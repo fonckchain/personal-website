@@ -52,10 +52,6 @@ color:forestgreen
 #fonck-logo {
     height: 80px;
     float: left;
-    margin-top: 7px;
-    margin-left: 10px;
-    margin-bottom: 7px;
-    z-index: 1;
   }
   #gmewallet {
   float: right;
