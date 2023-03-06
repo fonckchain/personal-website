@@ -17,8 +17,8 @@ nav {
   font-size: larger;
   padding: 20px 30px;
 }
-  .navbar a {
-    color: white;
+.navbar a {
+  color: white;
   }
 ::selection {
   background-color: lightsalmon;
