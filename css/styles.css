@@ -1,0 +1,87 @@
+
+ul { /*Partial CSS Reset*/
+  margin: 0;
+}
+nav {
+  text-align: center;
+  background: #fb6c24;
+  background: radial-gradient(#fb6c24, black);
+  width: 100%;
+}
+.topnavbar {
+  position: fixed;
+  top: 0;
+}
+.navbar li {
+  display: inline-block;
+  font-size: larger;
+  padding: 20px 30px;
+}
+  .navbar a {
+    color: white;
+  }
+::selection {
+  background-color: lightsalmon;
+}
+.highlight {
+  background-color: yellow;
+}
+main {
+  margin: 12px;
+  height: 200vh;
+  padding-top: 100px;
+}
+table, th, td, tfoot {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 5px; 
+}
+table {
+  border-width: 4px 4px; /*trbl*/
+  box-shadow: 0 0 20px #1C60FF;
+}
+p {
+  color: #fb6c24;
+}
+em {
+    font-style: italic;
+  }
+  #first {
+color:forestgreen  
+}
+#fonck-logo {
+    height: 80px;
+    float: left;
+    margin-top: 7px;
+    margin-left: 10px;
+    margin-bottom: 7px;
+    z-index: 1;
+  }
+  #gmewallet {
+  float: right;
+  position: absolute;
+  z-index: 1;
+  }
+#linkedin {
+    width: 144px;
+  }
+  .title {
+    text-align: center;
+  }
+  .crypto-logo {
+    height: 40px;
+  }
+.handle {
+    font-weight: bold;
+    color: rgb(14.9%, 65.49%, 87.06%);
+  }
+h1,h2,h3,h4,h5,h6 {
+    color: black;
+    object-fit: cover;
+    text-shadow: 0 0 15px red;}
+#computershare {
+   color: #93186c
+  }
+video {
+ width: 1080px;
+  }
