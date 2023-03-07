@@ -17,8 +17,8 @@ nav {
   font-size: larger;
   padding: 20px 30px;
 }
-  .navbar a {
-    color: white;
+.navbar a {
+  color: white;
   }
 ::selection {
   background-color: lightsalmon;
@@ -52,10 +52,6 @@ color:forestgreen
 #fonck-logo {
     height: 80px;
     float: left;
-    margin-top: 7px;
-    margin-left: 10px;
-    margin-bottom: 7px;
-    z-index: 1;
   }
   #gmewallet {
   float: right;
