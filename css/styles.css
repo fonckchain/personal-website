@@ -17,19 +17,24 @@ nav {
   font-size: larger;
   padding: 20px 30px;
 }
-.navbar a {
+ .navbar a {
   color: white;
   }
 ::selection {
-  background-color: lightsalmon;
+  background-color: greenyellow;
 }
 .highlight {
   background-color: yellow;
 }
 main {
   margin: 12px;
-  height: 200vh;
-  padding-top: 100px;
+  height: 144vh;
+  padding-top: 69px;
+}
+#homepage {
+ background-image: url(/Images/TheRoadtrip.png);
+ background-size: contain;
+ background-repeat: no-repeat;
 }
 table, th, td, tfoot {
   border: 1px solid black;
@@ -41,7 +46,18 @@ table {
   box-shadow: 0 0 20px #1C60FF;
 }
 p {
-  color: #fb6c24;
+inline-size: 33%;
+  color: white;
+  text-align: left;
+  font-size: larger;
+  text-shadow:
+      0.07em 0 black,
+      0 0.07em black,
+      -0.07em 0 black,
+      0 -0.07em black;
+}
+.title-logo {
+height: 32px;
 }
 em {
     font-style: italic;
@@ -61,9 +77,6 @@ color:forestgreen
 #linkedin {
     width: 144px;
   }
-  .title {
-    text-align: center;
-  }
   .crypto-logo {
     height: 40px;
   }
@@ -72,9 +85,11 @@ color:forestgreen
     color: rgb(14.9%, 65.49%, 87.06%);
   }
 h1,h2,h3,h4,h5,h6 {
-    color: black;
+    font-size: xx-large;
+    color: white;
     object-fit: cover;
-    text-shadow: 0 0 15px red;}
+    text-shadow: 0 0 15px rgb(0, 0, 0);
+  }
 #computershare {
    color: #93186c
   }
