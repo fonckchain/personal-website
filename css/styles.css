@@ -27,8 +27,9 @@ nav {
   background-color: yellow;
 }
 main {
+  background-image: url(/Images/TheRoadtrip.png);
   margin: 12px;
-  height: 200vh;
+  height: 144vh;
   padding-top: 100px;
 }
 table, th, td, tfoot {
