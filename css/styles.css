@@ -29,10 +29,13 @@ nav {
 /*Block styles */
 main {
   margin: 12px;
-  height: 169vh;
   padding-top: 58px;
+  height: 200vh;
 }
-#homepage {
+main.homepage {
+  height: 100vh;
+}
+body.homepage {
  background-image: url(../Images/TheRoadtrip.png);
  background-size: contain;
  background-repeat: no-repeat;
