@@ -33,7 +33,7 @@ main {
   padding-top: 58px;
 }
 #homepage {
- background-image: url(/Images/TheRoadtrip.png);
+ background-image: url(../Images/TheRoadtrip.png);
  background-size: contain;
  background-repeat: no-repeat;
 }
