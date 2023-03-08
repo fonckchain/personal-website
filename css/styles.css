@@ -1,7 +1,9 @@
-
+/*  Basic styles */
 ul { /*Partial CSS Reset*/
   margin: 0;
 }
+
+/*Naviation bar*/
 nav {
   text-align: center;
   background: #fb6c24;
@@ -26,6 +28,8 @@ nav {
 .highlight {
   background-color: yellow;
 }
+
+/*Block styles */
 main {
   margin: 12px;
   height: 144vh;
@@ -45,6 +49,8 @@ table {
   border-width: 4px 4px; /*trbl*/
   box-shadow: 0 0 20px #1C60FF;
 }
+
+/*Typography*/
 p {
 inline-size: 33%;
   color: white;
