@@ -2,6 +2,9 @@
 ul { /*Partial CSS Reset*/
   margin: 0;
 }
+::selection {
+  background-color: greenyellow;
+}
 
 /*Naviation bar*/
 nav {
@@ -22,12 +25,6 @@ nav {
  .navbar a {
   color: white;
   }
-::selection {
-  background-color: greenyellow;
-}
-.highlight {
-  background-color: yellow;
-}
 
 /*Block styles */
 main {
@@ -62,15 +59,30 @@ inline-size: 33%;
       -0.07em 0 black,
       0 -0.07em black;
 }
+.highlight {
+  background-color: yellow;
+}
 .title-logo {
 height: 32px;
 }
 em {
     font-style: italic;
   }
-  #first {
-color:forestgreen  
-}
+  .handle {
+    font-weight: bold;
+    color: rgb(14.9%, 65.49%, 87.06%);
+  }
+h1,h2,h3,h4,h5,h6 {
+    font-size: xx-large;
+    color: white;
+    object-fit: cover;
+    text-shadow: 0 0 15px rgb(0, 0, 0);
+  }
+#computershare {
+   color: #93186c
+  }
+
+  /*Multimedia*/
 #fonck-logo {
     height: 80px;
     float: left;
@@ -85,19 +97,6 @@ color:forestgreen
   }
   .crypto-logo {
     height: 40px;
-  }
-.handle {
-    font-weight: bold;
-    color: rgb(14.9%, 65.49%, 87.06%);
-  }
-h1,h2,h3,h4,h5,h6 {
-    font-size: xx-large;
-    color: white;
-    object-fit: cover;
-    text-shadow: 0 0 15px rgb(0, 0, 0);
-  }
-#computershare {
-   color: #93186c
   }
 video {
  width: 1080px;
