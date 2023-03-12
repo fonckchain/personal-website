@@ -45,7 +45,7 @@
             </div>
             <div class="form-group">
               <label for="name">Username</label>
-              <input type="name" placeholder="Username" maxlength="20" autofocus>
+              <input type="name" required placeholder="Username" minlength="3" maxlength="20" autofocus>
             </div>
             <div class="form-group">
               <label for="date">Date of Birth</label>
@@ -53,11 +53,11 @@
             </div>
             <div class="form-group">
               <label for="email">Email</label>
-              <input type="email">
+              <input type="email" required maxlength="50">
               </div>
             <div class="form-group">
                 <label for="password">Password</label>
-                <input type="password">
+                <input type="password" required minlength="6" maxlength="60">
               </div>
             <div class="form-group">
               <input type="checkbox" id="newsletter">
