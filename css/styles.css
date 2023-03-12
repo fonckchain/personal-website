@@ -56,14 +56,14 @@ button {
   background: #fb6c24;
   color: white;
   border: 0;
-  padding: 0.5rem 0.7rem;
+  padding: .5rem 0.7rem;
   border-radius: 5px;
   outline: 0;
 }
 input {
   border: 1px solid #ccc;
   border-radius: 5px;
-  padding: 0.42rem 1.888rem;
+  padding: 5px 15px;
   transition: border-color 0.15s, box-shadow 0.15s;
 }
 input:focus {
@@ -74,7 +74,13 @@ input:focus {
 .form-group {
   margin-bottom: 1rem;
 }
-
+#newsletter {
+  float: left;
+  margin-right: 0.25rem;
+  position: relative;
+  top: 0.28rem;
+  }
+  
 /*Typography*/
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
