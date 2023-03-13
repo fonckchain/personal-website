@@ -6,7 +6,7 @@ ul { /*Partial CSS Reset*/
   background-color: greenyellow;
 }
 
-/*Naviation bar*/
+/*Top & bottom bar*/
 nav {
   text-align: center;
   background: #fb6c24;
@@ -19,21 +19,32 @@ nav {
 }
 .navbar li {
   display: inline-block;
-  font-size: larger;
+  font-size: large;
   padding: 20px 30px;
 }
+.social-bar li {
+  display: inline-block;
+  font-size: large;
+  padding: 10px 36px;
+}
+#copyright {
+  position: relative;
+  bottom: 10px;
+  color: #ccc;
+}
 
-/*Block styles */
+/*Structure*/
 main {
   margin: 12px;
   padding-top: 58px;
-  height: 88vh;
+  height: 95vh;
 }
 main.homepage {
-  height: 100vh;
+  height: 97vh;
 }
 body.homepage {
  background-image: url(../Images/TheRoadtrip.png);
+ background-position: center;
  background-size: cover;
  background-repeat: no-repeat;
 }
@@ -42,6 +53,8 @@ body.about {
   background-position: center;
   background-size: contain;
 }
+
+/*Elements*/
 table, th, td, tfoot {
   border: 1px solid black;
   border-collapse: collapse;
@@ -116,10 +129,6 @@ height: 32px;
 em {
     font-style: italic;
   }
-  .handle {
-    font-weight: bold;
-    color: rgb(14.9%, 65.49%, 87.06%);
-  }
 h1,h2,h3,h4,h5,h6 {
     font-size: xx-large;
     color: white;
@@ -139,17 +148,18 @@ h1,h2,h3,h4,h5,h6 {
   }
 
   /*Multimedia*/
-#fonck-logo {
+  #fonck-logo {
     height: 70px;
     position: absolute;
-    top: 6px;
     left: 10px;
+    top: 5px;
   }
   #gmewallet {
+  height: 40px;
   position: absolute;
   }
-#linkedin {
-    width: 144px;
+#email, #telegram, #twitter, #discord, #coinmarketcap, #medium, #linkedin, #fiverr, #twitch, #reddit {
+    height: 40px;
   }
   .crypto-logo {
     height: 40px;
