@@ -27,15 +27,20 @@ nav {
 main {
   margin: 12px;
   padding-top: 58px;
-  height: 200vh;
+  height: 88vh;
 }
 main.homepage {
   height: 100vh;
 }
 body.homepage {
  background-image: url(../Images/TheRoadtrip.png);
- background-size: contain;
+ background-size: cover;
  background-repeat: no-repeat;
+}
+body.about {
+  background-image: url(../Images/Lilia_eyes.jpg);
+  background-position: center;
+  background-size: contain;
 }
 table, th, td, tfoot {
   border: 1px solid black;
@@ -127,8 +132,6 @@ h1,h2,h3,h4,h5,h6 {
 
   /*Animations*/
   button:hover {
-    transform: skew(-12deg);
-    transform: translateX(5px) rotate(-12deg);
     transform: perspective(420px) translateZ(69px) rotate(-10deg);
   }
   img:hover {
@@ -152,5 +155,5 @@ h1,h2,h3,h4,h5,h6 {
     height: 40px;
   }
 video {
- width: 1080px;
+ width: 32%;
   }
