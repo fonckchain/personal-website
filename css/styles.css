@@ -22,7 +22,7 @@ nav {
   font-size: large;
   padding: 20px 30px;
 }
-.social-bar li {
+.socials-bar li {
   display: inline-block;
   font-size: large;
   padding: 10px 36px;
@@ -36,7 +36,7 @@ nav {
 /*Structure*/
 main {
   margin: 12px;
-  padding-top: 58px;
+  padding-top: 55px;
   height: 95vh;
 }
 main.homepage {
@@ -47,11 +47,30 @@ body.homepage {
  background-position: center;
  background-size: cover;
  background-repeat: no-repeat;
+ margin: 0;
 }
 body.about {
   background-image: url(../Images/Lilia_eyes.jpg);
   background-position: center;
   background-size: contain;
+}
+main.projects {
+  margin: 0;
+}
+#web3rocketeers {
+  background-size: cover;
+  background-position: center;
+  background-image: url(../Images/Web3\ Rocketeers\ Power\ Rangers\ Style.png);
+}
+#foreignfuels {
+  background-size: cover;
+  background-position: center;
+  background-image: url(../Images/Foreign\ Fuels\ Banner.jpeg);
+}
+#web3costarica {
+  background-size: cover;
+  background-position: center;
+  background-image: url(../Images/Sunset.jpg);
 }
 
 /*Elements*/
@@ -68,9 +87,9 @@ label {
   display: block;
 }
 button {
-  background: black;
+  background: radial-gradient(black, #fb6c24);
   color: white;
-  border: 0;
+  border: 1px solid #fb6c24;
   padding: .5rem 0.7rem;
   border-radius: 20px;
   outline: 0;
@@ -109,8 +128,8 @@ body {
   .navbar a {
     color: white;
     }
-  p {
-    inline-size: 33%;
+  p, figcaption {
+    inline-size: 40%;
       color: white;
       text-align: left;
       font-size: larger;
@@ -143,7 +162,7 @@ h1,h2,h3,h4,h5,h6 {
   button:hover {
     transform: perspective(420px) translateZ(69px) rotate(-10deg);
   }
-  img:hover {
+  img.social-logo:hover {
     transform: perspective(420px) translateZ(69px);
   }
 
@@ -158,8 +177,11 @@ h1,h2,h3,h4,h5,h6 {
   height: 40px;
   position: absolute;
   }
-#email, #telegram, #twitter, #discord, #coinmarketcap, #medium, #linkedin, #fiverr, #twitch, #reddit {
+  img.social-logo {
     height: 40px;
+  }
+  .project-image {
+    height: 420px;
   }
   .crypto-logo {
     height: 40px;
