@@ -43,14 +43,16 @@ main.homepage {
   height: 97vh;
 }
 body.homepage {
- background-image: url(../Images/TheRoadtrip.png);
+ background-image: linear-gradient(rgba(64,64,64,0.5),rgba(64,64,64,0.5)), 
+ url(../Images/TheRoadtrip.png);
  background-position: center;
  background-size: cover;
  background-repeat: no-repeat;
  margin: 0;
 }
 body.about {
-  background-image: url(../Images/Lilia_eyes.jpg);
+  background-image: linear-gradient(rgba(64,64,64,0.5),rgba(64,64,64,0.5)), 
+  url(../Images/Lilia_eyes.jpg);
   background-position: center;
   background-size: contain;
 }
@@ -60,17 +62,29 @@ main.projects {
 #web3rocketeers {
   background-size: cover;
   background-position: center;
-  background-image: url(../Images/Web3\ Rocketeers\ Power\ Rangers\ Style.png);
+  background-image: linear-gradient(rgba(64,64,64,0.5),rgba(64,64,64,0.5)), 
+  url(../Images/Web3\ Rocketeers\ Power\ Rangers\ Style.png);
 }
 #foreignfuels {
   background-size: cover;
   background-position: center;
-  background-image: url(../Images/Foreign\ Fuels\ Banner.jpeg);
+  background-image: linear-gradient(rgba(64,64,64,0.5),rgba(64,64,64,0.5)), 
+  url(../Images/Foreign\ Fuels\ Banner.jpeg);
 }
 #web3costarica {
   background-size: cover;
   background-position: center;
-  background-image: url(../Images/Sunset.jpg);
+  background-image: linear-gradient(rgba(64,64,64,0.5),rgba(64,64,64,0.5)), 
+  url(../Images/Sunset.jpg);
+}
+figure.projects {
+  margin: 15px 15px 0;
+}
+p.projects {
+  margin-bottom: 0;
+}
+h2.projects, h3.projects {
+  margin: 0px;
 }
 
 /*Elements*/
@@ -162,6 +176,9 @@ h1,h2,h3,h4,h5,h6 {
   button:hover {
     transform: perspective(420px) translateZ(69px) rotate(-10deg);
   }
+  button, img.social-logo {
+    transition: all 100ms ease-out 100ms;
+}
   img.social-logo:hover {
     transform: perspective(420px) translateZ(69px);
   }
