@@ -12,20 +12,28 @@ nav {
   background: #fb6c24;
   background: radial-gradient(#fb6c24, black);
   width: 100%;
-}
+  z-index: 69;
+  }
 .topnavbar {
   position: fixed;
   top: 0;
+  max-height: auto; /*TBD*/
 }
 .navbar li {
   display: inline-block;
   font-size: large;
   padding: 20px 30px;
 }
-.socials-bar li {
+#socials-bar li {
   display: inline-block;
   font-size: large;
   padding: 10px 36px;
+}
+#socials-bar {
+  height: 140px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 #copyright {
   position: relative;
@@ -33,31 +41,36 @@ nav {
   color: #ccc;
 }
 
+
 /*Structure*/
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+#content-wrap {
+  padding-bottom: 140px;
+}
+body {
+  background-color: #fb6c24a8;
+  min-height: 100vh;
+}
 main {
-  margin: 12px;
+  margin: 0px;
   padding-top: 55px;
-  height: 95vh;
 }
-main.homepage {
-  height: 97vh;
-}
-body.homepage {
+#homepage {
  background-image: linear-gradient(rgba(64,64,64,0.5),rgba(64,64,64,0.5)), 
  url(../Images/TheRoadtrip.png);
  background-position: center;
  background-size: cover;
  background-repeat: no-repeat;
- margin: 0;
 }
-body.about {
+#about {
   background-image: linear-gradient(rgba(64,64,64,0.5),rgba(64,64,64,0.5)), 
-  url(../Images/Lilia_eyes.jpg);
+  url(../Images/connecturday-cropped.jpg);
   background-position: center;
-  background-size: contain;
-}
-main.projects {
-  margin: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 #web3rocketeers {
   background-size: cover;
@@ -77,21 +90,109 @@ main.projects {
   background-image: linear-gradient(rgba(64,64,64,0.5),rgba(64,64,64,0.5)), 
   url(../Images/Sunset.jpg);
 }
-figure.projects {
-  margin: 15px 15px 0;
+h2, h3 {
+  margin-top: 0px;
 }
-p.projects {
-  margin-bottom: 0;
+#socials {
+  background-image: linear-gradient(rgba(64,64,64,0.5),rgba(64,64,64,0.5)), 
+  url(../Images/Lilia_eyes.jpg);
+  background-position: center;
+  background-size: contain;
 }
-h2.projects, h3.projects {
-  margin: 0px;
+#portfolio {
+  background-image: linear-gradient(rgba(64,64,64,0.5),rgba(64,64,64,0.5)), 
+  url(../Images/THE\ ROADTRIP\ [Edition_02].png);
+  background-position: center;
+  background-size: cover;
 }
+#library {
+  background-image: linear-gradient(rgba(64,64,64,0.5),rgba(64,64,64,0.5)), 
+  url(../Images/Barb\ on\ Top.png);
+  background-position: center;
+  background-size: cover;
+}
+#services {
+  background-image: linear-gradient(rgba(64,64,64,0.5),rgba(64,64,64,0.5)), 
+  url(../Images/THE\ ROADTRIP\ [Edition_03].png);
+  background-position: center;
+  background-size: cover;
+}
+#support {
+  background-image: linear-gradient(rgba(64,64,64,0.5),rgba(64,64,64,0.5)), 
+  url(../Images/Loophead3064.png);
+  background-position: center;
+  background-size: cover;
+}
+  
+/*Typography*/
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  a:link {
+    text-decoration: none;
+  }
+  a {
+  color: red;
+  }
+  .navbar a {
+    color: white;
+    }
+  p, figcaption {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    inline-size: 60%;
+    text-align: center;
+      color: white;
+      font-size: larger;
+      text-shadow:
+          0.07em 0 black,
+          0 0.07em black,
+          -0.07em 0 black,
+          0 -0.07em black;
+    }
+.highlight {
+  background-color: yellow;
+}
+.title-logo {
+height: 32px;
+}
+em {
+    font-style: italic;
+  }
+h1,h2,h3,h4,h5,h6 {
+    text-align: center;
+    font-size: xx-large;
+    color: white;
+    object-fit: cover;
+    text-shadow: 0 0 15px rgb(0, 0, 0);
+  }
+#computershare {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   inline-size: 66%;
+   text-align: center;
+   color: white
+  }
 
-/*Elements*/
+  /*Animations*/
+  button:hover {
+    transform: perspective(420px) translateZ(69px) rotate(-10deg);
+  }
+  button, img.social-logo {
+    transition: all 100ms ease-out 100ms;
+}
+  img.social-logo:hover, #fonck-logo:hover, #gmewallet:hover {
+    transform: perspective(420px) translateZ(69px);
+  }
+
+  /*Elements*/
 table, th, td, tfoot {
-  border: 1px solid black;
+  border: 1px solid white;
   border-collapse: collapse;
   padding: 5px; 
+  color: white;
 }
 table {
   border-width: 4px 4px; /*trbl*/
@@ -121,6 +222,7 @@ input:focus {
 }
 .form-group {
   margin-bottom: 1rem;
+  color: white;
 }
 #newsletter {
   float: left;
@@ -128,59 +230,17 @@ input:focus {
   position: relative;
   top: 0.31rem;
   }
-  
-/*Typography*/
-body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  figure.projects {
+    margin: 15px 15px 0;
   }
-  a:link {
-    text-decoration: none;
+  audio {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
-  a {
-  color: red;
-  }
-  .navbar a {
+  li {
     color: white;
-    }
-  p, figcaption {
-    inline-size: 40%;
-      color: white;
-      text-align: left;
-      font-size: larger;
-      text-shadow:
-          0.07em 0 black,
-          0 0.07em black,
-          -0.07em 0 black,
-          0 -0.07em black;
-    }
-.highlight {
-  background-color: yellow;
-}
-.title-logo {
-height: 32px;
-}
-em {
-    font-style: italic;
-  }
-h1,h2,h3,h4,h5,h6 {
-    font-size: xx-large;
-    color: white;
-    object-fit: cover;
-    text-shadow: 0 0 15px rgb(0, 0, 0);
-  }
-#computershare {
-   color: #93186c
-  }
-
-  /*Animations*/
-  button:hover {
-    transform: perspective(420px) translateZ(69px) rotate(-10deg);
-  }
-  button, img.social-logo {
-    transition: all 100ms ease-out 100ms;
-}
-  img.social-logo:hover {
-    transform: perspective(420px) translateZ(69px);
+    text-align: center;
   }
 
   /*Multimedia*/
@@ -197,8 +257,14 @@ h1,h2,h3,h4,h5,h6 {
   img.social-logo {
     height: 40px;
   }
-  .project-image {
-    height: 420px;
+  img.project-image {
+    object-fit: contain;
+    width: 60%;
+    max-height: 19.5vh;
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
   }
   .crypto-logo {
     height: 40px;
