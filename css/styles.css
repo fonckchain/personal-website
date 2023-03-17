@@ -112,7 +112,7 @@ a {
   margin-left: 1rem;
 }
   a {
-    color: red;
+    color: purple;
     }
 @media screen and (min-width: 768px) {
   .link-arrow {
