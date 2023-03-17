@@ -1,4 +1,4 @@
-/*  Basic styles */
+/* Basic styles */
 ul { /*Partial CSS Reset*/
   margin: 0;
 }
@@ -6,7 +6,7 @@ ul { /*Partial CSS Reset*/
   background-color: greenyellow;
 }
 
-/*Typography*/
+/* Typography */
 html {
   /* 62.5% of 16px = 10px */
   font-size: 62.5%;
@@ -54,12 +54,6 @@ p {
     font-size: 3.2rem;
   }
 }
-  a:link {
-    text-decoration: none;
-  }
-  a {
-  color: red;
-  }
   .navbar a {
     color: white;
     }
@@ -79,8 +73,8 @@ p {
 .highlight {
   background-color: yellow;
 }
-.title-logo {
-height: 32px;
+.title-icon {
+height: 3.5rem;
 }
 em {
     font-style: italic;
@@ -99,7 +93,20 @@ h1,h2,h3,h4,h5,h6 {
    color: white
   }
 
-/*Top & bottom bar*/
+/* Links */
+a {
+  text-decoration: none;
+}
+.link-arrow {
+  color: var(--color-accent);
+  font-weight: bold;
+}
+  a {
+    color: red;
+    }
+
+
+/* Top & bottom bar */
 nav {
   text-align: center;
   background: #fb6c24;
@@ -135,7 +142,7 @@ nav {
 }
 
 
-/*Structure*/
+/* Structure */
 #page-container {
   position: relative;
   min-height: 100vh;
@@ -217,18 +224,18 @@ h1, h2, h3 {
   background-size: cover;
 }
 
-  /*Animations*/
+  /* Animations */
   button:hover {
     transform: perspective(420px) translateZ(69px) rotate(-10deg);
   }
-  button, img.social-logo {
+  button, img.social-logo, #fonck-logo, #gmewallet, img.title-icon {
     transition: all 100ms ease-out 100ms;
 }
-  img.social-logo:hover, #fonck-logo:hover, #gmewallet:hover {
+  img.social-logo:hover, img.title-icon:hover, #fonck-logo:hover, #gmewallet:hover {
     transform: perspective(420px) translateZ(69px);
   }
 
-  /*Elements*/
+  /* Elements */
 table, th, td, tfoot {
   border: 1px solid white;
   border-collapse: collapse;
@@ -284,7 +291,7 @@ input:focus {
     text-align: center;
   }
 
-  /*Multimedia*/
+  /* Multimedia */
   #fonck-logo {
     height: 70px;
     position: absolute;
