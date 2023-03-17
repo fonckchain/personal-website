@@ -1,4 +1,11 @@
 /*  Basic styles */
+:root {
+  --color-primary: #fb6c24;
+  --color-secondary: black;
+  --color-accent: #93186c;
+  --color-headings: white;
+  --color-body: #ccc;
+}
 ul { /*Partial CSS Reset*/
   margin: 0;
 }
