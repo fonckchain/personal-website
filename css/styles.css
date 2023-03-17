@@ -1,4 +1,16 @@
 /*  Basic styles */
+ul { /*Partial CSS Reset*/
+  margin: 0;
+}
+::selection {
+  background-color: greenyellow;
+}
+
+/*Typography*/
+html {
+  /* 62.5% of 16px = 10px */
+  font-size: 62.5%;
+}
 :root {
   --color-primary: #fb6c24;
   --color-secondary: black;
@@ -6,12 +18,84 @@
   --color-headings: white;
   --color-body: #ccc;
 }
-ul { /*Partial CSS Reset*/
-  margin: 0;
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 2.4rem;
+  line-height: 1.5;
+  }
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color-headings);
 }
-::selection {
-  background-color: greenyellow;
+h1 {
+font-size: 6rem;
 }
+h2 {
+  font-size: 4rem
+}
+h3, h4, h5, h6 {
+  font-size: 3rem;
+}
+p {
+  margin-top: 0;
+}
+@media screen and (min-width: 1024px) {
+  body {
+    font-size: 1.8rem;
+  }
+  h1 {
+    font-size: 5rem;
+  }
+  h2 {
+    font-size: 3.5rem;
+  }
+  h3, h4, h5, h6 {
+    font-size: 2.4rem;
+  }
+}
+  a:link {
+    text-decoration: none;
+  }
+  a {
+  color: red;
+  }
+  .navbar a {
+    color: white;
+    }
+  p, figcaption {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    inline-size: 60%;
+    text-align: center;
+      color: white;
+      text-shadow:
+          0.07em 0 black,
+          0 0.07em black,
+          -0.07em 0 black,
+          0 -0.07em black;
+    }
+.highlight {
+  background-color: yellow;
+}
+.title-logo {
+height: 32px;
+}
+em {
+    font-style: italic;
+  }
+h1,h2,h3,h4,h5,h6 {
+    text-align: center;
+    object-fit: cover;
+    text-shadow: 0 0 15px rgb(0, 0, 0);
+  }
+#computershare {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   inline-size: 66%;
+   text-align: center;
+   color: white
+  }
 
 /*Top & bottom bar*/
 nav {
@@ -97,7 +181,7 @@ main {
   background-image: linear-gradient(rgba(64,64,64,0.5),rgba(64,64,64,0.5)), 
   url(../Images/Sunset.jpg);
 }
-h2, h3 {
+h1, h2, h3 {
   margin-top: 0px;
 }
 #socials {
@@ -130,58 +214,6 @@ h2, h3 {
   background-position: center;
   background-size: cover;
 }
-  
-/*Typography*/
-body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  }
-  a:link {
-    text-decoration: none;
-  }
-  a {
-  color: red;
-  }
-  .navbar a {
-    color: white;
-    }
-  p, figcaption {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    inline-size: 60%;
-    text-align: center;
-      color: white;
-      font-size: larger;
-      text-shadow:
-          0.07em 0 black,
-          0 0.07em black,
-          -0.07em 0 black,
-          0 -0.07em black;
-    }
-.highlight {
-  background-color: yellow;
-}
-.title-logo {
-height: 32px;
-}
-em {
-    font-style: italic;
-  }
-h1,h2,h3,h4,h5,h6 {
-    text-align: center;
-    font-size: xx-large;
-    color: white;
-    object-fit: cover;
-    text-shadow: 0 0 15px rgb(0, 0, 0);
-  }
-#computershare {
-   display: block;
-   margin-left: auto;
-   margin-right: auto;
-   inline-size: 66%;
-   text-align: center;
-   color: white
-  }
 
   /*Animations*/
   button:hover {
