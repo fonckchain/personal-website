@@ -1,4 +1,4 @@
-/* Basic styles */
+/* BASIC */
 ul { /*Partial CSS Reset*/
   margin: 0;
 }
@@ -6,7 +6,7 @@ ul { /*Partial CSS Reset*/
   background-color: greenyellow;
 }
 
-/* Typography */
+/* TYPOGRAPHY */
 html {
   /* 62.5% of 16px = 10px */
   font-size: 62.5%;
@@ -29,10 +29,10 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 1rem;
 }
 h1 {
-font-size: 5rem;
+font-size: 4.5rem;
 }
 h2 {
-  font-size: 4rem
+  font-size: 3.69rem
 }
 h3, h4, h5, h6 {
   font-size: 3rem;
@@ -40,22 +40,22 @@ h3, h4, h5, h6 {
 p {
   margin-top: 0;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   body {
     font-size: 2rem;
   }
   h1 {
-    font-size: 6rem;
+    font-size: 5.5rem;
   }
   h2 {
-    font-size: 4.5rem;
+    font-size: 4.2rem;
   }
   h3, h4, h5, h6 {
     font-size: 3.2rem;
   }
 }
-  .navbar a {
-    color: white;
+  .pages a {
+    color: var(--color-headings)
     }
   p, figcaption {
     display: block;
@@ -63,7 +63,6 @@ p {
     margin-right: auto;
     inline-size: 60%;
     text-align: center;
-      color: white;
       text-shadow:
           0.07em 0 black,
           0 0.07em black,
@@ -93,7 +92,7 @@ h1,h2,h3,h4,h5,h6 {
    color: white
   }
 
-/* Links */
+/* LINKS */
 a {
   text-decoration: none;
 }
@@ -114,13 +113,13 @@ a {
   a {
     color: purple;
     }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .link-arrow {
     font-size: 1.8rem;
   }
 }
 
-/* Lists */
+/* LISTS */
 li {
   color: var(--color-body);
 }
@@ -130,34 +129,123 @@ li {
   margin-bottom: 1rem;
 }
 
-/* Top & bottom bar */
-nav {
-  text-align: center;
-  background: #fb6c24;
-  background: radial-gradient(#fb6c24, black);
+/* HEADER */
+.navbar {
   width: 100%;
+  height: 50px;
+  max-width: 99%;
+  display: flex;
+  margin: 0 auto;
   z-index: 69;
+  align-items: center;
+  justify-content: space-between;
+  /*position: fixed;*/
+}
+.pages {
+  display: flex;
+  margin: 0;
+  list-style-type: none;
+  gap: 3rem;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+}
+.logo {
+  height: 45px;
+}
+#fonck-logo {
+  height: 88px;
+  /*margin-left: 7px;*/
+}
+.navbar .toggle_btn {
+color: var(--color-headings);
+font-size: 1.6rem;
+cursor: pointer;
+display: none;
+}
+.action_btn {
+/*margin-right: 7px;*/
+background-color: var(--color-accent);
+color: var(--color-headings);
+padding: 0.5rem 3.6rem;
+border: none;
+outline: none;
+border-radius: 20px;
+font-size: 1.6rem;
+font-weight: bold;
+cursor: pointer;
+transition: scale .2 ease;
+}
+.action_btn:hover {
+  scale: 1.05;
+}
+.action_btn:active {
+  scale: 0.95;
+}
+/*Dropdown Menu*/
+.dropdown_menu {
+display: none;
+position: absolute;
+right: 2rem;
+top: 60px;
+height: 0;
+width: 300px;
+background: rgba(255, 255, 255, 0.1);
+backdrop-filter: blur(5px);
+border-radius: 10px;
+overflow: hidden;
+transition: height 0.2 cubic-bezier(0.175, 0.885, 0.32, 1.275) ;
+}
+.dropdown_menu.open {
+  height: 300px
+}
+.dropdown_menu li {
+padding: 0.5rem;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.dropdown_menu .action_btn {
+  width: 69%;
+  display: flex;
+  justify-content: center;
+}
+.dropdown_menu li a {
+  color: var(--color-headings)
+  text-transform: uppercase;
+}
+/*Reponsive Design*/
+@media(max-width:1024px){
+.pages, .navbar .action_btn {
+  display: none;
+}
+.navbar .toggle_btn {
+  display: block;
+}
+.dropdown_menu {
+display: block;
+}
+}
+@media (max-width:430px) {
+  .dropdown_menu {
+    left: 2rem;
+    width: unset;
   }
-.topnavbar {
-  position: fixed;
-  top: 0;
-  max-height: auto; /*TBD*/
 }
-.navbar li {
-  display: inline-block;
-  font-size: large;
-  padding: 2rem 3rem;
-}
+
+/* FOOTER */
 #socials-bar li {
   display: inline-block;
-  font-size: large;
   padding: 10px 36px;
 }
 #socials-bar {
+  text-align: center;
+  background: #fb6c24;
+  background: radial-gradient(#fb6c24, black);
   height: 140px;
   position: absolute;
   bottom: 0;
   width: 100%;
+  z-index: 69;
 }
 #copyright {
   position: relative;
@@ -166,7 +254,7 @@ nav {
 }
 
 
-/* Structure */
+/* STRUCTURE */
 #page-container {
   position: relative;
   min-height: 100vh;
@@ -180,7 +268,7 @@ body {
 }
 main {
   margin: 0px;
-  padding-top: 55px;
+  padding-top: 3rem;
 }
 #homepage {
  background-image: linear-gradient(rgba(64,64,64,0.5),rgba(64,64,64,0.5)), 
@@ -248,7 +336,7 @@ h1, h2, h3 {
   background-size: cover;
 }
 
-  /* Animations */
+  /* ANIMATIONS */
   button:hover {
     transform: perspective(420px) translateZ(69px) rotate(-10deg);
   }
@@ -258,8 +346,11 @@ h1, h2, h3 {
   img.social-logo:hover, img.title-icon:hover, #fonck-logo:hover, #gmewallet:hover {
     transform: perspective(420px) translateZ(69px);
   }
+  a:hover {
+    color: #fb6c24;
+  }
 
-  /* Elements */
+  /* ELEMENTS */
 table, th, td, tfoot {
   border: 1px solid white;
   border-collapse: collapse;
@@ -311,17 +402,7 @@ input:focus {
     margin-right: auto;
   }
 
-  /* Multimedia */
-  #fonck-logo {
-    height: 70px;
-    position: absolute;
-    left: 10px;
-    top: 5px;
-  }
-  #gmewallet {
-  height: 40px;
-  position: absolute;
-  }
+  /* MULTIMEDIA */
   img.social-logo {
     height: 40px;
   }
