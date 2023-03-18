@@ -127,10 +127,13 @@ li {
   color: var(--color-body);
 }
 .list--tick .list__item {
-  list-style-image: url(../Images/tick.svg);
   padding-left: 0.5rem;
   margin-bottom: 1rem;
 }
+.list__item .fa-solid{
+  color: green;
+}
+
 
 /* HEADER */
 .navbar {
@@ -386,7 +389,7 @@ body {
   min-height: 100vh;
 }
 main {
-  padding-top: 2.5rem;
+  padding-top: 1rem;
   padding-bottom: 10px;
 }
 #homepage {
@@ -457,12 +460,12 @@ h1, h2, h3 {
 
   /* ANIMATIONS */
   button:hover {
-    transform: perspective(420px) translateZ(69px) rotate(-10deg);
+    transform: perspective(420px) translateZ(69px);
   }
-  button, img.social-logo, .fonck-logo, #gmewallet, img.title-icon {
+  button, img.social-icon, .fonck-logo, img.title-icon {
     transition: all 100ms ease-out 100ms;
 }
-  img.social-logo:hover, img.title-icon:hover, .fonck-logo:hover, #gmewallet:hover {
+  img.social-icon:hover, img.title-icon:hover, .fonck-logo:hover {
     transform: perspective(420px) translateZ(69px);
   }
   a:hover {
