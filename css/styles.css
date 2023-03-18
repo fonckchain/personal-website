@@ -1,6 +1,13 @@
 /* BASIC */
-ul { /*Partial CSS Reset*/
+/*Partial CSS Reset*/
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul li {
+  list-style: none;
+  margin-bottom: 12px;
 }
 ::selection {
   background-color: greenyellow;
@@ -16,7 +23,7 @@ html {
   --color-secondary: black;
   --color-accent: #93186c;
   --color-headings: white;
-  --color-body: #ccc;
+  --color-body: #eeeeee;
 }
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -24,6 +31,18 @@ body {
   line-height: 1.5;
   color: var(--color-body)
   }
+  main p, figcaption {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    inline-size: 60%;
+    text-align: center;
+      text-shadow:
+          0.07em 0 black,
+          0 0.07em black,
+          -0.07em 0 black,
+          0 -0.07em black;
+    }
 h1, h2, h3, h4, h5, h6 {
   color: var(--color-headings);
   margin-bottom: 1rem;
@@ -36,9 +55,6 @@ h2 {
 }
 h3, h4, h5, h6 {
   font-size: 3rem;
-}
-p {
-  margin-top: 0;
 }
 @media screen and (min-width: 1024px) {
   body {
@@ -57,18 +73,7 @@ p {
   .pages a {
     color: var(--color-headings)
     }
-  p, figcaption {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    inline-size: 60%;
-    text-align: center;
-      text-shadow:
-          0.07em 0 black,
-          0 0.07em black,
-          -0.07em 0 black,
-          0 -0.07em black;
-    }
+
 .highlight {
   background-color: yellow;
 }
@@ -95,6 +100,7 @@ h1,h2,h3,h4,h5,h6 {
 /* LINKS */
 a {
   text-decoration: none;
+  color: white;
 }
 .link-arrow {
   color: var(--color-accent);
@@ -110,9 +116,6 @@ a {
 .link-arrow:hover::after {
   margin-left: 1rem;
 }
-  a {
-    color: purple;
-    }
 @media screen and (min-width: 1024px) {
   .link-arrow {
     font-size: 1.8rem;
@@ -148,11 +151,8 @@ li {
   text-transform: uppercase;
   font-size: 1.6rem;
 }
-.logo {
+.top-logo {
   height: 33px;
-}
-#fonck-logo {
-  height: 88px;
 }
 .navbar .toggle_btn {
 color: var(--color-headings);
@@ -230,24 +230,146 @@ display: block;
 }
 
 /* FOOTER */
-#socials-bar li {
-  display: inline-block;
-  padding: 10px 36px;
-}
-#socials-bar {
-  text-align: center;
-  background: #fb6c24;
-  background: radial-gradient(#fb6c24, black);
-  height: 140px;
+
+footer {
+  width: 100%;
   position: absolute;
   bottom: 0;
-  width: 100%;
-  z-index: 69;
+  background: linear-gradient(to right, var(--color-secondary), var(--color-primary));
+  color: var(--color-headings);
+  padding: 100px 0 30px;
+  border-top-left-radius: 125px;
+  font-size: 2rem;
+  text-align: left;
+  line-height: 20px;
 }
-#copyright {
+.row {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex start;
+  justify-content: space-between;
+}
+.col {
+  flex-basis: 25%;
+  padding: 10px;
+}
+.col:nth-child(2), .col:nth-child(3) {
+flex-basis: 15%;
+}
+.fonck-logo {
+  height: 88px;
+  margin-bottom: 30px;
+}
+.col h3 {
+  width: fit-content;
+  margin-bottom: 40px;
   position: relative;
-  bottom: 10px;
+}
+.email-id {
+  width: fit-content;
+  border-bottom: 1px solid #ccc;
+  margin: 20px 0;
+}
+form.email {
+  padding-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 50px;
+}
+form .fa-regular {
+  font-size: 1.8rem;
+  margin-right: 10px;
+}
+form input{
+  width: 100%;
+  background: transparent;
   color: #ccc;
+  border: 0;
+  outline: none;
+}
+form button{
+  background: transparent;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+form button .fa-solid {
+  font-size: 1.6rem;
+  color: #ccc;
+}
+.social-icons .fa-brands {
+width: 53px;
+border-radius: 50%;
+text-align: center;
+line-height: 53px;
+font-size: 33px;
+color: #fff;
+background: transparent #fff;
+margin: 0 15px 15px 0;
+cursor: pointer;
+}
+hr {
+  width:90%;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  margin: 20px auto;
+}
+.copyright {
+  text-align: center;
+}
+.underline {
+  width: 100%;
+  height: 5px;
+  background: #ccc;
+  border-radius: 3px;
+  position: absolute;
+  top: 25px;
+  left: 0;
+  overflow: hidden;
+}
+.underline span {
+width: 15px;
+height: 100%;
+background: #fb6c24;
+border-radius: 3px;
+position: absolute;
+top: 0;
+left: 10px;
+animation: moving 2s linear infinite;
+}
+@keyframes moving {
+0% {
+  left: -20px;
+}
+100% {
+  left: 100%;
+}
+}
+@media (max-width:1024px) {
+  footer {
+    bottom: unset;
+  }
+  .col {
+    flex-basis: 50%;
+  }
+  .col:nth-child(2), .col:nth-child(3) {
+  flex-basis: 50%;
+  }
+}
+@media (max-width:768px) {
+  footer {
+    bottom: unset;
+  }
+  .col {
+    flex-basis: 100%;
+  }
+  .col:nth-child(2), .col:nth-child(3) {
+  flex-basis: 100%;
+  }
 }
 
 
@@ -257,15 +379,15 @@ display: block;
   min-height: 100vh;
 }
 #content-wrap {
-  padding-bottom: 140px;
+  padding-bottom: 505px;
 }
 body {
-  background-color: #fb6c24a8;
+  background-color: #000;
   min-height: 100vh;
 }
 main {
-  margin: 0px;
-  padding-top: 3rem;
+  padding-top: 2.5rem;
+  padding-bottom: 10px;
 }
 #homepage {
  background-image: linear-gradient(rgba(64,64,64,0.5),rgba(64,64,64,0.5)), 
@@ -337,10 +459,10 @@ h1, h2, h3 {
   button:hover {
     transform: perspective(420px) translateZ(69px) rotate(-10deg);
   }
-  button, img.social-logo, #fonck-logo, #gmewallet, img.title-icon {
+  button, img.social-logo, .fonck-logo, #gmewallet, img.title-icon {
     transition: all 100ms ease-out 100ms;
 }
-  img.social-logo:hover, img.title-icon:hover, #fonck-logo:hover, #gmewallet:hover {
+  img.social-logo:hover, img.title-icon:hover, .fonck-logo:hover, #gmewallet:hover {
     transform: perspective(420px) translateZ(69px);
   }
   a:hover {
@@ -348,26 +470,18 @@ h1, h2, h3 {
   }
 
   /* ELEMENTS */
-table, th, td, tfoot {
+table.cryptos, th.cryptos, td.cryptos, tfoot.cryptos {
   border: 1px solid white;
   border-collapse: collapse;
   padding: 5px; 
   color: white;
 }
-table {
+table.cryptos {
   border-width: 4px 4px; /*trbl*/
   box-shadow: 0 0 20px #1C60FF;
 }
 label {
   display: block;
-}
-button {
-  background: radial-gradient(black, #fb6c24);
-  color: white;
-  border: 1px solid #fb6c24;
-  padding: .5rem 0.7rem;
-  border-radius: 20px;
-  outline: 0;
 }
 input {
   border: 1px solid #ccc;
@@ -400,9 +514,6 @@ input:focus {
   }
 
   /* MULTIMEDIA */
-  img.social-logo {
-    height: 40px;
-  }
   img.project-image {
     object-fit: contain;
     width: 60%;
