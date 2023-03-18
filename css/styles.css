@@ -133,13 +133,12 @@ li {
 .navbar {
   width: 100%;
   height: 50px;
-  max-width: 99%;
+  max-width: 98%;
   display: flex;
   margin: 0 auto;
   z-index: 69;
   align-items: center;
   justify-content: space-between;
-  /*position: fixed;*/
 }
 .pages {
   display: flex;
@@ -150,11 +149,10 @@ li {
   font-size: 1.6rem;
 }
 .logo {
-  height: 45px;
+  height: 33px;
 }
 #fonck-logo {
   height: 88px;
-  /*margin-left: 7px;*/
 }
 .navbar .toggle_btn {
 color: var(--color-headings);
@@ -163,14 +161,14 @@ cursor: pointer;
 display: none;
 }
 .action_btn {
-/*margin-right: 7px;*/
 background-color: var(--color-accent);
 color: var(--color-headings);
+text-transform: uppercase;
 padding: 0.5rem 3.6rem;
 border: none;
 outline: none;
 border-radius: 20px;
-font-size: 1.6rem;
+font-size: 1.4rem;
 font-weight: bold;
 cursor: pointer;
 transition: scale .2 ease;
@@ -211,7 +209,6 @@ justify-content: center;
 }
 .dropdown_menu li a {
   color: var(--color-headings)
-  text-transform: uppercase;
 }
 /*Reponsive Design*/
 @media(max-width:1024px){
