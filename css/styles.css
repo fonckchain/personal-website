@@ -27,15 +27,15 @@ html {
 }
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 1.7rem;
+  font-size: 2rem;
   line-height: 1.5;
   color: var(--color-body)
   }
-  main p, figcaption {
+  .homepage p, .about p, .projects p, .socials p, .portfolio p, .library p, .services p, .support p, figcaption {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    inline-size: 60%;
+    margin-bottom: 1.69rem;
     text-align: center;
       text-shadow:
           0.07em 0 black,
@@ -43,31 +43,63 @@ body {
           -0.07em 0 black,
           0 -0.07em black;
     }
+    .homepage p, .about p, .socials p, .portfolio p, .library p, .services p, .support p, figcaption {
+      inline-size: 60%;
+      text-align: center;
+      }
 h1, h2, h3, h4, h5, h6 {
   color: var(--color-headings);
   margin-bottom: 1rem;
 }
 h1 {
-font-size: 4.5rem;
+font-size: 5.5rem;
 }
 h2 {
-  font-size: 3.69rem
+  font-size: 4.2rem
 }
 h3, h4, h5, h6 {
-  font-size: 3rem;
+  font-size: 3.2rem;
 }
-@media screen and (min-width: 1024px) {
+@media (max-width: 1024px) {
   body {
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
   h1 {
-    font-size: 5.5rem;
+    font-size: 4.5rem;
   }
   h2 {
-    font-size: 4.2rem;
+    font-size: 3.69rem;
   }
   h3, h4, h5, h6 {
-    font-size: 3.2rem;
+    font-size: 3rem;
+  }
+}
+@media (max-width: 768px) {
+  body {
+    font-size: 1.5rem;
+  }
+  h1 {
+    font-size: 4.2rem;
+  }
+  h2 {
+    font-size: 3.33rem;
+  }
+  h3, h4, h5, h6 {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 420px) {
+  body {
+    font-size: 1.4rem;
+  }
+  h1 {
+    font-size: 3.69rem;
+  }
+  h2 {
+    font-size: 2.741rem;
+  }
+  h3, h4, h5, h6 {
+    font-size: 2.rem;
   }
 }
   .pages a {
@@ -106,7 +138,7 @@ a {
   color: var(--color-accent);
   font-weight: bold;
   text-transform: uppercase;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 .link-arrow::after {
   content: "-->";
@@ -116,9 +148,9 @@ a {
 .link-arrow:hover::after {
   margin-left: 1rem;
 }
-@media screen and (min-width: 1024px) {
+@media (max-width: 1024px) {
   .link-arrow {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -157,11 +189,55 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
-#web3rocketeers {
+#projects {
+  background: linear-gradient(#000, #a14516);
+}
+/*#web3rocketeers {
   background-size: cover;
   background-position: center;
   background-image: linear-gradient(rgba(64,64,64,0.5),rgba(64,64,64,0.5)), 
   url(../Images/Web3\ Rocketeers\ Power\ Rangers\ Style.png);
+}*/
+.header-image {
+  position: absolute;
+  top: 0;
+  z-index: -69;
+  width: 100%;
+  object-fit: cover;
+}
+@media (max-width: 666px) {
+  .header-image {
+    height: 741px;
+  }
+}
+@media (max-width: 580px) {
+  .header-image {
+    height: 888px;
+  }
+}
+@media (max-width: 460px) {
+  .header-image {
+    height: 999px;
+  }
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 10px;
+}
+.grid-item {
+  width: 100%;
+  padding: 10px;
+  overflow: hidden;
+}
+@media (max-width:768px) {
+  .grid-container {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: none;
+
+    padding: 10px;
+  } 
 }
 #foreignfuels {
   background-size: cover;
@@ -169,13 +245,21 @@ body {
   background-image: linear-gradient(rgba(64,64,64,0.5),rgba(64,64,64,0.5)), 
   url(../Images/Foreign\ Fuels\ Banner.jpeg);
 }
-#web3costarica {
+/*#web3costarica {
   background-size: cover;
   background-position: center;
   background-image: linear-gradient(rgba(64,64,64,0.5),rgba(64,64,64,0.5)), 
   url(../Images/Sunset.jpg);
+  overflow: visible;
+  z-index: 69;
+}*/
+.bottom-image {
+position: absolute;
+width: 100%;
+z-index: -69;
+max-height: 40%;
 }
-h1, h2, h3 {
+h1 {
   margin-top: 0px;
 }
 #socials {
@@ -299,7 +383,7 @@ justify-content: center;
 display: block;
 }
 }
-@media (max-width:430px) {
+@media (max-width:369px) {
   .dropdown_menu {
     left: 2rem;
     width: unset;
@@ -336,6 +420,11 @@ flex-basis: 15%;
 .fonck-logo {
   height: 88px;
   margin-bottom: 30px;
+}
+@media (max-width: 768px) {
+  .fonck-logo {
+    height: 69px;
+  }
 }
 .col h3 {
   width: fit-content;
@@ -514,8 +603,8 @@ input:focus {
   /* MULTIMEDIA */
   img.project-image {
     object-fit: contain;
-    width: 60%;
-    max-height: 19.5vh;
+    width: 100%;
+    max-height: 33vh;
     display: block;
     position: relative;
     margin-left: auto;
