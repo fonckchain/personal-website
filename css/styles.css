@@ -237,6 +237,7 @@ footer {
   font-size: 2rem;
   text-align: left;
   line-height: 20px;
+  margin-top: 10px;
 }
 .row {
   width: 85%;
@@ -387,7 +388,6 @@ body {
 }
 main {
   padding-top: 1rem;
-  padding-bottom: 10px;
 }
 #homepage {
  background-image: linear-gradient(rgba(64,64,64,0.5),rgba(64,64,64,0.5)), 
