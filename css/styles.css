@@ -126,14 +126,6 @@ a {
 li {
   color: var(--color-body);
 }
-.list--tick .list__item {
-  padding-left: 0.5rem;
-  margin-bottom: 1rem;
-}
-.list__item .fa-solid{
-  color: green;
-}
-
 
 /* HEADER */
 .navbar {
@@ -270,6 +262,16 @@ flex-basis: 15%;
   margin-bottom: 40px;
   position: relative;
 }
+#email-icon {
+  margin-right: 5px;
+  display: flex;
+  height: 20px;
+}
+#arrow-right {
+  height: 20px;
+  display: flex;
+  margin-left: 5px;
+}
 .email-id {
   width: fit-content;
   border-bottom: 1px solid #ccc;
@@ -282,10 +284,6 @@ form.email {
   justify-content: space-between;
   border-bottom: 1px solid #ccc;
   margin-bottom: 50px;
-}
-form .fa-regular {
-  font-size: 1.8rem;
-  margin-right: 10px;
 }
 form input{
   width: 100%;
@@ -300,20 +298,20 @@ form button{
   outline: none;
   cursor: pointer;
 }
-form button .fa-solid {
-  font-size: 1.6rem;
-  color: #ccc;
+.social-icons {
+  margin: 0 auto;
+  width: 83%;
+  text-align: center;
 }
-.social-icons .fa-brands {
-width: 53px;
-border-radius: 50%;
-text-align: center;
-line-height: 53px;
-font-size: 33px;
-color: #fff;
-background: transparent #fff;
-margin: 0 15px 15px 0;
-cursor: pointer;
+.social-icons img {
+  margin: 0 9px 9px 0;
+  height: 30px;
+  width: 30px;
+  background: #fff;
+  border-radius: 50%;
+  }
+#telegram-icon {
+color: #93186c;
 }
 hr {
   width:90%;
@@ -374,7 +372,6 @@ animation: moving 2s linear infinite;
   flex-basis: 100%;
   }
 }
-
 
 /* STRUCTURE */
 #page-container {
@@ -462,10 +459,10 @@ h1, h2, h3 {
   button:hover {
     transform: perspective(420px) translateZ(69px);
   }
-  button, img.social-icon, .fonck-logo, img.title-icon {
+  button, .fonck-logo, #telegram-icon, #discord-icon, #twitter-icon, #medium-icon, #linkedin-icon, #github-icon, #reddit-icon, #twitch-logo, #coinmarketcap-icon {
     transition: all 100ms ease-out 100ms;
 }
-  img.social-icon:hover, img.title-icon:hover, .fonck-logo:hover {
+  .fonck-logo:hover, #telegram-icon:hover, #discord-icon:hover, #twitter-icon:hover, #medium-icon:hover, #linkedin-icon:hover, #github-icon:hover, #reddit-icon:hover, #twitch-icon:hover, #coinmarketcap-icon:hover {
     transform: perspective(420px) translateZ(69px);
   }
   a:hover {
@@ -476,7 +473,7 @@ h1, h2, h3 {
 table.cryptos, th.cryptos, td.cryptos, tfoot.cryptos {
   border: 1px solid white;
   border-collapse: collapse;
-  padding: 5px; 
+  padding: 5px;
   color: white;
 }
 table.cryptos {
