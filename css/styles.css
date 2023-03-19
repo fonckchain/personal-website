@@ -127,6 +127,88 @@ li {
   color: var(--color-body);
 }
 
+/* STRUCTURE */
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+#content-wrap {
+  padding-bottom: 500px;
+}
+@media (max-width:1024px) {
+  #content-wrap {
+    padding-bottom: 15px;
+  }
+  }
+body {
+  background-color: #000;
+}
+#homepage {
+ background-image: linear-gradient(rgba(64,64,64,0.5),rgba(64,64,64,0.5)), 
+ url(../Images/TheRoadtrip.png);
+ background-position: center;
+ background-size: cover;
+ background-repeat: no-repeat;
+}
+#about {
+  background-image: linear-gradient(rgba(64,64,64,0.5),rgba(64,64,64,0.5)), 
+  url(../Images/connecturday-cropped.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#web3rocketeers {
+  background-size: cover;
+  background-position: center;
+  background-image: linear-gradient(rgba(64,64,64,0.5),rgba(64,64,64,0.5)), 
+  url(../Images/Web3\ Rocketeers\ Power\ Rangers\ Style.png);
+}
+#foreignfuels {
+  background-size: cover;
+  background-position: center;
+  background-image: linear-gradient(rgba(64,64,64,0.5),rgba(64,64,64,0.5)), 
+  url(../Images/Foreign\ Fuels\ Banner.jpeg);
+}
+#web3costarica {
+  background-size: cover;
+  background-position: center;
+  background-image: linear-gradient(rgba(64,64,64,0.5),rgba(64,64,64,0.5)), 
+  url(../Images/Sunset.jpg);
+}
+h1, h2, h3 {
+  margin-top: 0px;
+}
+#socials {
+  background-image: linear-gradient(rgba(64,64,64,0.5),rgba(64,64,64,0.5)), 
+  url(../Images/Lilia_eyes.jpg);
+  background-position: center;
+  background-size: contain;
+}
+#portfolio {
+  background-image: linear-gradient(rgba(64,64,64,0.5),rgba(64,64,64,0.5)), 
+  url(../Images/THE\ ROADTRIP\ [Edition_02].png);
+  background-position: center;
+  background-size: cover;
+}
+#library {
+  background-image: linear-gradient(rgba(64,64,64,0.5),rgba(64,64,64,0.5)), 
+  url(../Images/Barb\ on\ Top.png);
+  background-position: center;
+  background-size: cover;
+}
+#services {
+  background-image: linear-gradient(rgba(64,64,64,0.5),rgba(64,64,64,0.5)), 
+  url(../Images/THE\ ROADTRIP\ [Edition_03].png);
+  background-position: center;
+  background-size: cover;
+}
+#support {
+  background-image: linear-gradient(rgba(64,64,64,0.5),rgba(64,64,64,0.5)), 
+  url(../Images/Loophead3064.png);
+  background-position: center;
+  background-size: cover;
+}
+
 /* HEADER */
 .navbar {
   width: 100%;
@@ -225,19 +307,16 @@ display: block;
 }
 
 /* FOOTER */
-
 footer {
   width: 100%;
   position: absolute;
   bottom: 0;
   background: linear-gradient(to right, var(--color-secondary), var(--color-primary));
   color: var(--color-headings);
-  padding: 100px 0 30px;
-  border-top-left-radius: 125px;
+  padding: 90px 0 30px;
   font-size: 2rem;
   text-align: left;
   line-height: 20px;
-  margin-top: 10px;
 }
 .row {
   width: 85%;
@@ -372,87 +451,6 @@ animation: moving 2s linear infinite;
   .col:nth-child(2), .col:nth-child(3) {
   flex-basis: 100%;
   }
-}
-
-/* STRUCTURE */
-#page-container {
-  position: relative;
-  min-height: 100vh;
-}
-#content-wrap {
-  padding-bottom: 505px;
-}
-body {
-  background-color: #000;
-  min-height: 100vh;
-}
-main {
-  padding-top: 1rem;
-}
-#homepage {
- background-image: linear-gradient(rgba(64,64,64,0.5),rgba(64,64,64,0.5)), 
- url(../Images/TheRoadtrip.png);
- background-position: center;
- background-size: cover;
- background-repeat: no-repeat;
-}
-#about {
-  background-image: linear-gradient(rgba(64,64,64,0.5),rgba(64,64,64,0.5)), 
-  url(../Images/connecturday-cropped.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-#web3rocketeers {
-  background-size: cover;
-  background-position: center;
-  background-image: linear-gradient(rgba(64,64,64,0.5),rgba(64,64,64,0.5)), 
-  url(../Images/Web3\ Rocketeers\ Power\ Rangers\ Style.png);
-}
-#foreignfuels {
-  background-size: cover;
-  background-position: center;
-  background-image: linear-gradient(rgba(64,64,64,0.5),rgba(64,64,64,0.5)), 
-  url(../Images/Foreign\ Fuels\ Banner.jpeg);
-}
-#web3costarica {
-  background-size: cover;
-  background-position: center;
-  background-image: linear-gradient(rgba(64,64,64,0.5),rgba(64,64,64,0.5)), 
-  url(../Images/Sunset.jpg);
-}
-h1, h2, h3 {
-  margin-top: 0px;
-}
-#socials {
-  background-image: linear-gradient(rgba(64,64,64,0.5),rgba(64,64,64,0.5)), 
-  url(../Images/Lilia_eyes.jpg);
-  background-position: center;
-  background-size: contain;
-}
-#portfolio {
-  background-image: linear-gradient(rgba(64,64,64,0.5),rgba(64,64,64,0.5)), 
-  url(../Images/THE\ ROADTRIP\ [Edition_02].png);
-  background-position: center;
-  background-size: cover;
-}
-#library {
-  background-image: linear-gradient(rgba(64,64,64,0.5),rgba(64,64,64,0.5)), 
-  url(../Images/Barb\ on\ Top.png);
-  background-position: center;
-  background-size: cover;
-}
-#services {
-  background-image: linear-gradient(rgba(64,64,64,0.5),rgba(64,64,64,0.5)), 
-  url(../Images/THE\ ROADTRIP\ [Edition_03].png);
-  background-position: center;
-  background-size: cover;
-}
-#support {
-  background-image: linear-gradient(rgba(64,64,64,0.5),rgba(64,64,64,0.5)), 
-  url(../Images/Loophead3064.png);
-  background-position: center;
-  background-size: cover;
 }
 
   /* ANIMATIONS */
