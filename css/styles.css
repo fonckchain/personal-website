@@ -240,17 +240,12 @@ background: linear-gradient(to bottom, transparent, #272727, #111111, #000);
   height: 1000px;
   }
 }
-@media (max-width: 666px) {
+@media (max-width: 768px) {
   #header-projects {
-    height: 741px;
+    height: 950px;
   }
 }
-@media (max-width: 580px) {
-  #header-projects {
-    height: 888px;
-  }
-}
-@media (max-width: 460px) {
+@media (max-width: 590px) {
   #header-projects {
     height: 999px;
   }
@@ -691,6 +686,6 @@ input:focus {
   .crypto-logo {
     height: 40px;
   }
-video {
- width: 32%;
+#stream {
+ width: 100%;
   }
