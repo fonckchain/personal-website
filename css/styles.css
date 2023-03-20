@@ -138,10 +138,7 @@ h1,h2,h3,h4,h5,h6 {
     text-shadow: none;
     padding-top: 1rem;
   }
-  .skills h2, .skills h3 {
-    margin-left: 3.69rem;
-    text-align: left;
-  }
+
   .skills h2 {
     padding-top: 50px;
   }
@@ -216,6 +213,14 @@ body {
   #header-homepage {
     height: 600px;
   }
+}
+.typewriter {
+  font-style: italic;
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .skills {
@@ -331,7 +336,6 @@ display: grid;
 gap: 1rem;
 grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 margin-top: 4.20vh;
-padding-bottom: 30px;
 }
 @media (max-width:1024px) {
   .skill-icons-grid {
