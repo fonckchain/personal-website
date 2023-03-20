@@ -37,15 +37,16 @@ body {
     margin-right: auto;
     margin-bottom: 1.69rem;
     text-align: center;
-      text-shadow:
-          0.07em 0 black,
-          0 0.07em black,
-          -0.07em 0 black,
-          0 -0.07em black;
     }
+    ol, .about ul, .about dl, .library ul, .homepage p, .about p, .projects p, .socials p, .portfolio p, .library p, .services p, .support p, figcaption {
+        text-shadow:
+            0.07em 0 black,
+            0 0.07em black,
+            -0.07em 0 black,
+            0 -0.07em black;
+      }
     .homepage p, .about p, .socials p, .portfolio p, .library p, .services p, .support p, figcaption {
       inline-size: 60%;
-      text-align: center;
       }
 h1, h2, h3, h4, h5, h6 {
   color: var(--color-headings);
@@ -158,6 +159,9 @@ a {
 li {
   color: var(--color-body);
 }
+ol {
+ text-align: justify;
+}
 
 /* STRUCTURE */
 #page-container {
@@ -182,16 +186,13 @@ body {
  background-size: cover;
  background-repeat: no-repeat;
 }
-#about {
+/*#about {
   background-image: linear-gradient(rgba(64,64,64,0.5),rgba(64,64,64,0.5)), 
   url(../Images/connecturday-cropped.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-}
-#projects {
-  background: linear-gradient(#000, #a14516);
-}
+}*/
 /*#web3rocketeers {
   background-size: cover;
   background-position: center;
@@ -230,6 +231,9 @@ body {
   padding: 10px;
   overflow: hidden;
 }
+#header-about {
+  top: -16%;
+  }
 @media (max-width:768px) {
   .grid-container {
     display: grid;
@@ -546,10 +550,10 @@ animation: moving 2s linear infinite;
   button:hover {
     transform: perspective(420px) translateZ(69px);
   }
-  .project-image, button, .fonck-logo, #telegram-icon, #discord-icon, #twitter-icon, #medium-icon, #linkedin-icon, #github-icon, #reddit-icon, #twitch-logo, #coinmarketcap-icon {
+  .project-image, button, .fonck-logo, .social-icon:hover {
     transition: all 100ms ease-out 100ms;
 }
-  .fonck-logo:hover, #telegram-icon:hover, #discord-icon:hover, #twitter-icon:hover, #medium-icon:hover, #linkedin-icon:hover, #github-icon:hover, #reddit-icon:hover, #twitch-icon:hover, #coinmarketcap-icon:hover {
+  .fonck-logo:hover, .social-icon:hover {
     transform: perspective(420px) translateZ(69px);
   }
   .project-image:hover {
