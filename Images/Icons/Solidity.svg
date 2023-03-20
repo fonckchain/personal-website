@@ -1,1 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5239 813"><style type="text/css">.st0{opacity:0.45;enable-background:new;}.st1{opacity:0.6;enable-background:new;}.st2{opacity:0.8;enable-background:new;}</style><path class="st0" d="M391.9 0l-130.7 232.3H0L130.6 0 391.9 0"/><path class="st1" d="M261.2 232.3h261.3L391.9 0h-261.3L261.2 232.3z"/><path class="st2" d="M130.6 464.5l130.6-232.2L130.6 0 0 232.3 130.6 464.5z"/><path class="st0" d="M131.9 813l130.7-232.3h261.3L393.2 813H131.9"/><path class="st1" d="M262.6 580.7h-261.3L131.9 813H393.2L262.6 580.7z"/><path class="st2" d="M393.2 348.5l-130.6 232.2L393.2 813l130.7-232.3L393.2 348.5z"/></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="256px" height="398px" viewBox="0 0 256 398" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
+    <title>Solidity</title>
+    <g fill="#000000">
+				<polyline opacity="0.45" points="191.513435 -1.38880392e-14 127.645979 113.512499 -2.77760784e-14 113.512499 63.8234781 -4.73316543e-30 191.513435 -4.73316543e-30"></polyline>
+				<polygon opacity="0.6" points="127.645979 113.512499 255.336913 113.512499 191.513435 -1.38880392e-14 63.8234781 -1.38880392e-14"></polygon>
+				<polygon opacity="0.8" points="63.8234781 226.981021 127.645979 113.512499 63.8234781 -1.38880392e-14 0 113.512499"></polygon>
+				<polyline opacity="0.45" points="64.4416102 397.24977 128.309066 283.736782 256 283.736782 192.132055 397.24977 64.4416102 397.24977"></polyline>
+				<polygon opacity="0.6" points="128.308577 283.737271 0.618132052 283.737271 64.4411215 397.250259 192.131567 397.250259"></polygon>
+				<polygon opacity="0.8" points="192.132055 170.268749 128.308577 283.737271 192.132055 397.250259 255.999511 283.737271"></polygon>
+		</g>
+</svg>

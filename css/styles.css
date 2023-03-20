@@ -53,13 +53,15 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 1rem;
 }
 h1 {
-font-size: 5.5rem;
+font-size: 6rem;
+text-transform: uppercase;
+margin-top: 1rem;
 }
 h2 {
-  font-size: 4.2rem
+  font-size: 4.5rem
 }
 h3, h4, h5, h6 {
-  font-size: 3.2rem;
+  font-size: 3.33rem;
 }
 @media (max-width: 1024px) {
   body {
@@ -129,6 +131,23 @@ h1,h2,h3,h4,h5,h6 {
    text-align: center;
    color: white
   }
+  .skill-icons-grid p {
+    text-align: center;
+  }
+  .skills p {
+    text-shadow: none;
+    padding-top: 1rem;
+  }
+  .skills h2, .skills h3 {
+    margin-left: 3.69rem;
+    text-align: left;
+  }
+  .skills h2 {
+    padding-top: 50px;
+  }
+  .skills h3 {
+    font-weight: lighter;
+  }
 
 /* LINKS */
 a {
@@ -169,79 +188,67 @@ ol {
   min-height: 100vh;
 }
 #content-wrap {
-  padding-bottom: 500px;
+  padding-bottom: 460px;
 }
 @media (max-width:1024px) {
   #content-wrap {
-    padding-bottom: 15px;
+    padding-bottom: 0px;
   }
   }
 body {
   background-color: #000;
 }
-#homepage {
- background-image: linear-gradient(rgba(64,64,64,0.5),rgba(64,64,64,0.5)), 
- url(../Images/TheRoadtrip.png);
- background-position: center;
- background-size: cover;
- background-repeat: no-repeat;
-}
-/*#about {
-  background-image: linear-gradient(rgba(64,64,64,0.5),rgba(64,64,64,0.5)), 
-  url(../Images/connecturday-cropped.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}*/
-/*#web3rocketeers {
-  background-size: cover;
-  background-position: center;
-  background-image: linear-gradient(rgba(64,64,64,0.5),rgba(64,64,64,0.5)), 
-  url(../Images/Web3\ Rocketeers\ Power\ Rangers\ Style.png);
-}*/
-.header-image {
+
+/* Home Page */
+#header-homepage {
   position: absolute;
   top: 0;
   z-index: -69;
   width: 100%;
   object-fit: cover;
 }
+@media (max-width: 1024) {
+  #header-homepage {
+    height: 741px;
+  }
+}
+@media (max-width: 888px) {
+  #header-homepage {
+    height: 600px;
+  }
+}
+
+.skills {
+background: linear-gradient(to bottom, transparent, #272727, #111111, #000);
+}
+
+/* PROJECTS */
+#header-projects {
+  position: absolute;
+  top: 0;
+  z-index: -69;
+  width: 100%;
+  object-fit: cover;
+}
+@media (max-height: 620px) {
+  #header-projects {
+  height: 1000px;
+  }
+}
 @media (max-width: 666px) {
-  .header-image {
+  #header-projects {
     height: 741px;
   }
 }
 @media (max-width: 580px) {
-  .header-image {
+  #header-projects {
     height: 888px;
   }
 }
 @media (max-width: 460px) {
-  .header-image {
+  #header-projects {
     height: 999px;
   }
-}
-.grid-container {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  padding: 10px;
-}
-.grid-item {
-  width: 100%;
-  padding: 10px;
-  overflow: hidden;
-}
-#header-about {
-  top: -16%;
-  }
-@media (max-width:768px) {
-  .grid-container {
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: none;
-
-    padding: 10px;
-  } 
 }
 #foreignfuels {
   background-size: cover;
@@ -249,22 +256,24 @@ body {
   background-image: linear-gradient(rgba(64,64,64,0.5),rgba(64,64,64,0.5)), 
   url(../Images/Foreign\ Fuels\ Banner.jpeg);
 }
-/*#web3costarica {
-  background-size: cover;
-  background-position: center;
-  background-image: linear-gradient(rgba(64,64,64,0.5),rgba(64,64,64,0.5)), 
-  url(../Images/Sunset.jpg);
-  overflow: visible;
-  z-index: 69;
-}*/
 .bottom-image {
 position: absolute;
 width: 100%;
 z-index: -69;
 max-height: 40%;
 }
-h1 {
-  margin-top: 0px;
+@media (max-width: 490px) {
+  #footer-projects {
+    height: 700px;
+  }
+}
+
+/* PAGES */
+#about {
+  background-image: linear-gradient(rgba(64,64,64,0.5),rgba(64,64,64,0.5)), 
+  url(../Images/connecturday-cropped.jpg);
+  background-position: center;
+  background-size: cover;
 }
 #socials {
   background-image: linear-gradient(rgba(64,64,64,0.5),rgba(64,64,64,0.5)), 
@@ -298,18 +307,62 @@ h1 {
 }
 
 /* GRIDS */
+.grid-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 10px;
+}
+.grid-item {
+  width: 100%;
+  padding: 10px;
+  overflow: hidden;
+}
+@media (max-width:768px) {
+  .grid-container {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: none;
+    padding: 10px;
+  } 
+}
 .skill-icons-grid {
 grid-gap: 1rem;
 display: grid;
 gap: 1rem;
-grid-template-columns: 1fr 1fr 1fr 1fr;
-margin-top: 5vh;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+margin-top: 4.20vh;
+padding-bottom: 30px;
+}
+@media (max-width:1024px) {
+  .skill-icons-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+}
+@media (max-width:768px) {
+  .skill-icons-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+@media (max-width:500px) {
+  .skill-icons-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    }
 }
 .skill-icons-grid div {
   display: block;
 }
-.skill-icons-grid p {
-  text-align: center;
+.skills img {
+    border-radius: 2rem;
+    box-shadow: 0 4px 16px rgba(17,17,26,.05), 0 8px 32px rgba(17,17,26,.05);
+    cursor: pointer;
+    display: block;
+    height: 7rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+    transition-duration: .4s;
+    width: 7rem;
+    background: #fff;
 }
 
 /* HEADER */
@@ -416,7 +469,7 @@ footer {
   bottom: 0;
   background: linear-gradient(to right, var(--color-secondary), var(--color-primary));
   color: var(--color-headings);
-  padding: 90px 0 30px;
+  padding: 70px 0 25px 0;
   font-size: 2rem;
   text-align: left;
   line-height: 20px;
@@ -439,11 +492,6 @@ flex-basis: 15%;
 .fonck-logo {
   height: 88px;
   margin-bottom: 30px;
-}
-@media (max-width: 768px) {
-  .fonck-logo {
-    height: 69px;
-  }
 }
 .col h3 {
   width: fit-content;
@@ -550,8 +598,12 @@ animation: moving 2s linear infinite;
   }
 }
 @media (max-width:768px) {
+  .fonck-logo {
+    height: 69px;
+  }
   footer {
     bottom: unset;
+    padding: 40px 0 25px 0;
   }
   .col {
     flex-basis: 100%;
@@ -562,13 +614,10 @@ animation: moving 2s linear infinite;
 }
 
   /* ANIMATIONS */
-  button:hover {
-    transform: perspective(420px) translateZ(69px);
-  }
-  .project-image, button, .fonck-logo, .social-icon:hover {
+  button:hover, .project-image:hover, .fonck-logo, .social-icon:hover, .skill-item:hover {
     transition: all 100ms ease-out 100ms;
 }
-  .fonck-logo:hover, .social-icon:hover {
+  button:hover, .fonck-logo:hover, .social-icon:hover, .skill-item:hover {
     transform: perspective(420px) translateZ(69px);
   }
   .project-image:hover {
