@@ -38,7 +38,7 @@ body {
     margin-bottom: 1.69rem;
     text-align: center;
     }
-    ol, .about ul, .about dl, .library ul, .homepage p, .about p, .projects p, .socials p, .portfolio p, .library p, .services p, .support p, figcaption {
+    ol, .about ul, .library ul, .homepage p, .about p, .projects p, .socials p, .portfolio p, .library p, .services p, .support p, figcaption {
         text-shadow:
             0.07em 0 black,
             0 0.07em black,
@@ -295,6 +295,21 @@ h1 {
   url(../Images/Loophead3064.png);
   background-position: center;
   background-size: cover;
+}
+
+/* GRIDS */
+.skill-icons-grid {
+grid-gap: 1rem;
+display: grid;
+gap: 1rem;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+margin-top: 5vh;
+}
+.skill-icons-grid div {
+  display: block;
+}
+.skill-icons-grid p {
+  text-align: center;
 }
 
 /* HEADER */
