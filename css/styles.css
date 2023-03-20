@@ -546,11 +546,17 @@ animation: moving 2s linear infinite;
   button:hover {
     transform: perspective(420px) translateZ(69px);
   }
-  button, .fonck-logo, #telegram-icon, #discord-icon, #twitter-icon, #medium-icon, #linkedin-icon, #github-icon, #reddit-icon, #twitch-logo, #coinmarketcap-icon {
+  .project-image, button, .fonck-logo, #telegram-icon, #discord-icon, #twitter-icon, #medium-icon, #linkedin-icon, #github-icon, #reddit-icon, #twitch-logo, #coinmarketcap-icon {
     transition: all 100ms ease-out 100ms;
 }
   .fonck-logo:hover, #telegram-icon:hover, #discord-icon:hover, #twitter-icon:hover, #medium-icon:hover, #linkedin-icon:hover, #github-icon:hover, #reddit-icon:hover, #twitch-icon:hover, #coinmarketcap-icon:hover {
     transform: perspective(420px) translateZ(69px);
+  }
+  .project-image:hover {
+    scale: 1.05;
+  }
+  .project-image:active {
+    scale: 0.95;
   }
   a:hover {
     color: #fb6c24;
