@@ -12,6 +12,20 @@ ul li {
   background-color: greenyellow;
 }
 
+/* STRUCTURE */
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+#content-wrap {
+  padding-bottom: 460px;
+}
+@media (max-width:1024px) {
+  #content-wrap {
+    padding-bottom: 0px;
+  }
+  }
+
 /* TYPOGRAPHY */
 html {
   /* 62.5% of 16px = 10px */
@@ -145,224 +159,7 @@ h1,h2,h3,h4,h5,h6 {
     font-weight: lighter;
   }
 
-/* LINKS */
-a {
-  text-decoration: none;
-  color: white;
-}
-.link-arrow {
-  color: var(--color-accent);
-  font-weight: bold;
-  text-transform: uppercase;
-  font-size: 1.8rem;
-}
-.link-arrow::after {
-  content: "-->";
-  margin-left: 0.5rem;
-  transition: margin 0.15s;
-}
-.link-arrow:hover::after {
-  margin-left: 1rem;
-}
-@media (max-width: 1024px) {
-  .link-arrow {
-    font-size: 1.5rem;
-  }
-}
-
-/* STRUCTURE */
-#page-container {
-  position: relative;
-  min-height: 100vh;
-}
-#content-wrap {
-  padding-bottom: 460px;
-}
-@media (max-width:1024px) {
-  #content-wrap {
-    padding-bottom: 0px;
-  }
-  }
-body {
-  background-color: #000;
-}
-
-/* Home Page */
-#header-homepage {
-  position: absolute;
-  top: 0;
-  z-index: -69;
-  width: 100%;
-  object-fit: cover;
-}
-@media (max-width: 1024) {
-  #header-homepage {
-    height: 741px;
-  }
-}
-@media (max-width: 888px) {
-  #header-homepage {
-    height: 600px;
-  }
-}
-.typewriter {
-  font-style: italic;
-  margin-top: 10px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.skills {
-background: linear-gradient(to bottom, transparent, #272727, #111111, #000);
-}
-
-/* PROJECTS */
-#header-projects {
-  position: absolute;
-  top: 0;
-  z-index: -69;
-  width: 100%;
-  object-fit: cover;
-}
-@media (max-height: 620px) {
-  #header-projects {
-  height: 1000px;
-  }
-}
-@media (max-width: 768px) {
-  #header-projects {
-    height: 950px;
-  }
-}
-@media (max-width: 590px) {
-  #header-projects {
-    height: 999px;
-  }
-}
-#foreignfuels {
-  background-size: cover;
-  background-position: center;
-  background-image: linear-gradient(rgba(64,64,64,0.5),rgba(64,64,64,0.5)), 
-  url(../Images/Foreign\ Fuels\ Banner.jpeg);
-}
-.bottom-image {
-position: absolute;
-width: 100%;
-z-index: -69;
-max-height: 40%;
-}
-@media (max-width: 490px) {
-  #footer-projects {
-    height: 700px;
-  }
-}
-
-/* PAGES */
-#about {
-  background-image: linear-gradient(rgba(64,64,64,0.5),rgba(64,64,64,0.5)), 
-  url(../Images/connecturday-cropped.jpg);
-  background-position: center;
-  background-size: cover;
-}
-#socials {
-  background-image: linear-gradient(rgba(64,64,64,0.5),rgba(64,64,64,0.5)), 
-  url(../Images/Lilia_eyes.jpg);
-  background-position: center;
-  background-size: contain;
-}
-#portfolio {
-  background-image: linear-gradient(rgba(64,64,64,0.5),rgba(64,64,64,0.5)), 
-  url(../Images/THE\ ROADTRIP\ [Edition_02].png);
-  background-position: center;
-  background-size: cover;
-}
-#library {
-  background-image: linear-gradient(rgba(64,64,64,0.5),rgba(64,64,64,0.5)), 
-  url(../Images/Barb\ on\ Top.png);
-  background-position: center;
-  background-size: cover;
-}
-#services {
-  background-image: linear-gradient(rgba(64,64,64,0.5),rgba(64,64,64,0.5)), 
-  url(../Images/THE\ ROADTRIP\ [Edition_03].png);
-  background-position: center;
-  background-size: cover;
-}
-#support {
-  background-image: linear-gradient(rgba(64,64,64,0.5),rgba(64,64,64,0.5)), 
-  url(../Images/Loophead3064.png);
-  background-position: center;
-  background-size: cover;
-}
-
-/* GRIDS */
-.grid-container2 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding-top: 25px;
-  padding-bottom: 25px;
-}
-@media (max-width:768px) {
-  .grid-container2 {
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: none;
-  } 
-}
-.grid-container3 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  padding: 10px;
-}
-.grid-item {
-  width: 100%;
-  padding: 10px;
-  display: block;
-  margin: auto;
-  overflow: hidden;
-}
-.skill-icons-grid {
-grid-gap: 1rem;
-display: grid;
-gap: 1rem;
-grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-margin-top: 4.20vh;
-}
-@media (max-width:1024px) {
-  .skill-icons-grid {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    }
-}
-@media (max-width:768px) {
-  .skill-icons-grid {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-}
-@media (max-width:500px) {
-  .skill-icons-grid {
-    grid-template-columns: 1fr 1fr 1fr;
-    }
-}
-.skill-icons-grid div {
-  display: block;
-}
-.skills img {
-    border-radius: 2rem;
-    box-shadow: 0 4px 16px rgba(17,17,26,.05), 0 8px 32px rgba(17,17,26,.05);
-    cursor: pointer;
-    display: block;
-    height: 7rem;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 1rem;
-    transition-duration: .4s;
-    width: 7rem;
-    background: #fff;
-}
-
-/* HEADER */
+  /* HEADER */
 .navbar {
   width: 100%;
   height: 50px;
@@ -610,6 +407,197 @@ animation: moving 2s linear infinite;
   }
 }
 
+/* Home Page */
+#header-homepage {
+  position: absolute;
+  top: 0;
+  z-index: -69;
+  width: 100%;
+  object-fit: cover;
+}
+@media (max-width: 1024) {
+  #header-homepage {
+    height: 741px;
+  }
+}
+@media (max-width: 888px) {
+  #header-homepage {
+    height: 600px;
+  }
+}
+.typewriter {
+  font-style: italic;
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.skills {
+background: linear-gradient(to bottom, transparent, #272727, #111111, #000);
+}
+.skill-icons-grid {
+  grid-gap: 1rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  margin-top: 4.20vh;
+  }
+  @media (max-width:1024px) {
+    .skill-icons-grid {
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      }
+  }
+  @media (max-width:768px) {
+    .skill-icons-grid {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      }
+  }
+  @media (max-width:500px) {
+    .skill-icons-grid {
+      grid-template-columns: 1fr 1fr 1fr;
+      }
+  }
+  .skill-icons-grid div {
+    display: block;
+  }
+  .skills img {
+      border-radius: 2rem;
+      box-shadow: 0 4px 16px rgba(17,17,26,.05), 0 8px 32px rgba(17,17,26,.05);
+      cursor: pointer;
+      display: block;
+      height: 7rem;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 1rem;
+      transition-duration: .4s;
+      width: 7rem;
+      background: #fff;
+  }
+
+/* PAGES */
+#about {
+  background-image: url(../Images/connecturday-cropped.jpg);
+  background-position: center;
+  background-size: cover;
+}
+#socials {
+  background-image: url(../Images/Lilia_eyes.jpg);
+  background-position: center;
+  background-size: contain;
+}
+#portfolio {
+  background-image: url(../Images/THE\ ROADTRIP\ [Edition_02].png);
+  background-position: center;
+  background-size: cover;
+}
+#library {
+  background-image: url(../Images/Barb\ on\ Top.png);
+  background-position: center;
+  background-size: cover;
+}
+#services {
+  background-image: url(../Images/THE\ ROADTRIP\ [Edition_03].png);
+  background-position: center;
+  background-size: cover;
+}
+#support {
+  background-image: url(../Images/Loophead3064.png);
+  background-position: center;
+  background-size: cover;
+}
+
+/* PROJECTS */
+#header-projects {
+  position: absolute;
+  top: 0;
+  z-index: -69;
+  width: 100%;
+  object-fit: cover;
+}
+img.project-image {
+  object-fit: contain;
+  width: 50%;
+  position: relative;
+}
+.projects figure {
+text-align: center;
+}
+#foreignfuels img {
+  width: 90%;
+}
+@media (max-height: 620px) {
+  #header-projects {
+  height: 1000px;
+  }
+}
+@media (max-width: 768px) {
+  #header-projects {
+    height: 950px;
+  }
+}
+@media (max-width: 590px) {
+  #header-projects {
+    height: 999px;
+  }
+}
+#foreignfuels {
+  background-size: cover;
+  background-position: center;
+  background-image: linear-gradient(rgba(64,64,64,0.5),rgba(64,64,64,0.5)), 
+  url(../Images/Foreign\ Fuels\ Banner.jpeg);
+}
+@media (min-width: 768px) {  
+  #foreignfuels .grid-item:nth-of-type(1) {
+    order: 2;
+  }
+  #foreignfuels .grid-item:nth-of-type(2) {
+    order: 1;
+  }
+}
+.bottom-image {
+position: absolute;
+width: 100%;
+z-index: -69;
+max-height: 36%;
+}
+@media (max-width: 768px) {
+  #footer-projects {
+  
+  }
+}
+@media (max-width: 490px) {
+  #footer-projects {
+    height: 741px;
+  }
+}
+
+/* GRIDS */
+.grid-container2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+@media (max-width:768px) {
+  .grid-container2 {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: none;
+  } 
+}
+.grid-container3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 10px;
+}
+.grid-item {
+  width: 100%;
+  padding: 10px;
+  display: block;
+  margin: auto;
+}
+
   /* ANIMATIONS */
   button:hover, .project-image:hover, .fonck-logo, .social-icon:hover, .skill-item:hover {
     transition: all 100ms ease-out 100ms;
@@ -618,10 +606,10 @@ animation: moving 2s linear infinite;
     transform: perspective(420px) translateZ(69px);
   }
   .project-image:hover {
-    scale: 1.05;
+    scale: 1.06;
   }
   .project-image:active {
-    scale: 0.95;
+    scale: 0.94;
   }
   a:hover {
     color: #fb6c24;
@@ -662,14 +650,36 @@ input:focus {
   position: relative;
   top: 0.31rem;
   }
-  figure.projects {
-    margin: 15px 15px 0;
-  }
   audio {
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
+
+  /* LINKS */
+a {
+  text-decoration: none;
+  color: white;
+}
+.link-arrow {
+  color: var(--color-accent);
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+}
+.link-arrow::after {
+  content: "-->";
+  margin-left: 0.5rem;
+  transition: margin 0.15s;
+}
+.link-arrow:hover::after {
+  margin-left: 1rem;
+}
+@media (max-width: 1024px) {
+  .link-arrow {
+    font-size: 1.5rem;
+  }
+}
 
 /* LISTS */
 #library li {
@@ -684,15 +694,6 @@ footer li {
 }
 
   /* MULTIMEDIA */
-  img.project-image {
-    object-fit: contain;
-    width: 100%;
-    max-height: 33vh;
-    display: block;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-  }
   .crypto-logo {
     height: 40px;
   }
