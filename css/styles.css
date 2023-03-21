@@ -12,9 +12,7 @@ ul li {
 ::selection {
   background-color: greenyellow;
 }
-/* ========================================================================== */
 /* STRUCTURE */
-/* ========================================================================== */
 #page-container {
   position: relative;
   min-height: 100vh;
@@ -210,9 +208,7 @@ transition: scale .2 ease;
 .action_btn:active {
   scale: 0.95;
 }
-/* -------------------------------------------------------------------------- */
-/* Dropdown Menu */
-/* -------------------------------------------------------------------------- */
+/* DROPDOWN MENU */
 .dropdown_menu {
 display: none;
 position: absolute;
@@ -243,7 +239,7 @@ justify-content: center;
 .dropdown_menu li a {
   color: var(--color-headings)
 }
-/*Reponsive Design*/
+/* RESPONSIVE DESIGN*/
 @media(max-width:1024px){
 .pages, .navbar .action_btn {
   display: none;
@@ -261,7 +257,9 @@ display: block;
     width: unset;
   }
 }
+/* ========================================================================== */
 /* FOOTER */
+/* ========================================================================== */
 footer {
   width: 100%;
   position: absolute;
