@@ -1,5 +1,6 @@
-/* BASIC */
-/*Partial CSS Reset*/
+/* ========================================================================== */
+/* BASIC & PARTIAL CSS RESET */
+/* ========================================================================== */
 * {
   margin: 0;
   padding: 0;
@@ -11,8 +12,9 @@ ul li {
 ::selection {
   background-color: greenyellow;
 }
-
+/* ========================================================================== */
 /* STRUCTURE */
+/* ========================================================================== */
 #page-container {
   position: relative;
   min-height: 100vh;
@@ -25,8 +27,9 @@ ul li {
     padding-bottom: 0px;
   }
   }
-
+/* ========================================================================== */
 /* TYPOGRAPHY */
+/* ========================================================================== */
 html {
   /* 62.5% of 16px = 10px */
   font-size: 62.5%;
@@ -158,8 +161,9 @@ h1,h2,h3,h4,h5,h6 {
   .skills h3 {
     font-weight: lighter;
   }
-
+  /* ======================================================================== */
   /* HEADER */
+  /* ======================================================================== */
 .navbar {
   width: 100%;
   height: 50px;
@@ -206,7 +210,9 @@ transition: scale .2 ease;
 .action_btn:active {
   scale: 0.95;
 }
-/*Dropdown Menu*/
+/* -------------------------------------------------------------------------- */
+/* Dropdown Menu */
+/* -------------------------------------------------------------------------- */
 .dropdown_menu {
 display: none;
 position: absolute;
@@ -255,7 +261,6 @@ display: block;
     width: unset;
   }
 }
-
 /* FOOTER */
 footer {
   width: 100%;
@@ -406,8 +411,9 @@ animation: moving 2s linear infinite;
   flex-basis: 100%;
   }
 }
-
-/* Home Page */
+/* ========================================================================== */
+/* HOME PAGE */
+/* ========================================================================== */
 #header-homepage {
   position: absolute;
   top: 0;
@@ -474,8 +480,9 @@ background: linear-gradient(to bottom, transparent, #272727, #111111, #000);
       width: 7rem;
       background: #fff;
   }
-
+/* ========================================================================== */
 /* PAGES */
+/* ========================================================================== */
 #about {
   background-image: url(../Images/connecturday-cropped.jpg);
   background-position: center;
@@ -506,8 +513,9 @@ background: linear-gradient(to bottom, transparent, #272727, #111111, #000);
   background-position: center;
   background-size: cover;
 }
-
+/* ========================================================================== */
 /* PROJECTS */
+/* ========================================================================== */
 #header-projects {
   position: absolute;
   top: 0;
@@ -571,8 +579,9 @@ max-height: 36%;
     height: 741px;
   }
 }
-
+/* ========================================================================== */
 /* GRIDS */
+/* ========================================================================== */
 .grid-container2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -597,8 +606,9 @@ max-height: 36%;
   display: block;
   margin: auto;
 }
-
-  /* ANIMATIONS */
+/* ========================================================================== */
+/* ANIMATIONS */
+/* ========================================================================== */
   button:hover, .project-image:hover, .fonck-logo, .social-icon:hover, .skill-item:hover {
     transition: all 100ms ease-out 100ms;
 }
@@ -614,8 +624,9 @@ max-height: 36%;
   a:hover {
     color: #fb6c24;
   }
-
-  /* ELEMENTS */
+/* ========================================================================== */
+/* ELEMENTS */
+/* ========================================================================== *//
 table.cryptos, th.cryptos, td.cryptos, tfoot.cryptos {
   border: 1px solid white;
   border-collapse: collapse;
@@ -655,8 +666,9 @@ input:focus {
     margin-left: auto;
     margin-right: auto;
   }
-
-  /* LINKS */
+/* ========================================================================== */
+/* LINKS */
+/* ========================================================================== */
 a {
   text-decoration: none;
   color: white;
@@ -680,8 +692,9 @@ a {
     font-size: 1.5rem;
   }
 }
-
+/* ========================================================================== */
 /* LISTS */
+/* ========================================================================== */
 #library li {
 text-align: center;
 margin-bottom: 12px;
@@ -692,8 +705,9 @@ ol {
 footer li {
   margin-bottom: 12px;
 }
-
-  /* MULTIMEDIA */
+/* ========================================================================== */
+/* MULTIMEDIA */
+/* ========================================================================== */
   .crypto-logo {
     height: 40px;
   }
