@@ -61,11 +61,11 @@ h2 {
   font-size: 4.5rem
 }
 h3, h4, h5, h6 {
-  font-size: 3.33rem;
+  font-size: 3.69rem;
 }
 @media (max-width: 1024px) {
   body {
-    font-size: 1.7rem;
+    font-size: 1.8rem;
   }
   h1 {
     font-size: 4.5rem;
@@ -74,15 +74,15 @@ h3, h4, h5, h6 {
     font-size: 3.69rem;
   }
   h3, h4, h5, h6 {
-    font-size: 3rem;
+    font-size: 3.1rem;
   }
 }
 @media (max-width: 768px) {
   body {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
   h1 {
-    font-size: 4.2rem;
+    font-size: 4.20rem;
   }
   h2 {
     font-size: 3.33rem;
@@ -99,10 +99,10 @@ h3, h4, h5, h6 {
     font-size: 3.69rem;
   }
   h2 {
-    font-size: 2.741rem;
+    font-size: 3rem;
   }
   h3, h4, h5, h6 {
-    font-size: 2.rem;
+    font-size: 2.2rem;
   }
 }
   .pages a {
@@ -307,23 +307,30 @@ max-height: 40%;
 }
 
 /* GRIDS */
-.grid-container {
+.grid-container2 {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+@media (max-width:768px) {
+  .grid-container2 {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: none;
+  } 
+}
+.grid-container3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   padding: 10px;
 }
 .grid-item {
   width: 100%;
   padding: 10px;
+  display: block;
+  margin: auto;
   overflow: hidden;
-}
-@media (max-width:768px) {
-  .grid-container {
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: none;
-    padding: 10px;
-  } 
 }
 .skill-icons-grid {
 grid-gap: 1rem;
