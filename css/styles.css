@@ -569,11 +569,6 @@ width: 100%;
 z-index: -69;
 max-height: 36%;
 }
-@media (max-width: 768px) {
-  #footer-projects {
-  
-  }
-}
 @media (max-width: 490px) {
   #footer-projects {
     height: 741px;
