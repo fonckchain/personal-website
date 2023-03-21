@@ -221,6 +221,7 @@ backdrop-filter: blur(4.2px);
 border-radius: 15px;
 overflow: hidden;
 transition: height 0.2 cubic-bezier(0.175, 0.885, 0.32, 1.275) ;
+z-index: 69;
 }
 .dropdown_menu.open {
   height: 300px
@@ -478,14 +479,17 @@ background: linear-gradient(to bottom, transparent, #272727, #111111, #000);
       width: 7rem;
       background: #fff;
   }
+  /* ======================================================================== */
+  /* ABOUT */
+  /* ======================================================================== */
+  #about {
+    background-image: url(../Images/connecturday-cropped.jpg);
+    background-position: center;
+    background-size: cover;
+  }
 /* ========================================================================== */
 /* PAGES */
 /* ========================================================================== */
-#about {
-  background-image: url(../Images/connecturday-cropped.jpg);
-  background-position: center;
-  background-size: cover;
-}
 #socials {
   background-image: url(../Images/Lilia_eyes.jpg);
   background-position: center;
@@ -553,14 +557,6 @@ text-align: center;
   background-image: linear-gradient(rgba(64,64,64,0.5),rgba(64,64,64,0.5)), 
   url(../Images/Foreign\ Fuels\ Banner.jpeg);
 }
-@media (min-width: 768px) {  
-  #foreignfuels .grid-item:nth-of-type(1) {
-    order: 2;
-  }
-  #foreignfuels .grid-item:nth-of-type(2) {
-    order: 1;
-  }
-}
 .bottom-image {
 position: absolute;
 width: 100%;
@@ -583,8 +579,6 @@ max-height: 36%;
 }
 @media (max-width:768px) {
   .grid-container2 {
-    display: grid;
-    grid-template-rows: auto;
     grid-template-columns: none;
   } 
 }
@@ -593,11 +587,29 @@ max-height: 36%;
   grid-template-columns: 1fr 1fr 1fr;
   padding: 10px;
 }
+@media (max-width:1200px) {
+  .grid-container3 {
+    grid-template-columns: 1fr 1fr;
+  } 
+}
+@media (max-width:650px) {
+  .grid-container3 {
+    grid-template-columns: 1fr;
+  } 
+}
 .grid-item {
   width: 100%;
   padding: 10px;
   display: block;
   margin: auto;
+}
+@media (min-width: 768px) {  
+  .grid-container__inverse .grid-item:nth-of-type(1) {
+    order: 2;
+  }
+  .grid-container__inverse .grid-item:nth-of-type(2) {
+    order: 1;
+  }
 }
 /* ========================================================================== */
 /* ANIMATIONS */
@@ -619,7 +631,7 @@ max-height: 36%;
   }
 /* ========================================================================== */
 /* ELEMENTS */
-/* ========================================================================== *//
+/* ========================================================================== */
 table.cryptos, th.cryptos, td.cryptos, tfoot.cryptos {
   border: 1px solid white;
   border-collapse: collapse;
@@ -629,6 +641,7 @@ table.cryptos, th.cryptos, td.cryptos, tfoot.cryptos {
 table.cryptos {
   border-width: 4px 4px; /*trbl*/
   box-shadow: 0 0 20px #1C60FF;
+  margin: 10px;
 }
 label {
   display: block;
@@ -693,8 +706,8 @@ text-align: center;
 margin-bottom: 12px;
 }
 ol {
- text-align: justify;
-}
+  text-align: justify;
+ }
 footer li {
   margin-bottom: 12px;
 }
@@ -712,3 +725,4 @@ footer li {
   audio {
     padding-bottom: 10px;
   }
+  
