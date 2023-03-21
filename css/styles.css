@@ -7,7 +7,6 @@
 }
 ul li {
   list-style: none;
-  margin-bottom: 12px;
 }
 ::selection {
   background-color: greenyellow;
@@ -46,7 +45,7 @@ body {
             0 -0.07em black;
       }
     .homepage p, .about p, .socials p, .portfolio p, .library p, .services p, .support p, figcaption {
-      inline-size: 60%;
+      inline-size: 70%;
       }
 h1, h2, h3, h4, h5, h6 {
   color: var(--color-headings);
@@ -169,14 +168,6 @@ a {
   .link-arrow {
     font-size: 1.5rem;
   }
-}
-
-/* LISTS */
-li {
-  color: var(--color-body);
-}
-ol {
- text-align: justify;
 }
 
 /* STRUCTURE */
@@ -680,6 +671,18 @@ input:focus {
     margin-right: auto;
   }
 
+/* LISTS */
+#library li {
+text-align: center;
+margin-bottom: 12px;
+}
+ol {
+ text-align: justify;
+}
+footer li {
+  margin-bottom: 12px;
+}
+
   /* MULTIMEDIA */
   img.project-image {
     object-fit: contain;
@@ -697,4 +700,7 @@ input:focus {
  width: 80%;
  display: block;
  margin: auto;
+  }
+  audio {
+    padding-bottom: 10px;
   }
