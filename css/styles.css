@@ -38,12 +38,16 @@ html {
   --color-accent: #93186c;
   --color-headings: white;
   --color-body: #eeeeee;
+  --color-important: rgb(16, 206, 101);
 }
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 2rem;
   line-height: 1.5;
   color: var(--color-body)
+  }
+  strong {
+    color: var(--color-primary);
   }
   .homepage p, .about p, .projects p, .socials p, .portfolio p, .library p, .services p, .support p, figcaption {
     display: block;
@@ -52,7 +56,7 @@ body {
     margin-bottom: 1.69rem;
     text-align: center;
     }
-    ol, .about ul, .library ul, .homepage p, .about p, .projects p, .socials p, .portfolio p, .library p, .services p, .support p, figcaption {
+    table.cryptos, ol, .about ul, .library ul, .homepage p, .about p, .projects p, .socials p, .portfolio p, .library p, .services p, .support p, figcaption {
         text-shadow:
             0.07em 0 black,
             0 0.07em black,
@@ -70,6 +74,7 @@ h1 {
 font-size: 6rem;
 text-transform: uppercase;
 margin-top: 1rem;
+color: var(--color-primary);
 }
 h2 {
   font-size: 4.5rem
@@ -119,10 +124,15 @@ h3, h4, h5, h6 {
     font-size: 2.2rem;
   }
 }
-  .pages a {
+.important {
+color: var(--color-important);
+}
+.pages a {
     color: var(--color-headings)
     }
-
+.strong-alt {
+  color: var(--color-primary);
+}
 .highlight {
   background-color: yellow;
 }
@@ -479,9 +489,9 @@ background: linear-gradient(to bottom, transparent, #272727, #111111, #000);
       width: 7rem;
       background: #fff;
   }
-  /* ======================================================================== */
-  /* ABOUT */
-  /* ======================================================================== */
+/* ======================================================================== */
+/* ABOUT */
+/* ======================================================================== */
   #about {
     background-image: url(../Images/connecturday-cropped.jpg);
     background-position: center;
@@ -510,11 +520,6 @@ background: linear-gradient(to bottom, transparent, #272727, #111111, #000);
   background-position: center;
   background-size: cover;
 }
-#support {
-  background-image: url(../Images/Loophead3064.png);
-  background-position: center;
-  background-size: cover;
-}
 /* ========================================================================== */
 /* PROJECTS */
 /* ========================================================================== */
@@ -529,6 +534,9 @@ img.project-image {
   object-fit: contain;
   width: 50%;
   position: relative;
+}
+#web3rocketeers img, #web3costarica img {
+  border: 2px solid #ccc;
 }
 .projects figure {
 text-align: center;
@@ -567,6 +575,30 @@ max-height: 36%;
   #footer-projects {
     height: 741px;
   }
+}
+/* ========================================================================== */
+/* SUPPORT */
+/* ========================================================================== */
+#support {
+  background-image: url(../Images/Loophead3064.png);
+  background-position: center;
+  background-size: cover;
+}
+.dropdown-hover {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-gif {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+.dropdown-hover:hover .dropdown-gif {
+  display: block;
 }
 /* ========================================================================== */
 /* GRIDS */
@@ -636,7 +668,6 @@ table.cryptos, th.cryptos, td.cryptos, tfoot.cryptos {
   border: 1px solid white;
   border-collapse: collapse;
   padding: 5px;
-  color: white;
 }
 table.cryptos {
   border-width: 4px 4px; /*trbl*/
