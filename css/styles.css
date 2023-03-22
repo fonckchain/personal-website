@@ -9,10 +9,15 @@
 ul li {
   list-style: none;
 }
-::selection {
-  background-color: greenyellow;
+:root {
+  --color-primary: #fb6c24;
+  --color-secondary: black;
+  --color-accent: #93186c;
+  --color-headings: white;
+  --color-body: #eeeeee;
+  --color-important: #009900;
+  --color-highlight: greenyellow;
 }
-/* STRUCTURE */
 #page-container {
   position: relative;
   min-height: 100vh;
@@ -20,155 +25,54 @@ ul li {
 #content-wrap {
   padding-bottom: 460px;
 }
-@media (max-width:1024px) {
-  #content-wrap {
-    padding-bottom: 0px;
-  }
-  }
-/* ========================================================================== */
-/* TYPOGRAPHY */
-/* ========================================================================== */
-html {
-  /* 62.5% of 16px = 10px */
-  font-size: 62.5%;
-}
-:root {
-  --color-primary: #fb6c24;
-  --color-secondary: black;
-  --color-accent: #93186c;
-  --color-headings: white;
-  --color-body: #eeeeee;
-  --color-important: rgb(16, 206, 101);
-}
 body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 2rem;
-  line-height: 1.5;
-  color: var(--color-body)
-  }
-  strong {
-    color: var(--color-primary);
-  }
-  .homepage p, .about p, .projects p, .socials p, .portfolio p, .library p, .services p, .support p, figcaption {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 1.69rem;
-    text-align: center;
-    }
-    table.cryptos, ol, .about ul, .library ul, .homepage p, .about p, .projects p, .socials p, .portfolio p, .library p, .services p, .support p, figcaption {
-        text-shadow:
-            0.07em 0 black,
-            0 0.07em black,
-            -0.07em 0 black,
-            0 -0.07em black;
-      }
-    .homepage p, .about p, .socials p, .portfolio p, .library p, .services p, .support p, figcaption {
-      inline-size: 70%;
-      }
-h1, h2, h3, h4, h5, h6 {
-  color: var(--color-headings);
-  margin-bottom: 1rem;
+background-color: #000;
 }
-h1 {
-font-size: 6rem;
-text-transform: uppercase;
-margin-top: 1rem;
-color: var(--color-primary);
+/* ========================================================================== */
+/* BACKGROUNDS */
+/* ========================================================================== */
+#about {
+  background-image: url(../Images/connecturday-cropped.jpg);
+  background-position: center;
+  background-size: cover;
 }
-h2 {
-  font-size: 4.5rem
+#foreignfuels {
+  background-size: cover;
+  background-position: center;
+  background-image: linear-gradient(rgba(64,64,64,0.5),rgba(64,64,64,0.5)), 
+  url(../Images/Foreign\ Fuels\ Banner.jpeg);
 }
-h3, h4, h5, h6 {
-  font-size: 3.69rem;
+#socials {
+  background-image: url(../Images/Lilia_eyes.jpg);
+  background-position: center;
+  background-size: contain;
 }
-@media (max-width: 1024px) {
-  body {
-    font-size: 1.8rem;
-  }
-  h1 {
-    font-size: 4.5rem;
-  }
-  h2 {
-    font-size: 3.69rem;
-  }
-  h3, h4, h5, h6 {
-    font-size: 3.1rem;
-  }
+#portfolio {
+  background-image: url(../Images/THE\ ROADTRIP\ [Edition_02].png);
+  background-position: center;
+  background-size: cover;
 }
-@media (max-width: 768px) {
-  body {
-    font-size: 1.6rem;
-  }
-  h1 {
-    font-size: 4.20rem;
-  }
-  h2 {
-    font-size: 3.33rem;
-  }
-  h3, h4, h5, h6 {
-    font-size: 2.5rem;
-  }
+#library {
+  background-image: url(../Images/Barb\ on\ Top.png);
+  background-position: center;
+  background-size: cover;
 }
-@media (max-width: 420px) {
-  body {
-    font-size: 1.4rem;
-  }
-  h1 {
-    font-size: 3.69rem;
-  }
-  h2 {
-    font-size: 3rem;
-  }
-  h3, h4, h5, h6 {
-    font-size: 2.2rem;
-  }
+#services {
+  background-image: url(../Images/THE\ ROADTRIP\ [Edition_03].png);
+  background-position: center;
+  background-size: cover;
 }
-.important {
-color: var(--color-important);
+#support {
+  background-image: url(../Images/Loophead3064.png);
+  background-position: center;
+  background-size: cover;
 }
-.pages a {
-    color: var(--color-headings)
-    }
-.strong-alt {
-  color: var(--color-primary);
+#loopring {
+  background-image: linear-gradient(rgba(64,64,64,0.5),rgba(64,64,64,0.5)), 
+  url(../Images/Gamestop\ Alley.png);
+  background-size: cover;
+  background-position: right;
 }
-.highlight {
-  background-color: yellow;
-}
-.title-icon {
-height: 3.5rem;
-}
-em {
-    font-style: italic;
-  }
-h1,h2,h3,h4,h5,h6 {
-    text-align: center;
-    object-fit: cover;
-    text-shadow: 0 0 15px rgb(0, 0, 0);
-  }
-#computershare {
-   display: block;
-   margin-left: auto;
-   margin-right: auto;
-   inline-size: 66%;
-   text-align: center;
-   color: white
-  }
-  .skill-icons-grid p {
-    text-align: center;
-  }
-  .skills p {
-    text-shadow: none;
-    padding-top: 1rem;
-  }
-
-  .skills h2 {
-    padding-top: 50px;
-  }
-  .skills h3 {
-    font-weight: lighter;
-  }
   /* ======================================================================== */
   /* HEADER */
   /* ======================================================================== */
@@ -379,7 +283,7 @@ hr {
 .underline span {
 width: 15px;
 height: 100%;
-background: #fb6c24;
+background: var(--color-primary);
 border-radius: 3px;
 position: absolute;
 top: 0;
@@ -394,32 +298,46 @@ animation: moving 2s linear infinite;
   left: 100%;
 }
 }
-@media (max-width:1024px) {
-  footer {
-    bottom: unset;
-  }
-  .col {
-    flex-basis: 50%;
-  }
-  .col:nth-child(2), .col:nth-child(3) {
-  flex-basis: 50%;
-  }
-}
-@media (max-width:768px) {
-  .fonck-logo {
-    height: 69px;
-  }
-  footer {
-    bottom: unset;
-    padding: 40px 0 25px 0;
-  }
-  .col {
-    flex-basis: 100%;
-  }
-  .col:nth-child(2), .col:nth-child(3) {
-  flex-basis: 100%;
-  }
-}
+/* ========================================================================== */
+/* RESPONSIVE DESIGN */
+/* ========================================================================== */
+  @media (max-width:1024px) {
+    #content-wrap {
+      padding-bottom: 0px;
+    }
+    footer {
+      bottom: unset;
+    }
+    }
+    @media (min-width: 768px) and (max-width:){
+    }
+    @media (max-width:1024px) {
+      .col {
+        flex-basis: 50%;
+      }
+      .col:nth-child(2), .col:nth-child(3) {
+      flex-basis: 50%;
+      }
+    }
+    @media (max-width:768px) {
+      .fonck-logo {
+        height: 69px;
+      }
+      footer {
+        padding: 40px 0 25px 0;
+      }
+      .col {
+        flex-basis: 100%;
+      }
+      .col:nth-child(2), .col:nth-child(3) {
+      flex-basis: 100%;
+      }
+    }
+    @media (max-width: 1024px) {
+      .link-arrow {
+        font-size: 1.5rem;
+      }
+    }
 /* ========================================================================== */
 /* HOME PAGE */
 /* ========================================================================== */
@@ -489,37 +407,6 @@ background: linear-gradient(to bottom, transparent, #272727, #111111, #000);
       width: 7rem;
       background: #fff;
   }
-/* ======================================================================== */
-/* ABOUT */
-/* ======================================================================== */
-  #about {
-    background-image: url(../Images/connecturday-cropped.jpg);
-    background-position: center;
-    background-size: cover;
-  }
-/* ========================================================================== */
-/* PAGES */
-/* ========================================================================== */
-#socials {
-  background-image: url(../Images/Lilia_eyes.jpg);
-  background-position: center;
-  background-size: contain;
-}
-#portfolio {
-  background-image: url(../Images/THE\ ROADTRIP\ [Edition_02].png);
-  background-position: center;
-  background-size: cover;
-}
-#library {
-  background-image: url(../Images/Barb\ on\ Top.png);
-  background-position: center;
-  background-size: cover;
-}
-#services {
-  background-image: url(../Images/THE\ ROADTRIP\ [Edition_03].png);
-  background-position: center;
-  background-size: cover;
-}
 /* ========================================================================== */
 /* PROJECTS */
 /* ========================================================================== */
@@ -559,12 +446,6 @@ text-align: center;
     height: 999px;
   }
 }
-#foreignfuels {
-  background-size: cover;
-  background-position: center;
-  background-image: linear-gradient(rgba(64,64,64,0.5),rgba(64,64,64,0.5)), 
-  url(../Images/Foreign\ Fuels\ Banner.jpeg);
-}
 .bottom-image {
 position: absolute;
 width: 100%;
@@ -575,32 +456,6 @@ max-height: 36%;
   #footer-projects {
     height: 741px;
   }
-}
-/* ========================================================================== */
-/* SUPPORT */
-/* ========================================================================== */
-#support {
-  background-image: url(../Images/Loophead3064.png);
-  background-position: center;
-  background-size: cover;
-}
-.dropdown-hover {
-  position: relative;
-  display: inline-block;
-}
-.dropdown-gif {
-  display: none;
-  position: absolute;
-  right: -30vw;
-  padding: 10px 0px;
-  z-index: 1;
-}
-img.animated-gif {
-
-  max-width: 70vw;
-}
-.dropdown-hover:hover .dropdown-gif {
-  display: block;
 }
 /* ========================================================================== */
 /* GRIDS */
@@ -660,9 +515,6 @@ img.animated-gif {
   .project-image:active {
     scale: 0.94;
   }
-  a:hover {
-    color: #fb6c24;
-  }
 /* ========================================================================== */
 /* ELEMENTS */
 /* ========================================================================== */
@@ -674,7 +526,8 @@ table.cryptos, th.cryptos, td.cryptos, tfoot.cryptos {
 table.cryptos {
   border-width: 4px 4px; /*trbl*/
   box-shadow: 0 0 20px #1C60FF;
-  margin: 10px;
+  margin: auto auto 10px;
+  max-width: 99%;
 }
 label {
   display: block;
@@ -712,8 +565,11 @@ a {
   text-decoration: none;
   color: white;
 }
+a:hover {
+  color: var(--color-primary);
+}
 .link-arrow {
-  color: var(--color-accent);
+  color: var(--color-important);
   font-weight: bold;
   text-transform: uppercase;
   font-size: 1.8rem;
@@ -726,24 +582,172 @@ a {
 .link-arrow:hover::after {
   margin-left: 1rem;
 }
-@media (max-width: 1024px) {
-  .link-arrow {
-    font-size: 1.5rem;
-  }
-}
 /* ========================================================================== */
 /* LISTS */
 /* ========================================================================== */
-.library li {
-text-align: center;
-margin-bottom: 12px;
-}
 ol {
   text-align: justify;
  }
 footer li {
   margin-bottom: 12px;
 }
+.about  li {
+font-style: italic;  
+}
+.library li {
+  text-align: center;
+  margin-bottom: 12px;
+  }
+.support li {
+text-align: center;
+}
+/* ========================================================================== */
+/* TYPOGRAPHY */
+/* ========================================================================== */
+html {
+  /* 62.5% of 16px = 10px */
+  font-size: 62.5%;
+}
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 2rem;
+  line-height: 1.5;
+  color: var(--color-body)
+  }
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color-headings);
+  margin-bottom: 1rem;
+}
+h1 {
+font-size: 6rem;
+text-transform: uppercase;
+margin-top: 1rem;
+color: var(--color-primary);
+}
+h2 {
+  font-size: 4.5rem
+}
+h3, h4, h5, h6 {
+  font-size: 3.69rem;
+}
+@media (max-width: 1024px) {
+  body {
+    font-size: 1.8rem;
+  }
+  h1 {
+    font-size: 4.5rem;
+  }
+  h2 {
+    font-size: 3.69rem;
+  }
+  h3, h4, h5, h6 {
+    font-size: 3.1rem;
+  }
+}
+@media (max-width: 768px) {
+  body {
+    font-size: 1.6rem;
+  }
+  h1 {
+    font-size: 4.20rem;
+  }
+  h2 {
+    font-size: 3.33rem;
+  }
+  h3, h4, h5, h6 {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 420px) {
+  body {
+    font-size: 1.4rem;
+  }
+  h1 {
+    font-size: 3.69rem;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  h3, h4, h5, h6 {
+    font-size: 2.2rem;
+  }
+}
+@media (min-width: 2048px) {
+  body {
+    font-size: 2.4rem;
+  }
+  h1 {
+    font-size: 8.88rem;
+  }
+  h2 {
+    font-size: 6.9rem;
+  }
+  h3, h4, h5, h6 {
+    font-size: 5rem;
+  }
+}
+strong {
+  color: var(--color-primary);
+}
+.homepage p, .about p, .projects p, .socials p, .portfolio p, .library p, .services p, .support p, figcaption {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.69rem;
+  text-align: center;
+  }
+  table.cryptos, ol, .about ul, .library ul, .homepage p, .about p, .projects p, .socials p, .portfolio p, .library p, .services p, .support p, figcaption {
+      text-shadow:
+          0.07em 0 black,
+          0 0.07em black,
+          -0.07em 0 black,
+          0 -0.07em black;
+    }
+  .homepage p, .about p, .socials p, .portfolio p, .library p, .services p, .support p, figcaption {
+    inline-size: 70%;
+    }
+.important {
+color: var(--color-important);
+}
+.strong-alt {
+  color: var(--color-primary);
+}
+.title-icon {
+height: 3.5rem;
+}
+em {
+    font-style: italic;
+  }
+h1,h2,h3,h4,h5,h6 {
+    text-align: center;
+    object-fit: cover;
+    text-shadow: 0 0 15px rgb(0, 0, 0);
+  }
+#computershare {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   inline-size: 66%;
+   text-align: center;
+   color: white
+  }
+  .skill-icons-grid p {
+    text-align: center;
+  }
+  .skills p {
+    text-shadow: none;
+    padding-top: 1rem;
+  }
+
+  .skills h2 {
+    padding-top: 50px;
+  }
+  .skills h3 {
+    font-weight: lighter;
+  }
+  ::selection {
+    background-color: var(--color-highlight);
+  }
 /* ========================================================================== */
 /* MULTIMEDIA */
 /* ========================================================================== */
@@ -758,4 +762,20 @@ footer li {
   audio {
     padding-bottom: 10px;
   }
-  
+.dropdown-hover {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-gif {
+  display: none;
+  position: absolute;
+  right: -30vw;
+  padding: 10px 0px;
+  z-index: 1;
+}
+img.animated-gif {
+  max-width: 70vw;
+}
+.dropdown-hover:hover .dropdown-gif {
+  display: block;
+}
