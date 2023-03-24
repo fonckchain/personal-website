@@ -10,7 +10,6 @@
  function greet (name) {
      console.log("I'm gonna visit your aussie ass once $GME pops " + name + " , I hope you're ready");
  }
- greet('Sgnt');
 
 // function MOASS(shares) {
 //     return shares * 1181561516548191515651618948498;
@@ -19,9 +18,9 @@
 // let shares = MOASS(2);
 // console.log(' 2 shares sold for $' + MOASS(2));
 
-let shares = 4;
+let shares = 3;
 let loan = 2;
-let price = 4;
+let price = 40;
 
 let x = shares;
 x = x + 5;
@@ -37,5 +36,11 @@ console.log(shares > loan);
 let type = shares > 3 ? 'whale' : 'fish';
 console.log(type);
 
-for (let i = 0; i < price;)
+// for (let i = 1; i <= shares; i++)
+// console.log(greet('Sgnt'));
+
+let i = 1;
+while (i <= shares) {
 console.log(greet('Sgnt'));
+i++;
+}
