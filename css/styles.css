@@ -103,7 +103,7 @@ font-size: 1.6rem;
 cursor: pointer;
 display: none;
 }
-.login-btn, button.login {
+.login-btn {
 background-color: var(--color-accent);
 color: var(--color-headings);
 text-transform: uppercase;
@@ -116,7 +116,29 @@ font-weight: bold;
 cursor: pointer;
 transition: scale .2 ease;
 }
-.login-form {
+.register-btn, button.login  {
+  display: block;
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: var(--color-primary);
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+.register-btn {
+  background-color: var(--color-headings);
+  color: #000;
+}
+.separator {
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 10px;
+}
+.login-page {
   display: none;
   }
   .popup {
@@ -124,7 +146,7 @@ transition: scale .2 ease;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #fff;
+    background-color: #000;
     border: 1px solid #ccc;
     padding: 20px;
     z-index: 9999;
@@ -132,7 +154,41 @@ transition: scale .2 ease;
     border-radius: 10px;
     max-width: 500px;
   }
-
+  .close-button {
+    position: absolute;
+    top: 1px;
+    right: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #666;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+  }
+  .close-button:hover {
+    color: var(--color-primary);
+  }
+  hr::before {
+    content: "OR";
+    display: inline-block;
+    position: relative;
+    top: -0.5em;
+    font-size: 1em;
+    padding: 0 0.5em;
+  }
+  hr {
+    border: none;
+    margin: 1em 0;
+  }
+  hr::after {
+    content: "";
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: 1px;
+    margin-left: 0.5em;
+  }
 /* DROPDOWN MENU */
 .dropdown-menu {
 display: none;
@@ -525,10 +581,10 @@ grid-container--2 {
   .project-image:active {
     scale: 0.94;
   }
-  button.login:hover, .login-btn:hover {
+  button.login:hover, .login-btn:hover, .register-btn:hover {
     scale: 1.05;
   }
-  button.login:active, .login-btn:active {
+  button.login:active, .login-btn:active, .register-btn:active {
     scale: 0.95;
   }
 /* ========================================================================== */

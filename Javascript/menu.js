@@ -9,13 +9,3 @@ toggleBtn.onclick = function () {
     ? "fa-solid fa-xmark"
     : "fa-solid fa-bars";
 };
-
-const registerBtns = document.querySelectorAll('.login-btn');
-const registerForm = document.querySelector('.login-form');
-
-registerBtns.forEach(registerBtn => {
-  registerBtn.addEventListener('click', function() {
-    registerForm.style.display = 'block';
-    registerForm.classList.add('popup');
-  });
-});
