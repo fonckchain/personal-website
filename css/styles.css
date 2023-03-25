@@ -23,7 +23,7 @@ ul li {
   min-height: 100vh;
 }
 #content-wrap {
-  padding-bottom: 460px;
+min-height: 69vh;
 }
 body {
 background-color: #000;
@@ -40,7 +40,7 @@ background-color: #000;
   background-size: cover;
   background-position: center;
   background-image: linear-gradient(rgba(64,64,64,0.5),rgba(64,64,64,0.5)), 
-  url(../Images/Foreign\ Fuels\ Banner.jpeg);
+  url(../Images/Foreign-Fuels-Banner.jpeg);
 }
 #socials {
   background-image: url(../Images/Lilia_eyes.jpg);
@@ -48,17 +48,17 @@ background-color: #000;
   background-size: contain;
 }
 #portfolio {
-  background-image: url(../Images/THE\ ROADTRIP\ [Edition_02].png);
+  background-image: url(../Images/THE-ROADTRIP-[Edition_02].png);
   background-position: center;
   background-size: cover;
 }
 #library {
-  background-image: url(../Images/Barb\ on\ Top.png);
+  background-image: url(../Images/Barb-on-Top.png);
   background-position: center;
   background-size: cover;
 }
 #services {
-  background-image: url(../Images/THE\ ROADTRIP\ [Edition_03].png);
+  background-image: url(../Images/THE-ROADTRIP-[Edition_03].png);
   background-position: center;
   background-size: cover;
 }
@@ -69,7 +69,7 @@ background-color: #000;
 }
 #loopring {
   background-image: linear-gradient(rgba(64,64,64,0.5),rgba(64,64,64,0.5)), 
-  url(../Images/Gamestop\ Alley.png);
+  url(../Images/Gamestop-Alley.png);
   background-size: cover;
   background-position: right;
 }
@@ -103,7 +103,7 @@ font-size: 1.6rem;
 cursor: pointer;
 display: none;
 }
-.action_btn {
+.login-btn, button.register {
 background-color: var(--color-accent);
 color: var(--color-headings);
 text-transform: uppercase;
@@ -116,12 +116,22 @@ font-weight: bold;
 cursor: pointer;
 transition: scale .2 ease;
 }
-.action_btn:hover {
-  scale: 1.05;
-}
-.action_btn:active {
-  scale: 0.95;
-}
+.login-form {
+  display: none;
+  }
+  .popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    z-index: 9999;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    max-width: 500px;
+  }
 /* DROPDOWN MENU */
 .dropdown_menu {
 display: none;
@@ -146,7 +156,7 @@ display: flex;
 align-items: center;
 justify-content: center;
 }
-.dropdown_menu .action_btn {
+.dropdown_menu .login-btn {
   width: 95%;
   display: flex;
   justify-content: center;
@@ -156,7 +166,7 @@ justify-content: center;
 }
 /* RESPONSIVE DESIGN*/
 @media(max-width:1024px){
-.pages, .navbar .action_btn {
+.pages, .navbar .login-btn {
   display: none;
 }
 .navbar .toggle_btn {
@@ -177,8 +187,7 @@ display: block;
 /* ========================================================================== */
 footer {
   width: 100%;
-  position: absolute;
-  bottom: 0;
+  position: sticky;
   background: linear-gradient(to right, var(--color-secondary), var(--color-primary));
   color: var(--color-headings);
   padding: 70px 0 25px 0;
@@ -468,7 +477,7 @@ max-height: 36%;
 }
 @media (max-width:768px) {
   .grid-container2 {
-    grid-template-columns: none;
+    grid-template-columns: 1fr;
   } 
 }
 .grid-container3 {
@@ -487,7 +496,7 @@ max-height: 36%;
   } 
 }
 .grid-item {
-  width: 100%;
+  width: auto;
   padding: 10px;
   display: block;
   margin: auto;
@@ -503,10 +512,10 @@ max-height: 36%;
 /* ========================================================================== */
 /* ANIMATIONS */
 /* ========================================================================== */
-  button:hover, .project-image:hover, .fonck-logo, .social-icon:hover, .skill-item:hover {
+  #arrow-right:hover, .project-image:hover, .fonck-logo, .social-icon:hover, .skill-item:hover {
     transition: all 100ms ease-out 100ms;
 }
-  button:hover, .fonck-logo:hover, .social-icon:hover, .skill-item:hover {
+  #arrow-right:hover, .fonck-logo:hover, .social-icon:hover, .skill-item:hover {
     transform: perspective(420px) translateZ(69px);
   }
   .project-image:hover {
@@ -514,6 +523,12 @@ max-height: 36%;
   }
   .project-image:active {
     scale: 0.94;
+  }
+  button.register:hover, .login-btn:hover {
+    scale: 1.05;
+  }
+  button.register:active, .login-btn:active {
+    scale: 0.95;
   }
 /* ========================================================================== */
 /* ELEMENTS */
@@ -631,7 +646,7 @@ h3, h4, h5, h6 {
   font-size: 3.69rem;
 }
 @media (max-width: 1024px) {
-  body {
+  body, footer {
     font-size: 1.8rem;
   }
   h1 {
@@ -643,9 +658,10 @@ h3, h4, h5, h6 {
   h3, h4, h5, h6 {
     font-size: 3.1rem;
   }
+  
 }
 @media (max-width: 768px) {
-  body {
+  body, footer {
     font-size: 1.6rem;
   }
   h1 {
@@ -673,7 +689,7 @@ h3, h4, h5, h6 {
   }
 }
 @media (min-width: 2048px) {
-  body {
+  body, footer {
     font-size: 2.4rem;
   }
   h1 {

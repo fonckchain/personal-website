@@ -19,7 +19,7 @@
   <body id="about">
     <div id="page-container">
       <header>
-        <nav class="navbar">
+        <nav class="navbar grid-container">
           <div class="top-logo">
             <a href="index.html"
               ><img
@@ -52,7 +52,7 @@
               <a href="support.html">Support</a>
             </li>
           </ul>
-          <a href="#" class="action_btn">Login</a>
+          <button class="login-btn">Login</button>
           <div class="toggle_btn">
             <img src="../Images/Icons/menu.svg" alt="Menu icon" />
           </div>
@@ -79,7 +79,14 @@
           <li>
             <a href="support.html">Support</a>
           </li>
-          <li><a href="#" class="action_btn">Login</a></li>
+          <li><button class="login-btn">Login</button></li>
+        </div>
+        <div class="login-form">
+          <form>
+            <input type="text" name="username" placeholder="Username" />
+            <input type="password" name="password" placeholder="Password" />
+            <button type="submit" class="register">Register</button>
+          </form>
         </div>
       </header>
       <!-- ======================================================================= -->
@@ -380,7 +387,7 @@
         <hr />
         <p class="copyright">© Copyright 2023 Fonck - All rights reserved</p>
         <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
-        <script src="../Javascript/index.js"></script>
+        <script src="../Javascript/buttons.js"></script>
       </footer>
     </div>
   </body>
