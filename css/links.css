@@ -1,0 +1,24 @@
+/* ========================================================================== */
+/* LINKS */
+/* ========================================================================== */
+a {
+    text-decoration: none;
+    color: white;
+  }
+  a:hover {
+    color: var(--color-primary);
+  }
+  .link-arrow {
+    color: var(--color-important);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+  }
+  .link-arrow::after {
+    content: "-->";
+    margin-left: 0.5rem;
+    transition: margin 0.15s;
+  }
+  .link-arrow:hover::after {
+    margin-left: 1rem;
+  }
