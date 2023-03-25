@@ -1,7 +1,7 @@
 
-toggleBtn = document.querySelector(".toggle_btn");
-toggleBtnIcon = document.querySelector(".toggle_btn i");
-dropDownMenu = document.querySelector(".dropdown_menu");
+toggleBtn = document.querySelector(".toggle-btn");
+toggleBtnIcon = document.querySelector(".toggle-btn i");
+dropDownMenu = document.querySelector(".dropdown-menu");
 toggleBtn.onclick = function () {
   dropDownMenu.classList.toggle("open");
   const isOpen = dropDownMenu.classList.contains("open");
