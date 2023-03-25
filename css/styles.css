@@ -116,7 +116,7 @@ font-weight: bold;
 cursor: pointer;
 transition: scale .2 ease;
 }
-.register-btn, button.login  {
+.register-button, .login-button  {
   display: block;
   margin-top: 10px;
   padding: 5px 10px;
@@ -129,7 +129,7 @@ transition: scale .2 ease;
   cursor: pointer;
   width: 100%;
 }
-.register-btn {
+.register-button {
   background-color: var(--color-headings);
   color: #000;
 }
@@ -561,10 +561,10 @@ grid-container--2 {
   .project-image:active {
     scale: 0.94;
   }
-  button.login:hover, .login-btn:hover, .register-btn:hover {
+  .login-button:hover, .login-btn:hover, .register-button:hover {
     scale: 1.05;
   }
-  button.login:active, .login-btn:active, .register-btn:active {
+  .login-button:active, .login-btn:active, .register-button:active {
     scale: 0.95;
   }
 /* ========================================================================== */
