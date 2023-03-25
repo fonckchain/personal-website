@@ -103,7 +103,7 @@ font-size: 1.6rem;
 cursor: pointer;
 display: none;
 }
-.login-btn, button.register {
+.login-btn, button.login {
 background-color: var(--color-accent);
 color: var(--color-headings);
 text-transform: uppercase;
@@ -132,6 +132,7 @@ transition: scale .2 ease;
     border-radius: 10px;
     max-width: 500px;
   }
+
 /* DROPDOWN MENU */
 .dropdown-menu {
 display: none;
@@ -524,10 +525,10 @@ grid-container--2 {
   .project-image:active {
     scale: 0.94;
   }
-  button.register:hover, .login-btn:hover {
+  button.login:hover, .login-btn:hover {
     scale: 1.05;
   }
-  button.register:active, .login-btn:active {
+  button.login:active, .login-btn:active {
     scale: 0.95;
   }
 /* ========================================================================== */
