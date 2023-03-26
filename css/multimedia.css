@@ -1,0 +1,25 @@
+.crypto-logo {
+    height: 40px;
+  }
+.stream-vid {
+ width: 80%;
+ display: block;
+ margin: auto;
+  }
+  audio {
+    padding-bottom: 10px;
+  }
+.dropdown-hover {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-gif {
+  display: none;
+  position: absolute;
+  right: -30vw;
+  padding: 10px 0px;
+  z-index: 1;
+}
+img.animated-gif {
+  max-width: 70vw;
+}

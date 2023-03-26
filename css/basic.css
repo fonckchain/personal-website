@@ -1,0 +1,37 @@
+/* ========================================================================== */
+/* PARTIAL CSS RESET */
+/* ========================================================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul li {
+  list-style: none;
+}
+/* ========================================================================== */
+/* BASIC */
+/* ========================================================================== */
+:root {
+  --color-primary: #fb6c24;
+  --color-secondary: black;
+  --color-accent: #93186c;
+  --color-headings: white;
+  --color-body: #eeeeee;
+  --color-important: #009900;
+  --color-highlight: greenyellow;
+}
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+#content-wrap {
+min-height: 69vh;
+}
+body {
+background-color: #000;
+}
+.fonck-logo {
+  height: 88px;
+  margin-bottom: 30px;
+}

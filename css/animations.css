@@ -1,0 +1,21 @@
+.arrow-right:hover, .project-image:hover, .fonck-logo, .social-icon:hover, .skill-item:hover {
+    transition: all 100ms ease-out 100ms;
+}
+  .arrow-right:hover, .fonck-logo:hover, .social-icon:hover, .skill-item:hover {
+    transform: perspective(420px) translateZ(69px);
+  }
+  .project-image:hover {
+    scale: 1.06;
+  }
+  .project-image:active {
+    scale: 0.94;
+  }
+  .login-button:hover, .login-btn:hover, .register-button:hover {
+    scale: 1.05;
+  }
+  .login-button:active, .login-btn:active, .register-button:active {
+    scale: 0.95;
+  }
+  .dropdown-hover:hover .dropdown-gif {
+    display: block;
+  }

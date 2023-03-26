@@ -1,0 +1,145 @@
+html {
+  /* 62.5% of 16px = 10px */
+  font-size: 62.5%;
+}
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 2rem;
+  line-height: 1.5;
+  color: var(--color-body)
+  }
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color-headings);
+  margin-bottom: 1rem;
+}
+h1 {
+font-size: 6rem;
+text-transform: uppercase;
+margin-top: 1rem;
+color: var(--color-primary);
+}
+h2 {
+  font-size: 4.5rem
+}
+h3, h4, h5, h6 {
+  font-size: 3.69rem;
+}
+@media (max-width: 1024px) {
+  body, footer {
+    font-size: 1.8rem;
+  }
+  h1 {
+    font-size: 4.5rem;
+  }
+  h2 {
+    font-size: 3.69rem;
+  }
+  h3, h4, h5, h6 {
+    font-size: 3.1rem;
+  }
+  
+}
+@media (max-width: 768px) {
+  body, footer {
+    font-size: 1.6rem;
+  }
+  h1 {
+    font-size: 4.20rem;
+  }
+  h2 {
+    font-size: 3.33rem;
+  }
+  h3, h4, h5, h6 {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 420px) {
+  body {
+    font-size: 1.4rem;
+  }
+  h1 {
+    font-size: 3.69rem;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  h3, h4, h5, h6 {
+    font-size: 2.2rem;
+  }
+}
+@media (min-width: 2048px) {
+  body, footer {
+    font-size: 2.4rem;
+  }
+  h1 {
+    font-size: 8.88rem;
+  }
+  h2 {
+    font-size: 6.9rem;
+  }
+  h3, h4, h5, h6 {
+    font-size: 5rem;
+  }
+}
+strong {
+  color: var(--color-primary);
+}
+.homepage p, .about p, .projects p, .socials p, .portfolio p, .library p, .services p, .support p, figcaption {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.69rem;
+  text-align: center;
+  }
+  table.cryptos, ol, .about ul, .library ul, .homepage p, .about p, .projects p, .socials p, .portfolio p, .library p, .services p, .support p, figcaption {
+      text-shadow:
+          0.07em 0 black,
+          0 0.07em black,
+          -0.07em 0 black,
+          0 -0.07em black;
+    }
+  .homepage p, .about p, .socials p, .portfolio p, .library p, .services p, .support p, figcaption {
+    inline-size: 70%;
+    }
+.important {
+color: var(--color-important);
+}
+.strong-alt {
+  color: var(--color-primary);
+}
+.title-icon {
+height: 3.5rem;
+}
+em {
+    font-style: italic;
+  }
+h1,h2,h3,h4,h5,h6 {
+    text-align: center;
+    object-fit: cover;
+    text-shadow: 0 0 15px rgb(0, 0, 0);
+  }
+#computershare {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   inline-size: 66%;
+   text-align: center;
+   color: white
+  }
+  .skill-icons-grid p {
+    text-align: center;
+  }
+  .skills p {
+    text-shadow: none;
+    padding-top: 1rem;
+  }
+
+  .skills h2 {
+    padding-top: 50px;
+  }
+  .skills h3 {
+    font-weight: lighter;
+  }
+  ::selection {
+    background-color: var(--color-highlight);
+  }

@@ -1,0 +1,118 @@
+footer {
+    width: 100%;
+    position: sticky;
+    background: linear-gradient(to right, var(--color-secondary), var(--color-primary));
+    color: var(--color-headings);
+    padding: 70px 0 25px 0;
+    font-size: 2rem;
+    text-align: left;
+    line-height: 20px;
+  }
+  .row {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex start;
+    justify-content: space-between;
+  }
+  .col {
+    flex-basis: 25%;
+    padding: 10px;
+  }
+  .col:nth-child(2), .col:nth-child(3) {
+  flex-basis: 15%;
+  }
+  .col h3 {
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+  }
+  #email-icon {
+    margin-right: 5px;
+    display: flex;
+    height: 20px;
+  }
+  #arrow-right {
+    height: 20px;
+    display: flex;
+    margin-left: 5px;
+  }
+  .email-id {
+    width: fit-content;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0;
+  }
+  form.email {
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 50px;
+  }
+  form input{
+    width: 100%;
+    background: transparent;
+    color: #ccc;
+    border: 0;
+    outline: none;
+  }
+  form button{
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+  }
+  .social-icons {
+    margin: 0 auto;
+    width: 83%;
+    text-align: center;
+  }
+  .social-icons img {
+    margin: 0 9px 9px 0;
+    height: 30px;
+    width: 30px;
+    background: #fff;
+    border-radius: 50%;
+    }
+  #telegram-icon {
+  color: #93186c;
+  }
+  hr {
+    width:90%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 20px auto;
+  }
+  .copyright {
+    text-align: center;
+  }
+  .underline {
+    width: 100%;
+    height: 5px;
+    background: #ccc;
+    border-radius: 3px;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    overflow: hidden;
+  }
+  .underline span {
+  width: 15px;
+  height: 100%;
+  background: var(--color-primary);
+  border-radius: 3px;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  animation: moving 2s linear infinite;
+  }
+  @keyframes moving {
+  0% {
+    left: -20px;
+  }
+  100% {
+    left: 100%;
+  }
+  }

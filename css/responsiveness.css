@@ -1,0 +1,37 @@
+@media (max-width:1024px) {
+    #content-wrap {
+      padding-bottom: 0px;
+    }
+    footer {
+      bottom: unset;
+    }
+    }
+    @media (min-width: 768px) and (max-width:){
+    }
+    @media (max-width:1024px) {
+      .col {
+        flex-basis: 50%;
+      }
+      .col:nth-child(2), .col:nth-child(3) {
+      flex-basis: 50%;
+      }
+    }
+    @media (max-width:768px) {
+      .fonck-logo {
+        height: 69px;
+      }
+      footer {
+        padding: 40px 0 25px 0;
+      }
+      .col {
+        flex-basis: 100%;
+      }
+      .col:nth-child(2), .col:nth-child(3) {
+      flex-basis: 100%;
+      }
+    }
+    @media (max-width: 1024px) {
+      .link-arrow {
+        font-size: 1.5rem;
+      }
+    }

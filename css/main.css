@@ -1,3 +1,12 @@
 @import 'normalize.css';
-@import 'styles.css';
-@import 'links.css';/*# sourceMappingURL=main.css.map */
+@import 'basic.css';
+@import 'header.css';
+@import 'footer.css';
+@import 'typography.css';
+@import 'responsiveness.css';
+@import 'grids.css';
+@import 'lists.css';
+@import 'links.css';
+@import 'multimedia.css';
+@import 'animations.css';
+@import 'elements.css';/*# sourceMappingURL=main.css.map */

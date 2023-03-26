@@ -1,0 +1,53 @@
+#foreignfuels {
+  background-size: cover;
+  background-position: center;
+  background-image: linear-gradient(rgba(64,64,64,0.5),rgba(64,64,64,0.5)), 
+  url(../Images/Foreign-Fuels-Banner.jpeg);
+}
+#header-projects {
+    position: absolute;
+    top: 0;
+    z-index: -69;
+    width: 100%;
+    object-fit: cover;
+  }
+  img.project-image {
+    object-fit: contain;
+    width: 50%;
+    position: relative;
+  }
+  #web3rocketeers img, #web3costarica img {
+    border: 2px solid #ccc;
+  }
+  .projects figure {
+  text-align: center;
+  }
+  #foreignfuels img {
+    width: 90%;
+  }
+  @media (max-height: 620px) {
+    #header-projects {
+    height: 1000px;
+    }
+  }
+  @media (max-width: 768px) {
+    #header-projects {
+      height: 950px;
+    }
+  }
+  @media (max-width: 590px) {
+    #header-projects {
+      height: 999px;
+    }
+  }
+  .bottom-image {
+  position: absolute;
+  width: 100%;
+  z-index: -69;
+  max-height: 36%;
+  }
+  @media (max-width: 490px) {
+    #footer-projects {
+      height: 741px;
+    }
+  }

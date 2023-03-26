@@ -1,0 +1,40 @@
+table.cryptos, th.cryptos, td.cryptos, tfoot.cryptos {
+    border: 1px solid white;
+    border-collapse: collapse;
+    padding: 5px;
+  }
+  table.cryptos {
+    border-width: 4px 4px; /*trbl*/
+    box-shadow: 0 0 20px #1C60FF;
+    margin: auto auto 10px;
+    max-width: 99%;
+  }
+  label {
+    display: block;
+  }
+  input {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px 15px;
+    transition: border-color 0.15s, box-shadow 0.15s;
+  }
+  input:focus {
+    border-color: #7db0fb;
+    outline: 0;
+    box-shadow: 0 0 0 4px rgba(24, 117, 255, 0.25);
+  }
+  .form-group {
+    margin-bottom: 1rem;
+    color: white;
+  }
+  #newsletter {
+    float: left;
+    margin-right: 0.25rem;
+    position: relative;
+    top: 0.31rem;
+    }
+    audio {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
