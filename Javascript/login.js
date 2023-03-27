@@ -2,13 +2,9 @@
 const loginBtns = document.querySelectorAll('.login-btn');
 const loginButton = document.querySelectorAll('.login-button');
 const loginForm = document.querySelector('.login-page');
-const registerBtn = document.querySelector('.register-button');
-const forgotPasswordBtn = document.querySelector('.forgot-password-button');
 const loginUsernameInput = document.querySelector('input[name="username"]');
 const loginPasswordInput = document.querySelector('input[name="password"]');
 const rememberMeCheckbox = document.querySelector('input[name="remember-me"]');
-const forgotPasswordForm = document.querySelector('.forgot-password-page');
-const registrationForm = document.querySelector('.registration-page');
 
 // Check if the user has already logged in
 const loggedInUser = localStorage.getItem('loggedInUser');
@@ -26,8 +22,8 @@ loginBtns.forEach(loginBtns => {
   });
 });
 
-  loginButton.forEach(loginButton => {
-    loginButton.addEventListener('click', function() {
+loginButton.forEach(loginButton => {
+  loginButton.addEventListener('click', function() {
     // Append the close button to the pop-up window
     const closeButton = document.createElement('button');
     closeButton.classList.add('close-button');
@@ -39,39 +35,6 @@ loginBtns.forEach(loginBtns => {
       loginForm.style.display = 'none';
       loginForm.classList.remove('popup');
     });
-  });
-});
-
-// Attach event listeners to the register and forgot password buttons
-registerBtn.addEventListener('click', function() {
-  loginForm.style.display = 'none';
-  registrationForm.style.display = 'block';
-  registrationForm.classList.add('popup');
-
-  const closeButton = document.createElement('button');
-  closeButton.classList.add('close-button');
-  closeButton.innerHTML = '&times;';
-  registrationForm.appendChild(closeButton);
-
-  closeButton.addEventListener('click', function() {
-    registrationForm.classList.remove('popup');
-    registrationForm.style.display = 'none';
-  });
-});
-
-forgotPasswordBtn.addEventListener('click', function() {
-  loginForm.style.display = 'none';
-  forgotPasswordForm.style.display = 'block';
-  forgotPasswordForm.classList.add('popup');
-
-  const closeButton = document.createElement('button');
-  closeButton.classList.add('close-button');
-  closeButton.innerHTML = '&times;';
-  forgotPasswordForm.appendChild(closeButton);
-
-  closeButton.addEventListener('click', function() {
-    forgotPasswordForm.style.display = 'none';
-    forgotPasswordForm.classList.remove('popup');
   });
 });
 
