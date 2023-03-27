@@ -1,5 +1,6 @@
 // Get references to the DOM elements
 const loginBtns = document.querySelectorAll('.login-btn');
+const loginButton = document.querySelectorAll('.login-button');
 const loginForm = document.querySelector('.login-page');
 const registerBtn = document.querySelector('.register-button');
 const forgotPasswordBtn = document.querySelector('.forgot-password-button');
@@ -17,12 +18,16 @@ if (loggedInUser) {
 }
 
 // Attach event listeners to the login buttons
-loginBtns.forEach(loginBtn => {
-  loginBtn.addEventListener('click', function() {
+loginBtns.forEach(loginBtns => {
+  loginBtns.addEventListener('click', function() {
     // Display the login form
     loginForm.style.display = 'block';
     loginForm.classList.add('popup');
+  });
+});
 
+  loginButton.forEach(loginButton => {
+    loginButton.addEventListener('click', function() {
     // Append the close button to the pop-up window
     const closeButton = document.createElement('button');
     closeButton.classList.add('close-button');
@@ -79,7 +84,7 @@ function handleLoginSuccess(username, event) {
     loginUsernameInput.value = '';
   }
 
-  if (event.target.classList.contains('login-btn')) {
+  if (event.target.classList.contains('login-button')) {
     window.location.href = '../html/home.html';
   }
 }
@@ -87,7 +92,9 @@ function handleLoginSuccess(username, event) {
 // Handle failed logins
 function handleLoginFailure(event) {
   alert('Invalid username or password.');
-  event.preventDefault();
+  if (event) {
+    event.preventDefault();
+  }
 }
 
 // Attach submit event listener to login form
@@ -96,12 +103,16 @@ loginForm.addEventListener('submit', function(event) {
   const username = loginUsernameInput.value;
   const password = loginPasswordInput.value;
 
+  // Check which button submitted the form
+  const submitter = document.activeElement;
+  const isLoginButton = submitter && submitter.hasAttribute('data-login');
+
   // Check credentials against a database or API
   if (username === 'testuser' && password === 'testpassword') {
     handleLoginSuccess(username, event);
   } else {
-    if (event.submitter.classList.contains('login-btn')) { // Check if the submit button is the login button
-      handleLoginFailure();
+    if (isLoginButton) {
+      handleLoginFailure(event);
     }
   }
 });
