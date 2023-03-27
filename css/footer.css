@@ -51,14 +51,14 @@ footer {
     border-bottom: 1px solid #ccc;
     margin-bottom: 50px;
   }
-  form input{
+  footer form input{
     width: 100%;
     background: transparent;
     color: #ccc;
     border: 0;
     outline: none;
   }
-  form button{
+  footer form button{
     background: transparent;
     border: 0;
     outline: none;
@@ -76,9 +76,6 @@ footer {
     background: #fff;
     border-radius: 50%;
     }
-  #telegram-icon {
-  color: #93186c;
-  }
   hr {
     width:90%;
     border: 0;

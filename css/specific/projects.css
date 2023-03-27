@@ -2,7 +2,7 @@
   background-size: cover;
   background-position: center;
   background-image: linear-gradient(rgba(64,64,64,0.5),rgba(64,64,64,0.5)), 
-  url(../Images/Foreign-Fuels-Banner.jpeg);
+  url(../../media/images/foreign-fuels-banner.jpeg);
 }
 #header-projects {
     position: absolute;

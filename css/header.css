@@ -25,6 +25,9 @@
   cursor: pointer;
   display: none;
   }
+  /* ======================================================================== */
+  /* LOGIN */
+  /* ======================================================================== */
   .login-btn {
   background-color: var(--color-primary);
   color: var(--color-headings);
@@ -38,9 +41,10 @@
   cursor: pointer;
   transition: scale .2 ease;
   }
-  .register-button, .login-button  {
+  .login-button, .register-button {
     display: block;
     margin-top: 10px;
+    margin-bottom: 10px;
     padding: 5px 10px;
     background-color: var(--color-primary);
     color: #fff;
@@ -57,20 +61,18 @@
   }
   .separator {
     text-align: center;
-    padding-top: 12px;
-    padding-bottom: 10px;
   }
-  .login-page {
+  .login-page, .registration-page, .forgot-password-page {
     display: none;
     }
-    .popup {
+  .popup {
       position: fixed;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
       background-color: #000;
       border: 1px solid #ccc;
-      padding: 20px;
+      padding: 25px;
       z-index: 9999;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
       border-radius: 10px;
@@ -90,6 +92,37 @@
     }
     .close-button:hover {
       color: var(--color-primary);
+    }
+    .checkbox-container {
+      display: flex;
+      align-items: center;
+    }
+    .checkbox-container input[type="checkbox"] {
+      margin-right: 10px;
+    }
+    .checkbox-container label {
+      flex-grow: 1;
+    }
+    .forgot-password-button {
+      padding: initial;
+      margin-bottom: 15px;
+      font-size: 1.4rem;
+      color: #ccc;
+      text-decoration: underline;
+    }
+    .login-page input[type="text"], header form input[type="password"], .forgot-password-page input[type="email"] {
+      width: 100%;
+      background: transparent;
+      color: #ccc;
+      border: 1;
+      outline: none;
+      margin-bottom: 5px;
+    }
+    header form button{
+      background: transparent;
+      border: 0;
+      outline: none;
+      cursor: pointer;
     }
 /* ========================================================================== */
 /* DROPDOWN MENU */
