@@ -21,16 +21,19 @@ if (loggedInUser) {
 }
 
 // Define a function to handle successful logins
-function handleLoginSuccess(username) {
+function handleLoginSuccess(username, event) {
   // Save the username to local storage if the "Remember me" checkbox is checked
   if (rememberMeCheckbox.checked) {
     localStorage.setItem('loggedInUser', username);
   } else {
     localStorage.removeItem('loggedInUser');
+    loginUsernameInput.value = ''; // Clear the username input if "Remember me" is unchecked
   }
 
-  // Redirect the user to the home page or dashboard
-  window.location.href = '../html/home.html'; // Replace with the actual URL
+  // Redirect the user to the home page or dashboard if the login button was clicked
+  if (event.target.classList.contains('login-btn')) {
+    window.location.href = '../html/home.html';
+  }
 }
 
 // Define a function to handle failed logins
@@ -102,7 +105,6 @@ forgotPasswordBtn.addEventListener('click', function() {
 
 
 
-
 // Attach a submit event listener to the login form
 loginForm.addEventListener('submit', function(event) {
   event.preventDefault(); // Prevent the form from submitting normally
@@ -115,8 +117,8 @@ loginForm.addEventListener('submit', function(event) {
 
   // For now, just simulate a successful login if the username and password match
   if (username === 'testuser' && password === 'testpassword') {
-    handleLoginSuccess(username);
+    handleLoginSuccess(username, event);
   } else {
-    handleLoginFailure();
+    handleLoginFailure(event);
   }
 });

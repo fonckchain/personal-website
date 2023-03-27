@@ -27,6 +27,7 @@ function handleLoginSuccess(username, event) {
     localStorage.setItem('loggedInUser', username);
   } else {
     localStorage.removeItem('loggedInUser');
+    loginUsernameInput.value = ''; // Clear the username input if "Remember me" is unchecked
   }
 
   // Redirect the user to the home page or dashboard if the login button was clicked
@@ -37,9 +38,7 @@ function handleLoginSuccess(username, event) {
 
 // Define a function to handle failed logins
 function handleLoginFailure() {
-  if (loginButtonClicked) {
-    alert('Invalid username or password.');
-  }
+  alert('Invalid username or password.');
 }
 
 // =============================================================================
@@ -120,6 +119,6 @@ loginForm.addEventListener('submit', function(event) {
   if (username === 'testuser' && password === 'testpassword') {
     handleLoginSuccess(username, event);
   } else {
-    handleLoginFailure();
+    handleLoginFailure(event);
   }
 });
