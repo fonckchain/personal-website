@@ -93,10 +93,37 @@
               <input type="checkbox" name="remember-me" id="remember-me" />
               <label for="remember-me">Remember me</label>
             </div>
-            <button type="submit" class="login-button">Sign in</button>
+            <button type="submit" class="login-button" data-login>
+              Sign in
+            </button>
             <p class="separator">OR</p>
             <button type="submit" class="register-button">
               Create account
+            </button>
+          </form>
+        </div>
+        <div class="registration-page">
+          <h3>Register</h3>
+          <form>
+            <input type="text" name="username" placeholder="Username" />
+            <input type="email" name="email" placeholder="Email" />
+            <input type="password" name="password" placeholder="Password" />
+            <input
+              type="password"
+              name="confirm-password"
+              placeholder="Confirm password"
+            />
+            <button type="submit" class="register-button">
+              Create account
+            </button>
+          </form>
+        </div>
+        <div class="forgot-password-page">
+          <h3>Forgot password?</h3>
+          <form>
+            <input type="email" name="email" placeholder="Email" />
+            <button type="submit" class="forgot-password-button">
+              Reset password
             </button>
           </form>
         </div>
@@ -406,6 +433,8 @@
         <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
         <script src="../javascript/menu.js"></script>
         <script src="../javascript/login.js"></script>
+        <script src="../javascript/registration.js"></script>
+        <script src="../javascript/forgot-password.js"></script>
       </footer>
     </div>
   </body>
