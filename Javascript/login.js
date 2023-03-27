@@ -1,6 +1,5 @@
-// Get references to the DOM elements
 const loginBtns = document.querySelectorAll('.login-btn');
-const loginButton = document.querySelectorAll('.login-button');
+const loginButton = document.querySelector('.login-button');
 const loginForm = document.querySelector('.login-page');
 const loginUsernameInput = document.querySelector('input[name="username"]');
 const loginPasswordInput = document.querySelector('input[name="password"]');
@@ -14,16 +13,12 @@ if (loggedInUser) {
 }
 
 // Attach event listeners to the login buttons
-loginBtns.forEach(loginBtns => {
-  loginBtns.addEventListener('click', function() {
+loginBtns.forEach(loginBtn => {
+  loginBtn.addEventListener('click', function() {
     // Display the login form
     loginForm.style.display = 'block';
     loginForm.classList.add('popup');
-  });
-});
 
-loginButton.forEach(loginButton => {
-  loginButton.addEventListener('click', function() {
     // Append the close button to the pop-up window
     const closeButton = document.createElement('button');
     closeButton.classList.add('close-button');
