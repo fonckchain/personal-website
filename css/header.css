@@ -110,13 +110,14 @@
       color: #ccc;
       text-decoration: underline;
     }
-    .login-page input[type="text"], header form input[type="password"], .forgot-password-page input[type="email"] {
+    header input[type="text"], header form input[type="password"],
+     header input[type="email"] {
       width: 100%;
       background: transparent;
       color: #ccc;
       border: 1;
       outline: none;
-      margin-bottom: 5px;
+      margin-bottom: 10px;
     }
     header form button{
       background: transparent;
@@ -142,7 +143,7 @@
   z-index: 69;
   }
   .dropdown-menu.open {
-    height: 300px
+    height: fit-content;
   }
   .dropdown-menu li {
   padding: 0.5rem;
@@ -154,6 +155,7 @@
     width: 95%;
     display: flex;
     justify-content: center;
+    margin-bottom: 5px;
   }
   .dropdown-menu li a {
     color: var(--color-headings)
