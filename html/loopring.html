@@ -7,7 +7,7 @@
     <link
       rel="shortcut icon"
       type="x-icon"
-      href="../Images/Icons/FonckLogo.png"
+      href="../media/images/icons/fonck-logo.png"
     />
     <meta name="keywords" content="HTML, CSS, Javascript, Loopring" />
     <meta
@@ -16,7 +16,7 @@
     />
     <title>Loopring Integrations</title>
     <link rel="stylesheet" href="../css/main.css" />
-    <script src="index.js"></script>
+    <link rel="stylesheet" href="../css/specific/loopring.css" />
   </head>
   <!-- ======================================================================= -->
   <!-- HEADER -->
@@ -26,10 +26,10 @@
       <header>
         <nav class="navbar grid-container">
           <div class="top-logo">
-            <a href="index.html"
+            <a href="home.html"
               ><img
                 class="fonck-logo"
-                src="../Images/Icons/FonckLogo.png"
+                src="../media/images/icons/fonck-logo.png"
                 alt="Fonck's logo"
               />
             </a>
@@ -57,9 +57,9 @@
               <a href="support.html">Support</a>
             </li>
           </ul>
-          <button class="login-btn">Login</button>
+          <button class="login-btn">Sign in</button>
           <div class="toggle-btn">
-            <img src="../Images/Icons/menu.svg" alt="Menu icon" />
+            <img src="../media/images/icons/menu.svg" alt="Menu icon" />
           </div>
         </nav>
         <div class="dropdown-menu">
@@ -84,13 +84,25 @@
           <li>
             <a href="support.html">Support</a>
           </li>
-          <li><button class="login-btn">Login</button></li>
+          <li><button class="login-btn">Sign in</button></li>
         </div>
-        <div class="login-form">
+        <div class="login-page">
+          <h3>Welcome!</h3>
           <form>
             <input type="text" name="username" placeholder="Username" />
             <input type="password" name="password" placeholder="Password" />
-            <button type="submit" class="register">Register</button>
+            <button type="button" class="forgot-password-button">
+              Forgot password?
+            </button>
+            <div class="checkbox-container">
+              <input type="checkbox" name="remember-me" id="remember-me" />
+              <label for="remember-me">Remember me</label>
+            </div>
+            <button type="submit" class="login-button">Sign in</button>
+            <p class="separator">OR</p>
+            <button type="submit" class="register-button">
+              Create account
+            </button>
           </form>
         </div>
       </header>
@@ -108,10 +120,10 @@
       <footer>
         <div class="row">
           <div class="col">
-            <a href="index.html"
+            <a href="home.html"
               ><img
                 class="fonck-logo"
-                src="../Images/Icons/FonckLogo.png"
+                src="../media/images/icons/fonck-logo.png"
                 alt="Fonck's logo"
               />
             </a>
@@ -166,7 +178,7 @@
             <form class="email" action="TBD">
               <img
                 id="email-icon"
-                src="../Images/Icons/email.svg"
+                src="../media/images/icons/email.svg"
                 alt="Email icon"
               />
               <input
@@ -177,7 +189,7 @@
               <button type="submit">
                 <img
                   id="arrow-right"
-                  src="../Images/Icons/arrow-right-alt-rounded.svg"
+                  src="../media/images/icons/arrow-right-alt-rounded.svg"
                   alt="Submit button"
                 />
               </button>
@@ -187,7 +199,7 @@
                 ><img
                   class="social-icon"
                   id="telegram-icon"
-                  src="../Images/Icons/telegram.svg"
+                  src="../media/images/icons/telegram.svg"
                   alt="Telegram icon"
               /></a>
               <a
@@ -196,35 +208,35 @@
                 ><img
                   class="social-icon"
                   id="discord-icon"
-                  src="../Images/Icons/discord.svg"
+                  src="../media/images/icons/discord.svg"
                   alt="Discord icon"
               /></a>
               <a href="https://twitter.com/Fonckchain" target="_blank"
                 ><img
                   class="social-icon"
                   id="twitter-icon"
-                  src="../Images/Icons/twitter.svg"
+                  src="../media/images/icons/twitter.svg"
                   alt="Twitter icon"
               /></a>
               <a href="https://medium.com/@fonckchain" target="_blank"
                 ><img
                   class="social-icon"
                   id="medium-icon"
-                  src="../Images/Icons/medium.svg"
+                  src="../media/images/icons/medium.svg"
                   alt="Medium icon"
               /></a>
               <a href="https://www.linkedin.com/in/fonckchain" target="_blank"
                 ><img
                   class="social-icon"
                   id="linkedin-icon"
-                  src="../Images/Icons/linkedin.svg"
+                  src="../media/images/icons/linkedin.svg"
                   alt="Linkedin icon"
               /></a>
               <a href="https://github.com/fonckchain" target="_blank"
                 ><img
                   class="social-icon"
                   id="github-icon"
-                  src="../Images/Icons/github.svg"
+                  src="../media/images/icons/github.svg"
                   alt="Github icon"
               /></a>
               <a
@@ -233,14 +245,14 @@
                 ><img
                   class="social-icon"
                   id="reddit-icon"
-                  src="../Images/Icons/reddit.svg"
+                  src="../media/images/icons/reddit.svg"
                   alt="Reddit icon"
               /></a>
               <a href="https://www.twitch.tv/fonckchain" target="_blank"
                 ><img
                   class="social-icon"
                   id="twitch-icon"
-                  src="../Images/Icons/twitch.svg"
+                  src="../media/images/icons/twitch.svg"
                   alt="Twitch icon"
               /></a>
               <a
@@ -249,7 +261,7 @@
                 ><img
                   class="social-icon"
                   id="coinmarketcap-icon"
-                  src="../Images/Icons/coinmarketcap.svg"
+                  src="../media/images/icons/coinmarketcap.svg"
                   alt="Coinmarketcap icon"
               /></a>
             </div>
@@ -258,7 +270,8 @@
         <hr />
         <p class="copyright">© Copyright 2023 Fonck - All rights reserved</p>
         <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
-        <script src="../Javascript/index.js"></script>
+        <script src="../javascript/menu.js"></script>
+        <script src="../javascript/login.js"></script>
       </footer>
     </div>
   </body>

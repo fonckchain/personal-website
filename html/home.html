@@ -7,7 +7,7 @@
     <link
       rel="shortcut icon"
       type="x-icon"
-      href="../Images/Icons/FonckLogo.png"
+      href="../media/images/icons/fonck-logo.png"
     />
     <meta name="keywords" content="HTML, CSS, Javascript" />
     <meta
@@ -26,10 +26,10 @@
       <header>
         <nav class="navbar grid-container">
           <div class="top-logo">
-            <a href="index.html"
+            <a href="home.html"
               ><img
                 class="fonck-logo"
-                src="../Images/Icons/FonckLogo.png"
+                src="../media/images/icons/fonck-logo.png"
                 alt="Fonck's logo"
               />
             </a>
@@ -59,7 +59,7 @@
           </ul>
           <button class="login-btn">Sign in</button>
           <div class="toggle-btn">
-            <img src="../Images/Icons/menu.svg" alt="Menu icon" />
+            <img src="../media/images/icons/menu.svg" alt="Menu icon" />
           </div>
         </nav>
         <div class="dropdown-menu">
@@ -87,12 +87,35 @@
           <li><button class="login-btn">Sign in</button></li>
         </div>
         <div class="login-page">
+          <h3>Welcome!</h3>
           <form>
             <input type="text" name="username" placeholder="Username">
             <input type="password" name="password" placeholder="Password">
+            <button type="button" class="forgot-password-button">Forgot password?</button>
+            <div class="checkbox-container">
+              <input type="checkbox" name="remember-me" id="remember-me">
+              <label for="remember-me">Remember me</label>
+            </div>
             <button type="submit" class="login-button">Sign in</button>
             <p class="separator">OR</p>
             <button type="submit" class="register-button">Create account</button>
+          </form>
+        </div>
+        <div class="registration-page">
+          <h3>Create account</h3>
+          <form>
+            <input type="text" name="username" placeholder="Username">
+            <input type="email" name="email" placeholder="Email">
+            <input type="password" name="password" placeholder="Password">
+            <input type="password" name="confirm-password" placeholder="Confirm password">
+            <button type="submit" class="register-button">Register</button>
+          </form>
+        </div>
+        <div class="forgot-password-page">
+          <h3>Forgot password?</h3>
+          <form>
+            <input type="email" name="email" placeholder="Email">
+            <button type="submit" class="forgot-password-button">Reset password</button>
           </form>
         </div>
       </header>
@@ -103,7 +126,7 @@
           <img
           class="header-image"
           id="header-homepage"
-          src="../Images/TheRoadtrip.png"
+          src="../media/images/the-roadtrip.png"
           alt=""
                 />
         <div id="content-wrap">
@@ -121,7 +144,7 @@
                 target="_blank"
               >
                 <div class="skill-item">
-                  <img src="../Images/Icons/html-5.svg" alt="HTML icon" />
+                  <img src="../media/images/icons/html-5.svg" alt="HTML icon" />
                 </div>
                 <p>HTML</p>
               </a>
@@ -130,7 +153,7 @@
                 target="_blank"
               >
                 <div class="skill-item">
-                  <img src="../Images/Icons/css.svg" alt="CSS icon" />
+                  <img src="../media/images/icons/css.svg" alt="CSS icon" />
                 </div>
                 <p>CSS</p>
               </a>
@@ -140,7 +163,7 @@
               >
                 <div class="skill-item">
                   <img
-                    src="../Images/Icons/javascript.svg"
+                    src="../media/images/icons/javascript.svg"
                     alt="Javascript icon"
                   />
                 </div>
@@ -152,7 +175,7 @@
             >
               <div class="skill-item">
                 <img
-                  src="../Images/Icons/nodejs.svg"
+                  src="../media/images/icons/nodejs.svg"
                   alt="Nodejs icon"
                 />
               </div>
@@ -163,13 +186,13 @@
                 target="_blank"
               >
                 <div class="skill-item">
-                  <img src="../Images/Icons/Bash.svg" alt="Bash icon" />
+                  <img src="../media/images/icons/bash.svg" alt="Bash icon" />
                 </div>
                 <p>Bash</p>
               </a>
               <a href="https://soliditylang.org/" target="_blank">
                 <div class="skill-item">
-                  <img src="../Images/Icons/solidity.svg" alt="Solidity icon" />
+                  <img src="../media/images/icons/solidity.svg" alt="Solidity icon" />
                 </div>
                 <p>Solidity</p>
               </a>
@@ -178,7 +201,7 @@
                 target="_blank"
               >
                 <div class="skill-item">
-                  <img src="../Images/Icons/ens.svg" alt="ENS icon" />
+                  <img src="../media/images/icons/ens.svg" alt="ENS icon" />
                 </div>
                 <p>ENS</p>
               </a>
@@ -187,7 +210,7 @@
                 target="_blank"
               >
                 <div class="skill-item">
-                  <img src="../Images/Icons/ipfs.svg" alt="IPFS icon" />
+                  <img src="../media/images/icons/ipfs.svg" alt="IPFS icon" />
                 </div>
                 <p>IPFS</p>
               </a>
@@ -197,7 +220,7 @@
               >
                 <div class="skill-item">
                   <img
-                    src="../Images/Icons/loopring-lrc-logo.svg"
+                    src="../media/images/icons/loopring-lrc-logo.svg"
                     alt="Loopring icon"
                   />
                 </div>
@@ -209,7 +232,7 @@
               >
                 <div class="skill-item">
                   <img
-                    src="../Images/Icons/immutable-x.svg"
+                    src="../media/images/icons/immutable-x.svg"
                     alt="Immutable X icon"
                   />
                 </div>
@@ -221,7 +244,7 @@
               >
                 <div class="skill-item">
                   <img
-                    src="../Images/Icons/The-Graph.svg"
+                    src="../media/images/icons/the-graph.svg"
                     alt="The Graph icon"
                   />
                 </div>
@@ -233,7 +256,7 @@
             >
               <div class="skill-item">
                 <img
-                  src="../Images/Icons/Tenderly.svg"
+                  src="../media/images/icons/tenderly.svg"
                   alt="The Graph icon"
                 />
               </div>
@@ -245,7 +268,7 @@
               >
                 <div class="skill-item">
                   <img
-                    src="../Images/Icons/point-network.svg"
+                    src="../media/images/icons/point-network.svg"
                     alt="Point Network icon"
                   />
                 </div>
@@ -256,7 +279,7 @@
                 target="_blank"
               >
                 <div class="skill-item">
-                  <img src="../Images/Icons/Python.svg" alt="Python icon" />
+                  <img src="../media/images/icons/python.svg" alt="Python icon" />
                 </div>
                 <p>Python</p>
               </a>
@@ -265,7 +288,7 @@
                 target="_blank"
               >
                 <div class="skill-item">
-                  <img src="../Images/Icons/git.svg" alt="Git icon" />
+                  <img src="../media/images/icons/git.svg" alt="Git icon" />
                 </div>
                 <p>Git</p>
               </a>
@@ -274,7 +297,16 @@
               target="_blank"
             >
               <div class="skill-item">
-                <img src="../Images/Icons/ChatGPT.svg" alt="Open AI icon" />
+                <img src="../media/images/icons/visual-studio-code.svg" alt="Visual Studio Code icon" />
+              </div>
+              <p>VSC</p>
+            </a>
+              <a
+              href="https://code.visualstudio.com/"
+              target="_blank"
+            >
+              <div class="skill-item">
+                <img src="../media/images/icons/open-ai.svg" alt="Open AI icon" />
               </div>
               <p>Open AI</p>
             </a>
@@ -283,7 +315,7 @@
                 target="_blank"
               >
                 <div class="skill-item">
-                  <img src="../Images/Icons/jira.svg" alt="Jira icon" />
+                  <img src="../media/images/icons/jira.svg" alt="Jira icon" />
                 </div>
                 <p>Jira</p>
               </a>
@@ -292,7 +324,7 @@
                 target="_blank"
               >
                 <div class="skill-item">
-                  <img src="../Images/Icons/notion.svg" alt="Notion icon" />
+                  <img src="../media/images/icons/notion.svg" alt="Notion icon" />
                 </div>
                 <p>Notion</p>
               </a>
@@ -301,7 +333,7 @@
                 target="_blank"
               >
                 <div class="skill-item">
-                  <img src="../Images/Icons/obs.svg" alt="OBS icon" />
+                  <img src="../media/images/icons/obs.svg" alt="OBS icon" />
                 </div>
                 <p>OBS</p>
               </a>
@@ -311,7 +343,7 @@
               >
                 <div class="skill-item">
                   <img
-                    src="../Images/Icons/DaVinci_Resolve_17.svg"
+                    src="../media/images/icons/davinci-resolve-17.svg"
                     alt="DaVinci Resolve icon"
                   />
                 </div>
@@ -322,7 +354,7 @@
                 target="_blank"
               >
                 <div class="skill-item">
-                  <img src="../Images/Icons/GIMP.svg" alt="Gimp icon" />
+                  <img src="../media/images/icons/gimp.svg" alt="Gimp icon" />
                 </div>
                 <p>Gimp</p>
               </a>
@@ -331,7 +363,7 @@
                 target="_blank"
               >
                 <div class="skill-item">
-                  <img src="../Images/Icons/Inkscape.svg" alt="Inkscape icon" />
+                  <img src="../media/images/icons/inkscape.svg" alt="Inkscape icon" />
                 </div>
                 <p>Inkscape</p>
               </a>
@@ -340,7 +372,7 @@
                 target="_blank"
               >
                 <div class="skill-item">
-                  <img src="../Images/Icons/Microsoft365.svg" alt="Microsoft365 icon" />
+                  <img src="../media/images/icons/microsoft365.svg" alt="Microsoft365 icon" />
                 </div>
                 <p>Microsoft 365</p>
               </a>
@@ -362,10 +394,10 @@
       <footer>
         <div class="row">
           <div class="col">
-            <a href="index.html"
+            <a href="home.html"
               ><img
                 class="fonck-logo"
-                src="../Images/Icons/FonckLogo.png"
+                src="../media/images/icons/fonck-logo.png"
                 alt="Fonck's logo"
               />
             </a>
@@ -420,7 +452,7 @@
             <form class="email" action="TBD">
               <img
                 id="email-icon"
-                src="../Images/Icons/email.svg"
+                src="../media/images/icons/email.svg"
                 alt="Email icon"
               />
               <input
@@ -431,7 +463,7 @@
               <button type="submit">
                 <img
                   id="arrow-right"
-                  src="../Images/Icons/arrow-right-alt-rounded.svg"
+                  src="../media/images/icons/arrow-right-alt-rounded.svg"
                   alt="Submit button"
                 />
               </button>
@@ -441,7 +473,7 @@
                 ><img
                   class="social-icon"
                   id="telegram-icon"
-                  src="../Images/Icons/telegram.svg"
+                  src="../media/images/icons/telegram.svg"
                   alt="Telegram icon"
               /></a>
               <a
@@ -450,35 +482,35 @@
                 ><img
                   class="social-icon"
                   id="discord-icon"
-                  src="../Images/Icons/discord.svg"
+                  src="../media/images/icons/discord.svg"
                   alt="Discord icon"
               /></a>
               <a href="https://twitter.com/Fonckchain" target="_blank"
                 ><img
                   class="social-icon"
                   id="twitter-icon"
-                  src="../Images/Icons/twitter.svg"
+                  src="../media/images/icons/twitter.svg"
                   alt="Twitter icon"
               /></a>
               <a href="https://medium.com/@fonckchain" target="_blank"
                 ><img
                   class="social-icon"
                   id="medium-icon"
-                  src="../Images/Icons/medium.svg"
+                  src="../media/images/icons/medium.svg"
                   alt="Medium icon"
               /></a>
               <a href="https://www.linkedin.com/in/fonckchain" target="_blank"
                 ><img
                   class="social-icon"
                   id="linkedin-icon"
-                  src="../Images/Icons/linkedin.svg"
+                  src="../media/images/icons/linkedin.svg"
                   alt="Linkedin icon"
               /></a>
               <a href="https://github.com/fonckchain" target="_blank"
                 ><img
                   class="social-icon"
                   id="github-icon"
-                  src="../Images/Icons/github.svg"
+                  src="../media/images/icons/github.svg"
                   alt="Github icon"
               /></a>
               <a
@@ -487,14 +519,14 @@
                 ><img
                   class="social-icon"
                   id="reddit-icon"
-                  src="../Images/Icons/reddit.svg"
+                  src="../media/images/icons/reddit.svg"
                   alt="Reddit icon"
               /></a>
               <a href="https://www.twitch.tv/fonckchain" target="_blank"
                 ><img
                   class="social-icon"
                   id="twitch-icon"
-                  src="../Images/Icons/twitch.svg"
+                  src="../media/images/icons/twitch.svg"
                   alt="Twitch icon"
               /></a>
               <a
@@ -503,7 +535,7 @@
                 ><img
                   class="social-icon"
                   id="coinmarketcap-icon"
-                  src="../Images/Icons/coinmarketcap.svg"
+                  src="../media/images/icons/coinmarketcap.svg"
                   alt="Coinmarketcap icon"
               /></a>
             </div>
@@ -512,9 +544,9 @@
         <hr />
         <p class="copyright">© Copyright 2023 Fonck - All rights reserved</p>
         <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
-        <script src="../Javascript/menu.js"></script>
-        <script src="../Javascript/login.js"></script>
-        <script src="../Javascript/autotyper.js"></script>
+        <script src="../javascript/menu.js"></script>
+        <script src="../javascript/login.js"></script>
+        <script src="../javascript/autotyper.js"></script>
       </footer>
     </div>
   </body>

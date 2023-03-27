@@ -7,23 +7,24 @@
     <link
     rel="shortcut icon"
     type="x-icon"
-    href="../Images/Icons/FonckLogo.png"
+    href="../media/images/icons/fonck-logo.png"
   />
     <title>Fonck's Portfolio</title>
     <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/specific/portfolio.css" />
   </head>
 <!-- ======================================================================= -->
 <!-- HEADER -->
 <!-- ======================================================================= -->
-<body id="portfolio">
+<body id="portfolio" background="../media/images/the-roadtrip-2.png">
   <div id="page-container">
     <header>
       <nav class="navbar grid-container">
         <div class="top-logo">
-          <a href="index.html"
+          <a href="home.html"
             ><img
               class="fonck-logo"
-              src="../Images/Icons/FonckLogo.png"
+              src="../media/images/icons/fonck-logo.png"
               alt="Fonck's logo"
             />
           </a>
@@ -51,9 +52,9 @@
             <a href="support.html">Support</a>
           </li>
         </ul>
-        <button class="login-btn">Login</button>
+        <button class="login-btn">Sign in</button>
         <div class="toggle-btn">
-          <img src="../Images/Icons/menu.svg" alt="Menu icon" />
+          <img src="../media/images/icons/menu.svg" alt="Menu icon" />
         </div>
       </nav>
       <div class="dropdown-menu">
@@ -78,13 +79,21 @@
         <li>
           <a href="support.html">Support</a>
         </li>
-        <li><button class="login-btn">Login</button></li>
+        <li><button class="login-btn">Sign in</button></li>
       </div>
-      <div class="login-form">
+      <div class="login-page">
+        <h3>Welcome!</h3>
         <form>
           <input type="text" name="username" placeholder="Username">
           <input type="password" name="password" placeholder="Password">
-          <button type="submit" class="register">Register</button>
+          <button type="button" class="forgot-password-button">Forgot password?</button>
+          <div class="checkbox-container">
+            <input type="checkbox" name="remember-me" id="remember-me">
+            <label for="remember-me">Remember me</label>
+          </div>
+          <button type="submit" class="login-button">Sign in</button>
+          <p class="separator">OR</p>
+          <button type="submit" class="register-button">Create account</button>
         </form>
       </div>
     </header>
@@ -139,7 +148,7 @@
           <tr>
             <td class="cryptos">1</td>
             <td class="cryptos"><a href="https://loopring.org/" target="_blank"><img class="crypto-logo"
-              src="../Images/Icons/loopring-lrc-logo.svg" alt="Loopring cryptocurrency logo" /></td>
+              src="../media/images/icons/loopring-lrc-logo.svg" alt="Loopring cryptocurrency logo" /></td>
             <td class="cryptos">LRC</td>
             <td class="cryptos">Loopring</td>
             <td class="cryptos">Loopring is an open-sourced, audited, and non-custodial exchange and payment protocol.
@@ -149,7 +158,7 @@
           <tr>
             <td class="cryptos">2</td>
             <td class="cryptos"><a href="https://ethereum.org" target="_blank"><img class="crypto-logo"
-              src="../Images/Icons/ethereum.svg" alt="Ethereum cryptocurrency logo" /></td>
+              src="../media/images/icons/ethereum.svg" alt="Ethereum cryptocurrency logo" /></td>
             <td class="cryptos">ETH</td>
             <td class="cryptos">Ethereum</td>
             <td class="cryptos">Enables the creation of decentralized finance platforms, NFTs, and smart contracts
@@ -167,161 +176,161 @@
 <!-- ======================================================================= -->
 <!-- FOOTER -->
 <!-- ======================================================================= -->
-    <footer>
-      <div class="row">
-        <div class="col">
-          <a href="index.html"
-            ><img
-              class="fonck-logo"
-              src="../Images/Icons/FonckLogo.png"
-              alt="Fonck's logo"
-            />
-          </a>
-          <p>Join me in decentralizing the world!</p>
-          <p>Power to the people</p>
-        </div>
-        <div class="col">
-          <h3>
-            Office
-            <div class="underline"><span></span></div>
-          </h3>
-          <p>XRFX+J6X</p>
-          <p>Cariari, Heredia</p>
-          <p>Ulloa, 40104, Costa Rica</p>
-          <p class="email-id">AFonck@protonmail.com</p>
-          <p>+(506) 7158 6206</p>
-        </div>
-        <div class="col">
-          <h3>
-            Links
-            <div class="underline"><span></span></div>
-          </h3>
-          <ul>
-            <li>
-              <a href="about.html">About</a>
-            </li>
-            <li>
-              <a href="projects.html">Projects</a>
-            </li>
-            <li>
-              <a href="socials.html">Socials</a>
-            </li>
-            <li>
-              <a href="portfolio.html">Portfolio</a>
-            </li>
-            <li>
-              <a href="library.html">Library</a>
-            </li>
-            <li>
-              <a href="services.html">Services</a>
-            </li>
-            <li>
-              <a href="support.html">Support</a>
-            </li>
-          </ul>
-        </div>
-        <div class="col">
-          <h3>
-            Newsletter
-            <div class="underline"><span></span></div>
-          </h3>
-          <form class="email" action="TBD">
-            <img
-              id="email-icon"
-              src="../Images/Icons/email.svg"
-              alt="Email icon"
-            />
-            <input
-              type="email"
-              placeholder="Enter your email address"
-              required
-            />
-            <button type="submit">
-              <img
-                id="arrow-right"
-                src="../Images/Icons/arrow-right-alt-rounded.svg"
-                alt="Submit button"
-              />
-            </button>
-          </form>
-          <div class="social-icons">
-            <a href="https://telegram.me/fonckchain" target="_blank"
-              ><img
-                class="social-icon"
-                id="telegram-icon"
-                src="../Images/Icons/telegram.svg"
-                alt="Telegram icon"
-            /></a>
-            <a
-              href="https://discord.com/users/143895452331409409"
-              target="_blank"
-              ><img
-                class="social-icon"
-                id="discord-icon"
-                src="../Images/Icons/discord.svg"
-                alt="Discord icon"
-            /></a>
-            <a href="https://twitter.com/Fonckchain" target="_blank"
-              ><img
-                class="social-icon"
-                id="twitter-icon"
-                src="../Images/Icons/twitter.svg"
-                alt="Twitter icon"
-            /></a>
-            <a href="https://medium.com/@fonckchain" target="_blank"
-              ><img
-                class="social-icon"
-                id="medium-icon"
-                src="../Images/Icons/medium.svg"
-                alt="Medium icon"
-            /></a>
-            <a href="https://www.linkedin.com/in/fonckchain" target="_blank"
-              ><img
-                class="social-icon"
-                id="linkedin-icon"
-                src="../Images/Icons/linkedin.svg"
-                alt="Linkedin icon"
-            /></a>
-            <a href="https://github.com/fonckchain" target="_blank"
-              ><img
-                class="social-icon"
-                id="github-icon"
-                src="../Images/Icons/github.svg"
-                alt="Github icon"
-            /></a>
-            <a
-              href="https://www.reddit.com/user/All-In-Fonck/"
-              target="_blank"
-              ><img
-                class="social-icon"
-                id="reddit-icon"
-                src="../Images/Icons/reddit.svg"
-                alt="Reddit icon"
-            /></a>
-            <a href="https://www.twitch.tv/fonckchain" target="_blank"
-              ><img
-                class="social-icon"
-                id="twitch-icon"
-                src="../Images/Icons/twitch.svg"
-                alt="Twitch icon"
-            /></a>
-            <a
-              href="https://coinmarketcap.com/watchlist/639e0c3c79f6625bd8a8ea57"
-              target="_blank"
-              ><img
-                class="social-icon"
-                id="coinmarketcap-icon"
-                src="../Images/Icons/coinmarketcap.svg"
-                alt="Coinmarketcap icon"
-            /></a>
-          </div>
-        </div>
+<footer>
+  <div class="row">
+    <div class="col">
+      <a href="home.html"
+        ><img
+          class="fonck-logo"
+          src="../media/images/icons/fonck-logo.png"
+          alt="Fonck's logo"
+        />
+      </a>
+      <p>Join me in decentralizing the world!</p>
+      <p>Power to the people</p>
+    </div>
+    <div class="col">
+      <h3>
+        Office
+        <div class="underline"><span></span></div>
+      </h3>
+      <p>XRFX+J6X</p>
+      <p>Cariari, Heredia</p>
+      <p>Ulloa, 40104, Costa Rica</p>
+      <p class="email-id">AFonck@protonmail.com</p>
+      <p>+(506) 7158 6206</p>
+    </div>
+    <div class="col">
+      <h3>
+        Links
+        <div class="underline"><span></span></div>
+      </h3>
+      <ul>
+        <li>
+          <a href="about.html">About</a>
+        </li>
+        <li>
+          <a href="projects.html">Projects</a>
+        </li>
+        <li>
+          <a href="socials.html">Socials</a>
+        </li>
+        <li>
+          <a href="portfolio.html">Portfolio</a>
+        </li>
+        <li>
+          <a href="library.html">Library</a>
+        </li>
+        <li>
+          <a href="services.html">Services</a>
+        </li>
+        <li>
+          <a href="support.html">Support</a>
+        </li>
+      </ul>
+    </div>
+    <div class="col">
+      <h3>
+        Newsletter
+        <div class="underline"><span></span></div>
+      </h3>
+      <form class="email" action="TBD">
+        <img
+          id="email-icon"
+          src="../media/images/icons/email.svg"
+          alt="Email icon"
+        />
+        <input
+          type="email"
+          placeholder="Enter your email address"
+          required
+        />
+        <button type="submit">
+          <img
+            id="arrow-right"
+            src="../media/images/icons/arrow-right-alt-rounded.svg"
+            alt="Submit button"
+          />
+        </button>
+      </form>
+      <div class="social-icons">
+        <a href="https://telegram.me/fonckchain" target="_blank"
+          ><img
+            class="social-icon"
+            id="telegram-icon"
+            src="../media/images/icons/telegram.svg"
+            alt="Telegram icon"
+        /></a>
+        <a
+          href="https://discord.com/users/143895452331409409"
+          target="_blank"
+          ><img
+            class="social-icon"
+            id="discord-icon"
+            src="../media/images/icons/discord.svg"
+            alt="Discord icon"
+        /></a>
+        <a href="https://twitter.com/Fonckchain" target="_blank"
+          ><img
+            class="social-icon"
+            id="twitter-icon"
+            src="../media/images/icons/twitter.svg"
+            alt="Twitter icon"
+        /></a>
+        <a href="https://medium.com/@fonckchain" target="_blank"
+          ><img
+            class="social-icon"
+            id="medium-icon"
+            src="../media/images/icons/medium.svg"
+            alt="Medium icon"
+        /></a>
+        <a href="https://www.linkedin.com/in/fonckchain" target="_blank"
+          ><img
+            class="social-icon"
+            id="linkedin-icon"
+            src="../media/images/icons/linkedin.svg"
+            alt="Linkedin icon"
+        /></a>
+        <a href="https://github.com/fonckchain" target="_blank"
+          ><img
+            class="social-icon"
+            id="github-icon"
+            src="../media/images/icons/github.svg"
+            alt="Github icon"
+        /></a>
+        <a
+          href="https://www.reddit.com/user/All-In-Fonck/"
+          target="_blank"
+          ><img
+            class="social-icon"
+            id="reddit-icon"
+            src="../media/images/icons/reddit.svg"
+            alt="Reddit icon"
+        /></a>
+        <a href="https://www.twitch.tv/fonckchain" target="_blank"
+          ><img
+            class="social-icon"
+            id="twitch-icon"
+            src="../media/images/icons/twitch.svg"
+            alt="Twitch icon"
+        /></a>
+        <a
+          href="https://coinmarketcap.com/watchlist/639e0c3c79f6625bd8a8ea57"
+          target="_blank"
+          ><img
+            class="social-icon"
+            id="coinmarketcap-icon"
+            src="../media/images/icons/coinmarketcap.svg"
+            alt="Coinmarketcap icon"
+        /></a>
       </div>
-      <hr />
-      <p class="copyright">© Copyright 2023 Fonck - All rights reserved</p>
-      <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
-      <script src="../Javascript/buttons.js"></script>
-    </footer>
+    </div>
+  </div>
+  <hr />
+  <p class="copyright">© Copyright 2023 Fonck - All rights reserved</p>
+  <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+  <script src="../javascript/menu.js"></script>
+  <script src="../javascript/login.js"></script>
   </div>
 </body>
 </html>

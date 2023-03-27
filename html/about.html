@@ -7,10 +7,11 @@
     <link
       rel="shortcut icon"
       type="x-icon"
-      href="../Images/Icons/FonckLogo.png"
+      href="../media/images/icons/fonck-logo.png"
     />
     <title>About Fonck</title>
     <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/specific/about.css" />
   </head>
   <!-- ===================================================================== -->
   <!-- HEADER -->
@@ -20,10 +21,10 @@
       <header>
         <nav class="navbar grid-container">
           <div class="top-logo">
-            <a href="index.html"
+            <a href="home.html"
               ><img
                 class="fonck-logo"
-                src="../Images/Icons/FonckLogo.png"
+                src="../media/images/icons/fonck-logo.png"
                 alt="Fonck's logo"
               />
             </a>
@@ -51,9 +52,9 @@
               <a href="support.html">Support</a>
             </li>
           </ul>
-          <button class="login-btn">Login</button>
+          <button class="login-btn">Sign in</button>
           <div class="toggle-btn">
-            <img src="../Images/Icons/menu.svg" alt="Menu icon" />
+            <img src="../media/images/icons/menu.svg" alt="Menu icon" />
           </div>
         </nav>
         <div class="dropdown-menu">
@@ -78,13 +79,25 @@
           <li>
             <a href="support.html">Support</a>
           </li>
-          <li><button class="login-btn">Login</button></li>
+          <li><button class="login-btn">Sign in</button></li>
         </div>
-        <div class="login-form">
+        <div class="login-page">
+          <h3>Welcome!</h3>
           <form>
             <input type="text" name="username" placeholder="Username" />
             <input type="password" name="password" placeholder="Password" />
-            <button type="submit" class="register">Register</button>
+            <button type="button" class="forgot-password-button">
+              Forgot password?
+            </button>
+            <div class="checkbox-container">
+              <input type="checkbox" name="remember-me" id="remember-me" />
+              <label for="remember-me">Remember me</label>
+            </div>
+            <button type="submit" class="login-button">Sign in</button>
+            <p class="separator">OR</p>
+            <button type="submit" class="register-button">
+              Create account
+            </button>
           </form>
         </div>
       </header>
@@ -94,7 +107,7 @@
       <main class="about">
         <!--<img
           class="header-image"
-          src="../Images/connecturday-cropped.jpg"
+          src="../media/images/connecturday-cropped.jpg"
           alt=""
         />-->
         <div id="content-wrap">
@@ -108,8 +121,14 @@
             visions, and make the world a better place.
           </p>
           <p>
-            I was born in Costa Rica in 1997 and I live with my girlfriend and
-            two dogs.
+            I have an
+            <a
+              href="https://www.16personalities.com/profiles/478df75e5ece8"
+              target="_blank"
+              >assertive protagonist (ENFJ-A) personality.</a
+            ><br />
+            I was born in Costa Rica in 1997 and I'm living with my girlfriend
+            and two dogs.
           </p>
           <div class="grid-container--2">
             <div class="grid-item">
@@ -128,47 +147,47 @@
             </div>
             <div class="grid-item">
               <ul class="list--tick">
-                <li class="list__item">
+                <li class="list-item">
                   <img
                     class="check-tick"
-                    src="../Images/Icons/check-small-rounded.svg"
+                    src="../media/images/icons/check-small-rounded.svg"
                     alt="Check"
                   />Competitions in high level esports
                 </li>
-                <li class="list__item">
+                <li class="list-item">
                   <img
                     class="check-tick"
-                    src="../Images/Icons/check-small-rounded.svg"
+                    src="../media/images/icons/check-small-rounded.svg"
                     alt="Check"
                   />Founded startup gaming company
                 </li>
-                <li class="list__item">
+                <li class="list-item">
                   <img
                     class="check-tick"
-                    src="../Images/Icons/check-small-rounded.svg"
+                    src="../media/images/icons/check-small-rounded.svg"
                     alt="Check"
                   />Worked at leading tech companies
                 </li>
-                <li class="list__item">
+                <li class="list-item">
                   <img
                     class="check-tick"
-                    src="../Images/Icons/check-small-rounded.svg"
+                    src="../media/images/icons/check-small-rounded.svg"
                     alt="Check"
                   />Consulting for PM, tech & blockchain services
                 </li>
-                <li class="list__item">
+                <li class="list-item">
                   <img
                     class="check-tick"
-                    src="../Images/Icons/check-small-rounded.svg"
+                    src="../media/images/icons/check-small-rounded.svg"
                     alt="Check"
                   />Management and infrastructure building for DAOs
                 </li>
               </ul>
             </div>
           </div>
+          <h2>Hobbies</h2>
           <div class="grid-container--2 grid-container--inverse">
             <div class="grid-item">
-              <h2>Hobbies</h2>
               <h3>Streaming</h3>
               <p>
                 Mostly gaming, with high focus on games featuring blockchain
@@ -189,7 +208,7 @@
             <div class="grid-item">
               <video
                 controls
-                src="../Videos/Kiraverse_Winning_Streak.mp4"
+                src="../media/videos/kiraverse-winning-streak.mp4"
                 class="stream-vid"
               >
                 Your browser does not support videos.
@@ -223,7 +242,7 @@
           </div>
           <p>
             You can
-            <a href="../Images/Lilia.jpg" download
+            <a href="../media/images/Lilia.jpg" download
               >download a cute dog picture</a
             >
             while I put more content in here.
@@ -236,10 +255,10 @@
       <footer>
         <div class="row">
           <div class="col">
-            <a href="index.html"
+            <a href="home.html"
               ><img
                 class="fonck-logo"
-                src="../Images/Icons/FonckLogo.png"
+                src="../media/images/icons/fonck-logo.png"
                 alt="Fonck's logo"
               />
             </a>
@@ -294,7 +313,7 @@
             <form class="email" action="TBD">
               <img
                 id="email-icon"
-                src="../Images/Icons/email.svg"
+                src="../media/images/icons/email.svg"
                 alt="Email icon"
               />
               <input
@@ -304,8 +323,8 @@
               />
               <button type="submit">
                 <img
-                  class="arrow-right"
-                  src="../Images/Icons/arrow-right-alt-rounded.svg"
+                  id="arrow-right"
+                  src="../media/images/icons/arrow-right-alt-rounded.svg"
                   alt="Submit button"
                 />
               </button>
@@ -315,7 +334,7 @@
                 ><img
                   class="social-icon"
                   id="telegram-icon"
-                  src="../Images/Icons/telegram.svg"
+                  src="../media/images/icons/telegram.svg"
                   alt="Telegram icon"
               /></a>
               <a
@@ -324,35 +343,35 @@
                 ><img
                   class="social-icon"
                   id="discord-icon"
-                  src="../Images/Icons/discord.svg"
+                  src="../media/images/icons/discord.svg"
                   alt="Discord icon"
               /></a>
               <a href="https://twitter.com/Fonckchain" target="_blank"
                 ><img
                   class="social-icon"
                   id="twitter-icon"
-                  src="../Images/Icons/twitter.svg"
+                  src="../media/images/icons/twitter.svg"
                   alt="Twitter icon"
               /></a>
               <a href="https://medium.com/@fonckchain" target="_blank"
                 ><img
                   class="social-icon"
                   id="medium-icon"
-                  src="../Images/Icons/medium.svg"
+                  src="../media/images/icons/medium.svg"
                   alt="Medium icon"
               /></a>
               <a href="https://www.linkedin.com/in/fonckchain" target="_blank"
                 ><img
                   class="social-icon"
                   id="linkedin-icon"
-                  src="../Images/Icons/linkedin.svg"
+                  src="../media/images/icons/linkedin.svg"
                   alt="Linkedin icon"
               /></a>
               <a href="https://github.com/fonckchain" target="_blank"
                 ><img
                   class="social-icon"
                   id="github-icon"
-                  src="../Images/Icons/github.svg"
+                  src="../media/images/icons/github.svg"
                   alt="Github icon"
               /></a>
               <a
@@ -361,14 +380,14 @@
                 ><img
                   class="social-icon"
                   id="reddit-icon"
-                  src="../Images/Icons/reddit.svg"
+                  src="../media/images/icons/reddit.svg"
                   alt="Reddit icon"
               /></a>
               <a href="https://www.twitch.tv/fonckchain" target="_blank"
                 ><img
                   class="social-icon"
                   id="twitch-icon"
-                  src="../Images/Icons/twitch.svg"
+                  src="../media/images/icons/twitch.svg"
                   alt="Twitch icon"
               /></a>
               <a
@@ -377,7 +396,7 @@
                 ><img
                   class="social-icon"
                   id="coinmarketcap-icon"
-                  src="../Images/Icons/coinmarketcap.svg"
+                  src="../media/images/icons/coinmarketcap.svg"
                   alt="Coinmarketcap icon"
               /></a>
             </div>
@@ -386,7 +405,8 @@
         <hr />
         <p class="copyright">© Copyright 2023 Fonck - All rights reserved</p>
         <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
-        <script src="../Javascript/buttons.js"></script>
+        <script src="../javascript/menu.js"></script>
+        <script src="../javascript/login.js"></script>
       </footer>
     </div>
   </body>
