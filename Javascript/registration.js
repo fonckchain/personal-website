@@ -1,8 +1,11 @@
-const registerBtn = document.querySelector('.register-button');
+// registration.js
+import { addReturnButton } from './returnButton.js';
+
+const signUpBtn = document.querySelector('.sign-up-btn');
 const registrationForm = document.querySelector('.registration-page');
 
 // Attach event listeners to the register button
-registerBtn.addEventListener('click', function() {
+signUpBtn.addEventListener('click', function () {
   const loginForm = document.querySelector('.login-page');
   loginForm.style.display = 'none';
   registrationForm.style.display = 'block';
@@ -13,8 +16,11 @@ registerBtn.addEventListener('click', function() {
   closeButton.innerHTML = '&times;';
   registrationForm.appendChild(closeButton);
 
-  closeButton.addEventListener('click', function() {
+  closeButton.addEventListener('click', function () {
     registrationForm.classList.remove('popup');
     registrationForm.style.display = 'none';
   });
+
+  // Add the return button
+  addReturnButton(registrationForm, loginForm);
 });

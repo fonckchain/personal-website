@@ -1,21 +1,95 @@
+/*
 .arrow-right:hover, .project-image:hover, .fonck-logo, .social-icon:hover, .skill-item:hover {
     transition: all 100ms ease-out 100ms;
 }
   .arrow-right:hover, .fonck-logo:hover, .social-icon:hover, .skill-item:hover {
     transform: perspective(420px) translateZ(69px);
   }
-  .project-image:hover {
-    scale: 1.06;
-  }
-  .project-image:active {
-    scale: 0.94;
-  }
-  .login-button:hover, .login-btn:hover, .register-button:hover {
-    scale: 1.05;
-  }
-  .login-button:active, .login-btn:active, .register-button:active {
+*/
+  .login-button:active, .login-btn:active, .register-button:active, 
+  .project-image:active, .toggle-btn:active {
     scale: 0.95;
   }
   .dropdown-hover:hover .dropdown-gif {
     display: block;
+  }
+/* ========================================================================== */
+/* HEADER */
+/* ========================================================================== */
+  .connect-gamestop:hover, .login-button:hover, .login-btn:hover, .register-button:hover, .project-image:hover, 
+  .arrow-right:hover, .fonck-logo:hover, .skill-item:hover{
+    transform: scale(1.05); 
+    transform-origin: center; /* Set the origin of the transformation to the center of the element */
+    transition: transform 0.3s ease; /* Add a smooth transition for the transformation */
+  }
+  .login-button:hover, .register-button:hover {
+    background-color: #ebebeb;
+  }
+  .connect-gamestop:hover {
+    background-color: #444444c5;
+  }
+  .gamestop-wallet-icon {
+    transition: all 0.3s ease;
+  }
+  .connect-gamestop:hover .gamestop-wallet-icon {
+    transform: rotate(360deg); /* Rotate the icon 360 degrees on hover */
+  }
+  .close-button, .return-button {
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  .close-button:hover, .return-button:hover {
+    color: var(--color-primary);
+    transform: scale(1.2);
+  }
+/* ========================================================================== */
+/* LINKS */
+/* ========================================================================== */
+  a:hover {
+    color: var(--color-important);
+  }
+  p a:not(.home, .link-arrow):hover {
+    color: var(--color-important);
+  }
+  .link-arrow::after {
+    content: "-->";
+    margin-left: 0.5rem;
+    transition: margin 0.15s;
+  }
+  .link-arrow:hover::after {
+    margin-left: 1rem;
+  }
+  .animate-text {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  .animate-text::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: currentColor;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+  }
+  .animate-text:hover {
+    color: var(--color-primary);
+  }
+  .animate-text:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+  .animate-text--2:hover {
+    color: var(--color-important);
+  }
+  /* ======================================================================== */
+  /* FOOTER */
+  /* ======================================================================== */
+  .social-icons img:hover {
+    transform: scale(1.2) rotate(12deg); /* Added */
+    background: #fff;
   }

@@ -5,23 +5,12 @@ a {
   p a:not(.home, .link-arrow) {
     color: var(--color-accent2);
   }
-  a:hover {
-    color: var(--color-primary);
-  }
-  p a:not(.home, .link-arrow):hover {
-    color: var(--color-important);
-  }
   .link-arrow {
     color: var(--color-accent2);
     font-weight: bold;
     text-transform: uppercase;
     font-size: 1.8rem;
   }
-  .link-arrow::after {
-    content: "-->";
-    margin-left: 0.5rem;
-    transition: margin 0.15s;
-  }
-  .link-arrow:hover::after {
-    margin-left: 1rem;
+  .email-id a[href^="mailto"] {
+    color: #fff;
   }
