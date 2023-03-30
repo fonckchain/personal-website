@@ -139,6 +139,7 @@
       <main class="loopring">
         <div id="content-wrap">
           <h1>Loopring</h1>
+          <button id="connect-gamestop">Connect to GME Wallet</button>
         </div>
       </main>
       <!-- ======================================================================= -->
@@ -301,6 +302,41 @@
         <script src="../javascript/login.js"></script>
         <script src="../javascript/registration.js"></script>
         <script src="../javascript/forgot-password.js"></script>
+        <script src="../javascript/gmewallet.js"></script>
+        <script src="../javascript/main.js"></script>
+        <script type="text/javascript">
+          const connectGamestopBtn =
+            document.getElementById("connect-gamestop");
+
+          connectGamestopBtn.addEventListener("click", async () => {
+            try {
+              const provider = await detectGamestopProvider.default();
+
+              if (!provider) {
+                alert(
+                  "Gamestop Wallet not detected. Please install the browser extension to continue."
+                );
+                return;
+              }
+
+              // Request user's account address
+              const accounts = await provider.request({
+                method: "eth_requestAccounts",
+              });
+
+              if (accounts.length === 0) {
+                alert(
+                  "No account found. Please connect your wallet and try again."
+                );
+              } else {
+                const account = accounts[0];
+                console.log("Connected account:", account);
+              }
+            } catch (error) {
+              console.error("Error connecting to Gamestop Wallet:", error);
+            }
+          });
+        </script>
       </footer>
     </div>
   </body>
