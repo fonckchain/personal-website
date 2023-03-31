@@ -2,6 +2,9 @@
 /* ========================================================================== */
 /* GENERAL */
 /* ========================================================================== */
+.gamestop-wallet-icon, .fonck-logo {
+  transition: all 0.33s ease;
+}
 .fonck-logo:hover {
   transform: scale(1.2) rotate(-38deg);
   transform-origin: center;
@@ -19,8 +22,7 @@
   transition: transform 0.33s ease; /* Add a smooth transition for the transformation */
   transform-origin: center; /* Set the origin of the transformation to the center of the element */
 }
-.connect-gamestop:hover, .login-button:hover, .login-btn:hover, .register-button:hover, .project-image:hover, 
-  .arrow-right:hover {
+.connect-gamestop:hover, .login-button:hover, .login-btn:hover, .register-button:hover, .project-image:hover {
     transform: scale(1.05); 
   }
   .login-button:hover, .register-button:hover {
@@ -28,9 +30,6 @@
   }
   .connect-gamestop:hover {
     background-color: #444444c5;
-  }
-  .gamestop-wallet-icon {
-    transition: all 0.33s ease;
   }
   .connect-gamestop:hover .gamestop-wallet-icon {
     transform: rotate(360deg); /* Rotate the icon 360 degrees on hover */
@@ -45,13 +44,13 @@
 /* ========================================================================== */
 /* LINKS */
 /* ========================================================================== */
-  a:hover {
-    color: var(--color-important);
-  }
-  p a:not(.home, .link-arrow):hover {
-    color: var(--color-important);
-  }
-  .link-arrow::after {
+a:hover {
+  color: var(--color-important);
+}
+p a:not(.home, .link-arrow):hover {
+  color: var(--color-important);
+}
+.link-arrow::after {
     content: "-->";
     margin-left: 0.5rem;
     transition: margin 0.2s;
@@ -103,6 +102,10 @@
   .crypto-logo {
     transition: transform 0.3s ease;
   }  
-  .skill-icon:hover, .crypto-logo:hover {
+  .crypto-logo:hover, .arrow-right:hover {
     transform: scale(1.1);
+  }
+  .skill-icon:hover {
+    transform: scale(1.33);
+    background: transparent;
   }

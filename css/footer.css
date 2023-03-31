@@ -33,7 +33,7 @@ footer {
     display: flex;
     height: 20px;
   }
-  #arrow-right {
+  .arrow-right {
     height: 20px;
     display: flex;
     margin-left: 5px;

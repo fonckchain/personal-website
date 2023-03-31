@@ -9,6 +9,9 @@
     margin: auto auto 10px;
     max-width: 99%;
   }
+  .cryptos-table {
+    text-align: center;
+  }
   label {
     display: block;
   }
