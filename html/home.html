@@ -26,8 +26,8 @@
       <header>
         <nav class="navbar grid-container">
           <div class="top-logo">
-            <a href="home.html"
-              ><img
+            <a href="home.html">
+              <img
                 class="fonck-logo"
                 src="../media/images/icons/fonck-logo.png"
                 alt="Fonck's logo"
@@ -36,25 +36,25 @@
           </div>
           <ul class="pages">
             <li>
-              <a href="info.html">About</a>
+              <a href="info.html" class="animate-text">About</a>
             </li>
             <li>
-              <a href="projects.html">Projects</a>
+              <a href="projects.html" class="animate-text">Projects</a>
             </li>
             <li>
-              <a href="portfolio.html">Portfolio</a>
+              <a href="portfolio.html" class="animate-text">Portfolio</a>
             </li>
             <li>
-              <a href="library.html">Library</a>
+              <a href="library.html" class="animate-text">Library</a>
             </li>
             <li>
-              <a href="services.html">Services</a>
+              <a href="services.html" class="animate-text">Services</a>
             </li>
             <li>
-              <a href="socials.html">Socials</a>
+              <a href="socials.html" class="animate-text">Socials</a>
             </li>
             <li>
-              <a href="support.html">Support</a>
+              <a href="support.html" class="animate-text">Support</a>
             </li>
           </ul>
           <button class="login-btn">Sign in</button>
@@ -62,60 +62,88 @@
             <img src="../media/images/icons/menu.svg" alt="Menu icon" />
           </div>
         </nav>
+
         <div class="dropdown-menu">
           <li>
-            <a href="info.html">About</a>
+            <a href="info.html" class="animate-text">About</a>
           </li>
           <li>
-            <a href="projects.html">Projects</a>
+            <a href="projects.html" class="animate-text">Projects</a>
           </li>
           <li>
-            <a href="portfolio.html">Portfolio</a>
+            <a href="portfolio.html" class="animate-text">Portfolio</a>
           </li>
           <li>
-            <a href="library.html">Library</a>
+            <a href="library.html" class="animate-text">Library</a>
           </li>
           <li>
-            <a href="services.html">Services</a>
+            <a href="services.html" class="animate-text">Services</a>
           </li>
           <li>
-            <a href="socials.html">Socials</a>
+            <a href="socials.html" class="animate-text">Socials</a>
           </li>
           <li>
-            <a href="support.html">Support</a>
+            <a href="support.html" class="animate-text">Support</a>
           </li>
           <li><button class="login-btn">Sign in</button></li>
         </div>
         <div class="login-page">
           <h3>Welcome!</h3>
           <form>
-            <input type="text" name="username" placeholder="Username">
-            <input type="password" name="password" placeholder="Password">
-            <button type="button" class="forgot-password-button">Forgot password?</button>
+            <input type="text" name="username" placeholder="Username" />
+            <input type="password" name="password" placeholder="Password" />
+            <button type="button" class="forgot-password-button animate-text">
+              Forgot password?
+            </button>
             <div class="checkbox-container">
-              <input type="checkbox" name="remember-me" id="remember-me">
+              <input type="checkbox" name="remember-me" id="remember-me" />
               <label for="remember-me">Remember me</label>
             </div>
-            <button type="submit" class="login-button" data-login>Sign in</button>
-            <p class="separator">OR</p>
-            <button type="submit" class="register-button">Create account</button>
+            <button type="submit" class="login-button" data-login>
+              Sign in
+            </button>
+            <div class="separator">
+              <hr />
+              <span>or</span>
+              <hr />
+            </div>
+            <button class="connect-gamestop">
+              <img
+                class="gamestop-wallet-icon"
+                src="../media/images/icons/gamestop_logo_circle.svg"
+                alt="Gamestop wallet icon"
+              />
+              <span class="sign-in-text">Sign in with GameStop wallet</span>
+            </button>
+            <div class="sign-up-container">
+              <p>You don't have an account?</p>
+              <button type="submit" class="sign-up-btn animate-text">
+                Sign up
+              </button>
+            </div>
           </form>
         </div>
         <div class="registration-page">
           <h3>Register</h3>
           <form>
-            <input type="text" name="username" placeholder="Username">
-            <input type="email" name="email" placeholder="Email">
-            <input type="password" name="password" placeholder="Password">
-            <input type="password" name="confirm-password" placeholder="Confirm password">
-            <button type="submit" class="register-button">Create account</button>
+            <input type="text" name="username" placeholder="Username" />
+            <input type="email" name="email" placeholder="Email" />
+            <input type="password" name="password" placeholder="Password" />
+            <input
+              type="password"
+              name="confirm-password"
+              placeholder="Confirm password"
+            />
+            <button type="submit" class="register-button">Sign up</button>
           </form>
         </div>
         <div class="forgot-password-page">
           <h3>Forgot password?</h3>
           <form>
-            <input type="email" name="email" placeholder="Email">
-            <button type="submit" class="forgot-password-button">Reset password</button>
+            <input type="email" name="email" placeholder="Email" />
+            <button type="submit" class="forgot-password-button">
+              Reset password
+            </button>
           </form>
         </div>
       </header>
@@ -139,15 +167,7 @@
             <h2>Skills</h2>
             <h3>Technologies I use in my work:</h3>
             <div class="skill-icons-grid">
-              <a
-                href="https://developer.mozilla.org/en-US/docs/Web/HTML"
-                target="_blank"
-              >
-                <div class="skill-item">
-                  <img src="../media/images/icons/html-5.svg" alt="HTML icon" />
-                </div>
-                <p>HTML</p>
-              </a>
+              <div class="skill-item"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank"><img src="../media/images/icons/html-5.svg" alt="HTML icon"/><p>HTML</p></a></div>
               <a
                 href="https://developer.mozilla.org/en-US/docs/Web/CSS"
                 target="_blank"
@@ -391,165 +411,205 @@
 <!-- ======================================================================= -->
 <!-- FOOTER -->
 <!-- ======================================================================= -->
-      <footer>
-        <div class="row">
-          <div class="col">
-            <a href="home.html"
-              ><img
-                class="fonck-logo"
-                src="../media/images/icons/fonck-logo.png"
-                alt="Fonck's logo"
-              />
-            </a>
-            <p>Join me in decentralizing the world!</p>
-            <p>Power to the people</p>
-          </div>
-          <div class="col">
-            <h3>
-              Office
-              <div class="underline"><span></span></div>
-            </h3>
-            <p>XRFX+J6X</p>
-            <p>Cariari, Heredia</p>
-            <p>Ulloa, 40104, Costa Rica</p>
-            <p class="email-id">AFonck@protonmail.com</p>
-            <p>+(506) 7158 6206</p>
-          </div>
-          <div class="col">
-            <h3>
-              Links
-              <div class="underline"><span></span></div>
-            </h3>
-            <ul>
-              <li>
-                <a href="info.html">About</a>
-              </li>
-              <li>
-                <a href="projects.html">Projects</a>
-              </li>
-              <li>
-                <a href="socials.html">Socials</a>
-              </li>
-              <li>
-                <a href="portfolio.html">Portfolio</a>
-              </li>
-              <li>
-                <a href="library.html">Library</a>
-              </li>
-              <li>
-                <a href="services.html">Services</a>
-              </li>
-              <li>
-                <a href="support.html">Support</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col">
-            <h3>
-              Newsletter
-              <div class="underline"><span></span></div>
-            </h3>
-            <form class="email" action="TBD">
-              <img
-                id="email-icon"
-                src="../media/images/icons/email.svg"
-                alt="Email icon"
-              />
-              <input
-                type="email"
-                placeholder="Enter your email address"
-                required
-              />
-              <button type="submit">
-                <img
-                  id="arrow-right"
-                  src="../media/images/icons/arrow-right-alt-rounded.svg"
-                  alt="Submit button"
-                />
-              </button>
-            </form>
-            <div class="social-icons">
-              <a href="https://telegram.me/fonckchain" target="_blank"
-                ><img
-                  class="social-icon"
-                  id="telegram-icon"
-                  src="../media/images/icons/telegram.svg"
-                  alt="Telegram icon"
-              /></a>
-              <a
-                href="https://discord.com/users/143895452331409409"
-                target="_blank"
-                ><img
-                  class="social-icon"
-                  id="discord-icon"
-                  src="../media/images/icons/discord.svg"
-                  alt="Discord icon"
-              /></a>
-              <a href="https://twitter.com/Fonckchain" target="_blank"
-                ><img
-                  class="social-icon"
-                  id="twitter-icon"
-                  src="../media/images/icons/twitter.svg"
-                  alt="Twitter icon"
-              /></a>
-              <a href="https://medium.com/@fonckchain" target="_blank"
-                ><img
-                  class="social-icon"
-                  id="medium-icon"
-                  src="../media/images/icons/medium.svg"
-                  alt="Medium icon"
-              /></a>
-              <a href="https://www.linkedin.com/in/fonckchain" target="_blank"
-                ><img
-                  class="social-icon"
-                  id="linkedin-icon"
-                  src="../media/images/icons/linkedin.svg"
-                  alt="Linkedin icon"
-              /></a>
-              <a href="https://github.com/fonckchain" target="_blank"
-                ><img
-                  class="social-icon"
-                  id="github-icon"
-                  src="../media/images/icons/github.svg"
-                  alt="Github icon"
-              /></a>
-              <a
-                href="https://www.reddit.com/user/All-In-Fonck/"
-                target="_blank"
-                ><img
-                  class="social-icon"
-                  id="reddit-icon"
-                  src="../media/images/icons/reddit.svg"
-                  alt="Reddit icon"
-              /></a>
-              <a href="https://www.twitch.tv/fonckchain" target="_blank"
-                ><img
-                  class="social-icon"
-                  id="twitch-icon"
-                  src="../media/images/icons/twitch.svg"
-                  alt="Twitch icon"
-              /></a>
-              <a
-                href="https://coinmarketcap.com/watchlist/639e0c3c79f6625bd8a8ea57"
-                target="_blank"
-                ><img
-                  class="social-icon"
-                  id="coinmarketcap-icon"
-                  src="../media/images/icons/coinmarketcap.svg"
-                  alt="Coinmarketcap icon"
-              /></a>
-            </div>
-          </div>
-        </div>
-        <hr />
-        <p class="copyright">© Copyright 2023 Fonck - All rights reserved</p>
-        <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
-        <script src="../javascript/menu.js"></script>
-        <script src="../javascript/login.js"></script>
-        <script src="../javascript/registration.js"></script>
-        <script src="../javascript/forgot-password.js"></script>
-        <script src="../javascript/autotyper.js"></script>
-      </footer>
+<footer>
+  <div class="row">
+    <div class="col">
+      <a href="home.html"
+        ><img
+          class="fonck-logo"
+          src="../media/images/icons/fonck-logo.png"
+          alt="Fonck's logo"
+        />
+      </a>
+      <p>Join me in decentralizing the world!</p>
+      <p>Power to the people</p>
+    </div>
+    <div class="col">
+      <h3>
+        Office
+        <div class="underline"><span></span></div>
+      </h3>
+      <p>XRFX+J6X</p>
+      <p>Cariari, Heredia</p>
+      <p>Ulloa, 40104, Costa Rica</p>
+      <p class="email-id">
+        <a href="mailto:AFonck@protonmail.com">AFonck@protonmail.com</a>
+      </p>
+      <p>+(506) 7158 6206</p>
+    </div>
+    <div class="col">
+      <h3>
+        Links
+        <div class="underline"><span></span></div>
+      </h3>
+      <ul>
+        <li>
+          <a class="animate-text animate-text--2" href="info.html"
+            >About</a
+          >
+        </li>
+        <li>
+          <a class="animate-text animate-text--2" href="projects.html"
+            >Projects</a
+          >
+        </li>
+        <li>
+          <a class="animate-text animate-text--2" href="socials.html"
+            >Socials</a
+          >
+        </li>
+        <li>
+          <a class="animate-text animate-text--2" href="portfolio.html"
+            >Portfolio</a
+          >
+        </li>
+        <li>
+          <a class="animate-text animate-text--2" href="library.html"
+            >Library</a
+          >
+        </li>
+        <li>
+          <a class="animate-text animate-text--2" href="services.html"
+            >Services</a
+          >
+        </li>
+        <li>
+          <a class="animate-text animate-text--2" href="support.html"
+            >Support</a
+          >
+        </li>
+      </ul>
+    </div>
+    <div class="col">
+      <h3>
+        Newsletter
+        <div class="underline"><span></span></div>
+      </h3>
+      <form class="email" action="TBD">
+        <img
+          id="email-icon"
+          src="../media/images/icons/email.svg"
+          alt="Email icon"
+        />
+        <input
+          type="email"
+          placeholder="Enter your email address"
+          required
+        />
+        <button type="submit">
+          <img
+            id="arrow-right"
+            src="../media/images/icons/arrow-right-alt-rounded.svg"
+            alt="Submit button"
+          />
+        </button>
+      </form>
+      <div class="social-icons">
+        <a
+          href="https://telegram.me/fonckchain"
+          target="_blank"
+          class="social-link"
+          ><img
+            class="social-icon"
+            id="telegram-icon"
+            src="../media/images/icons/telegram.svg"
+            alt="Telegram icon"
+        /></a>
+        <a
+          href="https://discord.com/users/143895452331409409"
+          target="_blank"
+          class="social-link"
+          ><img
+            class="social-icon"
+            id="discord-icon"
+            src="../media/images/icons/discord.svg"
+            alt="Discord icon"
+        /></a>
+        <a
+          href="https://twitter.com/Fonckchain"
+          target="_blank"
+          class="social-link"
+          ><img
+            class="social-icon"
+            id="twitter-icon"
+            src="../media/images/icons/twitter.svg"
+            alt="Twitter icon"
+        /></a>
+        <a
+          href="https://medium.com/@fonckchain"
+          target="_blank"
+          class="social-link"
+          ><img
+            class="social-icon"
+            id="medium-icon"
+            src="../media/images/icons/medium.svg"
+            alt="Medium icon"
+        /></a>
+        <a
+          href="https://www.linkedin.com/in/fonckchain"
+          target="_blank"
+          class="social-link"
+          ><img
+            class="social-icon"
+            id="linkedin-icon"
+            src="../media/images/icons/linkedin.svg"
+            alt="Linkedin icon"
+        /></a>
+        <a
+          href="https://github.com/fonckchain"
+          target="_blank"
+          class="social-link"
+          ><img
+            class="social-icon"
+            id="github-icon"
+            src="../media/images/icons/github.svg"
+            alt="Github icon"
+        /></a>
+        <a
+          href="https://www.reddit.com/user/All-In-Fonck/"
+          target="_blank"
+          class="social-link"
+          ><img
+            class="social-icon"
+            id="reddit-icon"
+            src="../media/images/icons/reddit.svg"
+            alt="Reddit icon"
+        /></a>
+        <a
+          href="https://www.twitch.tv/fonckchain"
+          target="_blank"
+          class="social-link"
+          ><img
+            class="social-icon"
+            id="twitch-icon"
+            src="../media/images/icons/twitch.svg"
+            alt="Twitch icon"
+        /></a>
+        <a
+          href="https://coinmarketcap.com/watchlist/639e0c3c79f6625bd8a8ea57"
+          target="_blank"
+          class="social-link"
+          ><img
+            class="social-icon"
+            id="coinmarketcap-icon"
+            src="../media/images/icons/coinmarketcap.svg"
+            alt="Coinmarketcap icon"
+        /></a>
+      </div>
+    </div>
+  </div>
+  <hr />
+  <p class="copyright">© Copyright 2023 Fonck - All rights reserved</p>
+  <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+  <script src="../javascript/autotyper.js"></script>
+  <script src="../javascript/menu.js"></script>
+  <script type="module" src="../javascript/login.js"></script>
+  <script type="module" src="../javascript/registration.js"></script>
+  <script type="module" src="../javascript/forgotPassword.js"></script>
+  <script src="../javascript/gmeWallet.js"></script>
+  <script src="../javascript/main.js"></script>
+  <script src="../javascript/gamestopConnect.js"></script>
+</footer>
     </div>
   </body>
 </html>

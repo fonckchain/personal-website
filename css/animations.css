@@ -1,26 +1,27 @@
-/*
-.arrow-right:hover, .project-image:hover, .fonck-logo, .social-icon:hover, .skill-item:hover {
-    transition: all 100ms ease-out 100ms;
+
+/* ========================================================================== */
+/* GENERAL */
+/* ========================================================================== */
+.fonck-logo:hover {
+  transform: scale(1.2) rotate(-38deg);
+  transform-origin: center;
+  transition: transform 0.3s ease; 
 }
-  .arrow-right:hover, .fonck-logo:hover, .social-icon:hover, .skill-item:hover {
-    transform: perspective(420px) translateZ(69px);
-  }
-*/
   .login-button:active, .login-btn:active, .register-button:active, 
   .project-image:active, .toggle-btn:active {
     scale: 0.95;
   }
-  .dropdown-hover:hover .dropdown-gif {
-    display: block;
-  }
 /* ========================================================================== */
 /* HEADER */
 /* ========================================================================== */
-  .connect-gamestop:hover, .login-button:hover, .login-btn:hover, .register-button:hover, .project-image:hover, 
-  .arrow-right:hover, .fonck-logo:hover, .skill-item:hover{
+.connect-gamestop, .login-button, .login-btn, .register-button, .project-image, 
+.arrow-right {
+  transition: transform 0.3s ease; /* Add a smooth transition for the transformation */
+  transform-origin: center; /* Set the origin of the transformation to the center of the element */
+}
+.connect-gamestop:hover, .login-button:hover, .login-btn:hover, .register-button:hover, .project-image:hover, 
+  .arrow-right:hover {
     transform: scale(1.05); 
-    transform-origin: center; /* Set the origin of the transformation to the center of the element */
-    transition: transform 0.3s ease; /* Add a smooth transition for the transformation */
   }
   .login-button:hover, .register-button:hover {
     background-color: #ebebeb;
@@ -90,6 +91,18 @@
   /* FOOTER */
   /* ======================================================================== */
   .social-icons img:hover {
-    transform: scale(1.2) rotate(12deg); /* Added */
+    transform: scale(1.2) rotate(12deg);
     background: #fff;
+  }
+  /* ======================================================================== */
+  /* MULTIMEDIA */
+  /* ======================================================================== */
+  .dropdown-hover:hover .dropdown-gif {
+    display: block;
+  }
+  .crypto-logo {
+    transition: transform 0.3s ease;
+  }  
+  .skill-item:hover, .crypto-logo:hover {
+    transform: scale(1.1);
   }
