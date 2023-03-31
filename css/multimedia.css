@@ -17,10 +17,11 @@
 .dropdown-gif {
   display: none;
   position: absolute;
-  right: -30vw;
-  padding: 10px 0px;
-  z-index: 1;
+  top: 100%; /* Position the gif below the 'YOU' text */
+  left: 50%; /* Center the gif horizontally */
+  transform: translateX(-50%); /* Adjust the position for better centering */
+  z-index: 1; /* Make sure the gif is on top of other elements */
 }
-img.animated-gif {
-  max-width: 70vw;
+.animated-gif {
+  max-width: 69vw;
 }

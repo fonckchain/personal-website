@@ -102,8 +102,11 @@ p a:not(.home, .link-arrow):hover {
   .crypto-logo {
     transition: transform 0.3s ease;
   }  
-  .crypto-logo:hover, .arrow-right:hover {
-    transform: scale(1.1);
+  .crypto-logo:hover {
+    transform: scale(1.12);
+  }
+  .arrow-right:hover {
+    transform: scale(1.33);
   }
   .skill-icon:hover {
     transform: scale(1.33);
