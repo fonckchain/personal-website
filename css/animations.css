@@ -5,7 +5,7 @@
 .fonck-logo:hover {
   transform: scale(1.2) rotate(-38deg);
   transform-origin: center;
-  transition: transform 0.3s ease; 
+  transition: transform 0.33s ease; 
 }
   .login-button:active, .login-btn:active, .register-button:active, 
   .project-image:active, .toggle-btn:active {
@@ -16,7 +16,7 @@
 /* ========================================================================== */
 .connect-gamestop, .login-button, .login-btn, .register-button, .project-image, 
 .arrow-right {
-  transition: transform 0.3s ease; /* Add a smooth transition for the transformation */
+  transition: transform 0.33s ease; /* Add a smooth transition for the transformation */
   transform-origin: center; /* Set the origin of the transformation to the center of the element */
 }
 .connect-gamestop:hover, .login-button:hover, .login-btn:hover, .register-button:hover, .project-image:hover, 
@@ -30,13 +30,13 @@
     background-color: #444444c5;
   }
   .gamestop-wallet-icon {
-    transition: all 0.3s ease;
+    transition: all 0.33s ease;
   }
   .connect-gamestop:hover .gamestop-wallet-icon {
     transform: rotate(360deg); /* Rotate the icon 360 degrees on hover */
   }
   .close-button, .return-button {
-    transition: transform 0.3s ease, color 0.3s ease;
+    transition: transform 0.33s ease, color 0.33s ease;
   }
   .close-button:hover, .return-button:hover {
     color: var(--color-primary);
@@ -54,7 +54,7 @@
   .link-arrow::after {
     content: "-->";
     margin-left: 0.5rem;
-    transition: margin 0.15s;
+    transition: margin 0.2s;
   }
   .link-arrow:hover::after {
     margin-left: 1rem;
@@ -63,7 +63,7 @@
     position: relative;
     display: inline-block;
     text-decoration: none;
-    transition: color 0.3s ease;
+    transition: color 0.33s ease;
   }
   .animate-text::before {
     content: "";
@@ -75,7 +75,7 @@
     background-color: currentColor;
     transform: scaleX(0);
     transform-origin: right;
-    transition: transform 0.3s ease;
+    transition: transform 0.33s ease;
   }
   .animate-text:hover {
     color: var(--color-primary);
@@ -103,6 +103,6 @@
   .crypto-logo {
     transition: transform 0.3s ease;
   }  
-  .skill-item:hover, .crypto-logo:hover {
+  .skill-icon:hover, .crypto-logo:hover {
     transform: scale(1.1);
   }
