@@ -71,7 +71,7 @@
     cursor: pointer;
     width: 100%;
   }
-  .connect-wallet-button, .connect-gamestop, .connect-metamask {
+  .connect-wallet-button, .connect-gamestop, .connect-metamask, .connect-walletConnect {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -89,17 +89,14 @@
   }
   .connect-metamask {
     background-color: #f6851b;
-    color: #fff;
   }
-  .gamestop-wallet-icon {
+  .connect-walletConnect {
+    background-color: #3999fc;
+  }
+  .gamestop-wallet-icon, .metamask-logo, .walletConnect-logo {
     width: 24px;
     height: 24px;
     margin-right: 8px;
-  }
-  .metamask-logo {
-    height: 24px;
-    margin-right: 8px;
-    width: 24px;
   }
   .sign-in-container {
     display: flex;
