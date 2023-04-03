@@ -173,17 +173,20 @@ margin-bottom: 10px;
   border-radius: 10px;
   max-width: 500px;
 }
-.close-button {
+.close-button, .close-btn {
   position: absolute;
   top: 1px;
   right: 5px;
   font-size: 2.5rem;
   font-weight: bold;
-  color: #666;
+  color: #999;
   background: transparent;
   border: none;
   cursor: pointer;
   outline: none;
+}
+.close-btn {
+  top: -5px;
 }
 .return-button {
   position: absolute;
@@ -191,7 +194,7 @@ margin-bottom: 10px;
   left: 5px;
   font-size: 2.5rem;
   font-weight: bold;
-  color: #666;
+  color: #999;
   background: none;
   border: none;
   cursor: pointer;
@@ -212,6 +215,22 @@ margin-bottom: 10px;
   padding: 0 0.5rem;
   font-size: 1.6rem;
   color: #666;
+}
+/* ========================================================================== */
+/* ERRORS */
+/* ========================================================================== */
+.modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #030303;
+  border: 1px solid #ccc;
+  padding: 25px;
+  z-index: 888;
+  border-radius: 10px;
+  width: 80vw;
 }
 /* ========================================================================== */
 /* DROPDOWN MENU */

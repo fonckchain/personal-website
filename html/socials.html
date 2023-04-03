@@ -130,7 +130,7 @@
               />
               <span class="sign-in-text">GameStop</span>
             </button>
-            <button class="connect-metamask">
+            <button class="connect-metamask" onclick="connectWithMetaMask()">
               <img
                 class="metamask-logo"
                 src="../media/images/icons/metamask-fox.svg"
@@ -162,6 +162,10 @@
               />
               <span class="sign-in-text">Phantom</span>
             </button>
+            <div id="error-modal" class="modal">
+              <span id="close-modal" class="close-btn">&times;</span>
+              <p id="error-message" class="error-message"></p>
+            </div>
           </div>
         </div>
         <div class="registration-popup">
@@ -402,7 +406,6 @@
         </div>
         <hr />
         <p class="copyright">© Copyright 2023 Fonck - All rights reserved</p>
-        <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
         <script src="../javascript/menu.js"></script>
         <script type="module" src="../javascript/login.js"></script>
         <script type="module" src="../javascript/connectWallet.js"></script>
@@ -411,6 +414,7 @@
         <script src="../javascript/gmeWallet.js"></script>
         <script src="../javascript/main.js"></script>
         <script src="../javascript/gamestopConnect.js"></script>
+        <script src="../javascript/metamaskConnect.js"></script>
       </footer>
     </div>
   </body>

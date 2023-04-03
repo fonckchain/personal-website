@@ -29,10 +29,10 @@
   .connect-wallet-button:hover .gamestop-wallet-icon, .connect-gamestop:hover .gamestop-wallet-icon, .connect-metamask:hover .metamask-logo, .connect-walletConnect:hover .walletConnect-logo, .connect-ledger:hover .ledger-icon, .connect-phantom:hover .phantom-logo {
     transform: rotate(360deg); /* Rotate the icon 360 degrees on hover */
   }
-  .close-button, .return-button {
+  .close-button, .return-button, .close-btn {
     transition: transform 0.33s ease, color 0.33s ease;
   }
-  .close-button:hover, .return-button:hover {
+  .close-button:hover, .return-button:hover, .close-btn:hover {
     color: var(--color-primary);
     transform: scale(1.2);
   }
