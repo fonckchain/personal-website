@@ -39,7 +39,7 @@
     cursor: pointer;
     }
   /* ======================================================================== */
-  /* LOGIN FORM */
+  /* LOGIN POPUP */
   /* ======================================================================== */
   .checkbox-container {
     display: flex;
@@ -53,12 +53,12 @@
   }
   .forgot-password-button {
     padding: initial;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
     font-size: 1.4rem;
     color: #ccc;
     text-decoration: underline;
   }
-  .login-button, .register-button {
+  .login-button, .register-button, .recovery-email-button  {
     display: block;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -71,10 +71,10 @@
     cursor: pointer;
     width: 100%;
   }
-  .connect-wallet-button, .connect-gamestop, .connect-metamask, .connect-walletConnect {
+  .connect-wallet-button, .connect-gamestop, .connect-metamask, .connect-walletConnect, .connect-ledger, .connect-phantom {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
     margin-top: 10px;
     margin-bottom: 10px;
     padding: 8px 10px;
@@ -85,18 +85,29 @@
     border-radius: 5px;
     cursor: pointer;
     width: 100%;
-    
+  }
+  .connect-wallet-button {
+    justify-content: center;
   }
   .connect-metamask {
     background-color: #f6851b;
   }
   .connect-walletConnect {
-    background-color: #3999fc;
+    background-color: #006FFF;
   }
-  .gamestop-wallet-icon, .metamask-logo, .walletConnect-logo {
+  .connect-ledger {
+    background-color: #252525c5;
+  }
+  .connect-phantom {
+    background-color: #5421f0;
+  }
+  .gamestop-wallet-icon, .metamask-logo, .walletConnect-logo, .ledger-icon, .phantom-logo {
     width: 24px;
     height: 24px;
     margin-right: 8px;
+  }
+  .walletConnect-logo {
+    margin-right: 4px;
   }
   .sign-in-container {
     display: flex;
@@ -124,7 +135,7 @@
   margin-left: 1rem;
   }
 /* ======================================================================== */
-/* POP UP */
+/* POP UPS */
 /* ======================================================================== */
 header input[type="text"], header form input[type="password"],
 header input[type="email"] {
@@ -140,6 +151,11 @@ header form button{
   border: 0;
   outline: none;
   cursor: pointer;
+}
+p.popup-subtitle {
+text-align: center;
+color: #999;
+margin-bottom: 10px;
 }
 .login-popup, .connect-wallet-popup, .registration-popup, .forgot-password-popup {
   display: none;

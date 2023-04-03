@@ -2,35 +2,31 @@
 /* ========================================================================== */
 /* GENERAL */
 /* ========================================================================== */
-.gamestop-wallet-icon, .metamask-logo, .fonck-logo {
+.gamestop-wallet-icon, .metamask-logo, .walletConnect-logo, .ledger-icon, .phantom-logo, .fonck-logo {
   transition: all 0.33s ease;
 }
 .fonck-logo:hover {
   transform: scale(1.2) rotate(-38deg);
   transform-origin: center;
 }
-  .login-button:active, .login-btn:active, .register-button:active, 
-  .project-image:active, .toggle-btn:active {
-    scale: 0.95;
-  }
 /* ========================================================================== */
 /* HEADER */
 /* ========================================================================== */
-.connect-wallet-button, .connect-gamestop, .login-button, .login-btn, .register-button, .project-image, 
+.connect-wallet-button, .connect-gamestop, .connect-metamask, .connect-walletConnect, .connect-ledger, .connect-phantom, .login-button, .login-btn, .register-button, .project-image, 
 .arrow-right {
   transition: transform 0.33s ease;
   transform-origin: center;
 }
-.connect-wallet-button:hover, .connect-gamestop:hover, .connect-metamask:hover, .login-button:hover, .login-btn:hover, .register-button:hover, .project-image:hover {
-    transform: scale(1.05); 
+.connect-wallet-button:hover, .connect-gamestop:hover, .connect-metamask:hover, .connect-walletConnect:hover, .connect-ledger:hover, .connect-phantom:hover, .login-button:hover, .login-btn:hover, .register-button:hover, .project-image:hover {
+    transform: scale(1.05);
   }
   .login-button:hover, .register-button:hover {
     background-color: #ebebeb;
   }
-  .connect-wallet-button:hover, .connect-gamestop:hover {
+  .connect-wallet-button:hover, .connect-gamestop:hover, .connect-ledger:hover {
     background-color: #444444c5;
   }
-  .connect-wallet-button:hover .gamestop-wallet-icon, .connect-gamestop:hover .gamestop-wallet-icon, .connect-metamask:hover .metamask-logo {
+  .connect-wallet-button:hover .gamestop-wallet-icon, .connect-gamestop:hover .gamestop-wallet-icon, .connect-metamask:hover .metamask-logo, .connect-walletConnect:hover .walletConnect-logo, .connect-ledger:hover .ledger-icon, .connect-phantom:hover .phantom-logo {
     transform: rotate(360deg); /* Rotate the icon 360 degrees on hover */
   }
   .close-button, .return-button {
@@ -42,6 +38,12 @@
   }
   .connect-metamask:hover {
     background-color: #d86b18;
+  }
+  .connect-walletConnect:hover {
+    background-color: #3999fc;
+  }
+  .connect-phantom:hover {
+    background-color: #8761f1;
   }
 /* ========================================================================== */
 /* LINKS */
@@ -113,4 +115,11 @@ p a:not(.home, .link-arrow):hover {
   .skill-icon:hover {
     transform: scale(1.33);
     background: transparent;
+  }
+  /* ======================================================================== */
+  /* ACTIVE */
+  /* ======================================================================== */
+  .login-button:active, .login-btn:active, .register-button:active, 
+  .project-image:active, .toggle-btn:active {
+    scale: 0.95;
   }

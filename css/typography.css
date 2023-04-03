@@ -24,6 +24,10 @@ h2 {
 h3, h4, h5, h6 {
   font-size: 3.69rem;
 }
+.close-bottom {
+margin-bottom: 0;
+padding-bottom: 0;
+}
 @media (max-width: 1024px) {
   body, footer {
     font-size: 1.8rem;

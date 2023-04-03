@@ -120,14 +120,15 @@
         </div>
         <div class="connect-wallet-popup">
           <div class="wallet-popup-content">
-            <h3>Connect your wallet</h3>
+            <h3 class="close-bottom">Connect your wallet</h3>
+            <p class="popup-subtitle">Choose how you want to connect</p>
             <button class="connect-gamestop">
               <img
                 class="gamestop-wallet-icon"
                 src="../media/images/icons/gamestop_logo_circle.svg"
                 alt="Gamestop wallet icon"
               />
-              <span class="sign-in-text">Log in with GameStop</span>
+              <span class="sign-in-text">GameStop</span>
             </button>
             <button class="connect-metamask">
               <img
@@ -135,7 +136,7 @@
                 src="../media/images/icons/metamask-fox.svg"
                 alt="MetaMask wallet icon"
               />
-              <span class="sign-in-text">Log in with MetaMask</span>
+              <span class="sign-in-text">MetaMask</span>
             </button>
             <button class="connect-walletConnect">
               <img
@@ -143,12 +144,29 @@
                 src="../media/images/icons/walletConnect.svg"
                 alt="WalletConnect icon"
               />
-              <span class="sign-in-text">Log in with MetaMask</span>
+              <span class="sign-in-text">WalletConnect</span>
+            </button>
+            <button class="connect-ledger">
+              <img
+                class="ledger-icon"
+                src="../media/images/icons/ledger-square.svg"
+                alt="Ledger icon"
+              />
+              <span class="sign-in-text">Ledger</span>
+            </button>
+            <button class="connect-phantom">
+              <img
+                class="phantom-logo"
+                src="../media/images/icons/phantom-wallet.svg"
+                alt="Phantom wallet icon"
+              />
+              <span class="sign-in-text">Phantom</span>
             </button>
           </div>
         </div>
         <div class="registration-popup">
-          <h3>Register</h3>
+          <h3 class="close-bottom">Register</h3>
+          <p class="popup-subtitle">Create an account</p>
           <form>
             <input type="text" name="username" placeholder="Username" />
             <input type="email" name="email" placeholder="Email" />
@@ -162,10 +180,11 @@
           </form>
         </div>
         <div class="forgot-password-popup">
-          <h3>Forgot password?</h3>
+          <h3 class="close-bottom">Forgot password?</h3>
+          <p class="popup-subtitle">Send a recovery email</p>
           <form>
             <input type="email" name="email" placeholder="Email" />
-            <button type="submit" class="forgot-password-button">
+            <button type="submit" class="recovery-email-button">
               Reset password
             </button>
           </form>
