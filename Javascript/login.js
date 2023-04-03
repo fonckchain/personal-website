@@ -1,6 +1,6 @@
 const loginBtns = document.querySelectorAll('.login-btn');
 const loginButton = document.querySelector('.login-button');
-const loginForm = document.querySelector('.login-page');
+const loginForm = document.querySelector('.login-popup');
 const loginUsernameInput = document.querySelector('input[name="username"]');
 const loginPasswordInput = document.querySelector('input[name="password"]');
 const rememberMeCheckbox = document.querySelector('input[name="remember-me"]');

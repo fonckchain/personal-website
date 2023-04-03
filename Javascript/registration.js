@@ -2,11 +2,11 @@
 import { addReturnButton } from './returnButton.js';
 
 const signUpBtn = document.querySelector('.sign-up-btn');
-const registrationForm = document.querySelector('.registration-page');
+const registrationForm = document.querySelector('.registration-popup');
 
 // Attach event listeners to the register button
 signUpBtn.addEventListener('click', function () {
-  const loginForm = document.querySelector('.login-page');
+  const loginForm = document.querySelector('.login-popup');
   loginForm.style.display = 'none';
   registrationForm.style.display = 'block';
   registrationForm.classList.add('popup');

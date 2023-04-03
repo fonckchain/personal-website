@@ -71,7 +71,7 @@
     cursor: pointer;
     width: 100%;
   }
-  .connect-gamestop {
+  .connect-wallet-button, .connect-gamestop, .connect-metamask {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -85,11 +85,21 @@
     border-radius: 5px;
     cursor: pointer;
     width: 100%;
+    
+  }
+  .connect-metamask {
+    background-color: #f6851b;
+    color: #fff;
   }
   .gamestop-wallet-icon {
     width: 24px;
     height: 24px;
     margin-right: 8px;
+  }
+  .metamask-logo {
+    height: 24px;
+    margin-right: 8px;
+    width: 24px;
   }
   .sign-in-container {
     display: flex;
@@ -134,7 +144,7 @@ header form button{
   outline: none;
   cursor: pointer;
 }
-.login-page, .registration-page, .forgot-password-page {
+.login-popup, .connect-wallet-popup, .registration-popup, .forgot-password-popup {
   display: none;
   }
 .popup {
@@ -145,7 +155,7 @@ header form button{
   background-color: #030303;
   border: 1px solid #ccc;
   padding: 25px;
-  z-index: 9999;
+  z-index: 741;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
   max-width: 500px;

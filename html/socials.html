@@ -52,7 +52,7 @@
               <a href="support.html" class="animate-text">Support</a>
             </li>
           </ul>
-          <button class="login-btn">Sign in</button>
+          <button class="login-btn">Login</button>
           <div class="toggle-btn">
             <img src="../media/images/icons/menu.svg" alt="Menu icon" />
           </div>
@@ -80,9 +80,9 @@
           <li>
             <a href="support.html" class="animate-text">Support</a>
           </li>
-          <li><button class="login-btn">Sign in</button></li>
+          <li><button class="login-btn">Login</button></li>
         </div>
-        <div class="login-page">
+        <div class="login-popup">
           <h3>Welcome!</h3>
           <form>
             <input type="text" name="username" placeholder="Username" />
@@ -95,20 +95,20 @@
               <label for="remember-me">Remember me</label>
             </div>
             <button type="submit" class="login-button" data-login>
-              Sign in
+              Log in
             </button>
             <div class="separator">
               <hr />
               <span>or</span>
               <hr />
             </div>
-            <button class="connect-gamestop">
+            <button class="connect-wallet-button">
               <img
                 class="gamestop-wallet-icon"
                 src="../media/images/icons/gamestop_logo_circle.svg"
                 alt="Gamestop wallet icon"
               />
-              <span class="sign-in-text">Sign in with GameStop wallet</span>
+              <span class="wallet-sign-in">Log in with wallet</span>
             </button>
             <div class="sign-up-container">
               <p>You don't have an account?</p>
@@ -118,7 +118,28 @@
             </div>
           </form>
         </div>
-        <div class="registration-page">
+        <div class="connect-wallet-popup">
+          <div class="wallet-popup-content">
+            <h3>Connect your wallet</h3>
+            <button class="connect-gamestop">
+              <img
+                class="gamestop-wallet-icon"
+                src="../media/images/icons/gamestop_logo_circle.svg"
+                alt="Gamestop wallet icon"
+              />
+              <span class="sign-in-text">Log in with GameStop</span>
+            </button>
+            <button class="connect-metamask">
+              <img
+                class="metamask-logo"
+                src="../media/images/icons/metamask-fox.svg"
+                alt="MetaMask wallet icon"
+              />
+              <span class="sign-in-text">Log in with MetaMask</span>
+            </button>
+          </div>
+        </div>
+        <div class="registration-popup">
           <h3>Register</h3>
           <form>
             <input type="text" name="username" placeholder="Username" />
@@ -132,7 +153,7 @@
             <button type="submit" class="register-button">Sign up</button>
           </form>
         </div>
-        <div class="forgot-password-page">
+        <div class="forgot-password-popup">
           <h3>Forgot password?</h3>
           <form>
             <input type="email" name="email" placeholder="Email" />
@@ -357,6 +378,7 @@
         <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
         <script src="../javascript/menu.js"></script>
         <script type="module" src="../javascript/login.js"></script>
+        <script type="module" src="../javascript/connectWallet.js"></script>
         <script type="module" src="../javascript/registration.js"></script>
         <script type="module" src="../javascript/forgotPassword.js"></script>
         <script src="../javascript/gmeWallet.js"></script>

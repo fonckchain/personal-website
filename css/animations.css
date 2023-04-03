@@ -2,13 +2,12 @@
 /* ========================================================================== */
 /* GENERAL */
 /* ========================================================================== */
-.gamestop-wallet-icon, .fonck-logo {
+.gamestop-wallet-icon, .metamask-logo, .fonck-logo {
   transition: all 0.33s ease;
 }
 .fonck-logo:hover {
   transform: scale(1.2) rotate(-38deg);
   transform-origin: center;
-  transition: transform 0.33s ease; 
 }
   .login-button:active, .login-btn:active, .register-button:active, 
   .project-image:active, .toggle-btn:active {
@@ -17,21 +16,21 @@
 /* ========================================================================== */
 /* HEADER */
 /* ========================================================================== */
-.connect-gamestop, .login-button, .login-btn, .register-button, .project-image, 
+.connect-wallet-button, .connect-gamestop, .login-button, .login-btn, .register-button, .project-image, 
 .arrow-right {
-  transition: transform 0.33s ease; /* Add a smooth transition for the transformation */
-  transform-origin: center; /* Set the origin of the transformation to the center of the element */
+  transition: transform 0.33s ease;
+  transform-origin: center;
 }
-.connect-gamestop:hover, .login-button:hover, .login-btn:hover, .register-button:hover, .project-image:hover {
+.connect-wallet-button:hover, .connect-gamestop:hover, .connect-metamask:hover, .login-button:hover, .login-btn:hover, .register-button:hover, .project-image:hover {
     transform: scale(1.05); 
   }
   .login-button:hover, .register-button:hover {
     background-color: #ebebeb;
   }
-  .connect-gamestop:hover {
+  .connect-wallet-button:hover, .connect-gamestop:hover {
     background-color: #444444c5;
   }
-  .connect-gamestop:hover .gamestop-wallet-icon {
+  .connect-wallet-button:hover .gamestop-wallet-icon, .connect-gamestop:hover .gamestop-wallet-icon, .connect-metamask:hover .metamask-logo {
     transform: rotate(360deg); /* Rotate the icon 360 degrees on hover */
   }
   .close-button, .return-button {
@@ -40,6 +39,9 @@
   .close-button:hover, .return-button:hover {
     color: var(--color-primary);
     transform: scale(1.2);
+  }
+  .connect-metamask:hover {
+    background-color: #d86b18;
   }
 /* ========================================================================== */
 /* LINKS */

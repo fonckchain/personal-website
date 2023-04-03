@@ -2,11 +2,11 @@
 import { addReturnButton } from './returnButton.js';
 
 const forgotPasswordBtn = document.querySelector('.forgot-password-button');
-const forgotPasswordForm = document.querySelector('.forgot-password-page');
+const forgotPasswordForm = document.querySelector('.forgot-password-popup');
 
 // Attach event listeners to the forgot password button
 forgotPasswordBtn.addEventListener('click', function() {
-  const loginForm = document.querySelector('.login-page');
+  const loginForm = document.querySelector('.login-popup');
   loginForm.style.display = 'none';
   forgotPasswordForm.style.display = 'block';
   forgotPasswordForm.classList.add('popup');
