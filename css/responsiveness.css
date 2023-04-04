@@ -35,3 +35,18 @@
         font-size: 1.5rem;
       }
     }
+    @media (max-width: 1024px) {
+      h3.animated-underline .underline {
+        bottom: -50%;
+      }
+    }
+    @media (max-width: 1024px) {
+      h3.animated-underline .underline {
+        bottom: -33%;
+      }
+    }
+    @media (min-width: 2048px) {
+      h3.animated-underline .underline {
+        bottom: -100%;
+      }
+    }
