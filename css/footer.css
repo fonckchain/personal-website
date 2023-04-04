@@ -58,19 +58,19 @@ footer {
     border-bottom: 1px solid #ccc;
     margin-bottom: 50px;
   }
-  footer input[type="email"]#footer-email::-webkit-input-placeholder { /* Chrome, Safari, and Opera */
+  footer input[type="email"]::-webkit-input-placeholder { /* Chrome, Safari, and Opera */
     color: #ccc;
     opacity: 1;
   }
-  footer input[type="email"]#footer-email::-moz-placeholder { /* Firefox */
+  footer input[type="email"]::-moz-placeholder { /* Firefox */
     color: #ccc;
     opacity: 1;
   }
-  footer input[type="email"]#footer-email::-ms-input-placeholder { /* Microsoft Edge */
+  footer input[type="email"]::-ms-input-placeholder { /* Microsoft Edge */
     color: #ccc;
     opacity: 1;
   }
-  footer input[type="email"]#footer-email::placeholder {
+  footer input[type="email"]::placeholder {
     color: #ccc;
     opacity: 1;
   }
