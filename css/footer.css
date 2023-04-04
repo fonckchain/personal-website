@@ -40,8 +40,15 @@ footer {
   }
   .email-id {
     width: fit-content;
-    border-bottom: 1px solid #ccc;
     margin: 20px 0;
+  }
+  .email-id a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px solid #ccc;
+    transition: border-color 0.33s, color 0.33s;
   }
   form.email {
     padding-bottom: 15px;
@@ -51,7 +58,23 @@ footer {
     border-bottom: 1px solid #ccc;
     margin-bottom: 50px;
   }
-  footer form input{
+  footer input[type="email"]#footer-email::-webkit-input-placeholder { /* Chrome, Safari, and Opera */
+    color: #ccc;
+    opacity: 1;
+  }
+  footer input[type="email"]#footer-email::-moz-placeholder { /* Firefox */
+    color: #ccc;
+    opacity: 1;
+  }
+  footer input[type="email"]#footer-email::-ms-input-placeholder { /* Microsoft Edge */
+    color: #ccc;
+    opacity: 1;
+  }
+  footer input[type="email"]#footer-email::placeholder {
+    color: #ccc;
+    opacity: 1;
+  }
+  footer form input {
     width: 100%;
     background: transparent;
     color: #ccc;
