@@ -95,7 +95,7 @@ strong {
   margin-bottom: 1.69rem;
   text-align: center;
   }
-  table.cryptos, ol, .about ul, .library ul, .homepage p, .about p, .projects p, .socials p, .portfolio p, .library p, .services p, .support p, figcaption {
+  .cryptos-table, ol, .about ul, .library ul, .homepage p, .about p, .projects p, .socials p, .portfolio p, .library p, .services p, .support p, figcaption {
       text-shadow:
           0.07em 0 black,
           0 0.07em black,
