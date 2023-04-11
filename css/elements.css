@@ -41,3 +41,37 @@
       margin-left: auto;
       margin-right: auto;
     }
+    .list--dropdown {
+      list-style-type: none;
+      padding: 0;
+      width: 70%;
+      margin: 0 auto;
+    }
+    .list-dropdown-item {
+      background-color: #1a1a1a;
+      border: 1px solid #ddd;
+      padding: 8px 16px;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.3s
+    }
+    .list-dropdown-item:hover .payment-method {
+      color: #000;
+      font-weight: 600;
+    }
+    .list-dropdown-item:hover {
+      background-color: #ddd;
+      transform: scale(1.03);
+    }
+    .payment-info {
+      display: none;
+      background-color: #000;
+      padding: 12px 16px;
+      border-left: 1px solid #ddd;
+      border-right: 1px solid #ddd;
+      border-bottom: 1px solid #ddd;
+      overflow: hidden;
+    }
+    .payment-info ul li {
+      word-break: break-word;
+    }
+    
