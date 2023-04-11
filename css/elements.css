@@ -44,14 +44,18 @@
     .list--dropdown {
       list-style-type: none;
       padding: 0;
-      width: 70%;
+      width: 75%;
       margin: 0 auto;
+    }
+    @media (max-width: 768px) {
+      .list--dropdown {
+        width: 100%;
+      }
     }
     .list-dropdown-item {
       background-color: #1a1a1a;
       border: 1px solid #ddd;
       padding: 8px 16px;
-      cursor: pointer;
       transition: background-color 0.3s, transform 0.3s
     }
     .list-dropdown-item:hover .payment-method {
@@ -74,4 +78,32 @@
     .payment-info ul li {
       word-break: break-word;
     }
-    
+    .info-container {
+      display: flex;
+      flex-direction: column;
+    }
+    .info-header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    } 
+    .copy-btn {
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0;
+      margin-right: 8px;
+    }
+    .copy-btn img {
+      width: 24px;
+      height: 24px;
+      vertical-align: middle;
+    }    
+    .copy-btn:hover {
+      transform: scale(1.03);
+    }
+    .copy-message {
+      color: var(--color-primary);
+      font-weight: bold;
+      margin-right: 8px;
+    }
